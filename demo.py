@@ -38,7 +38,7 @@ agent = initialize_agent(tools=tools, llm=llm, agent = "zero-shot-react-descript
 prompt = "get the latest news about France Olympics"
 
 if prompt:
-    responsie = agent.run(prompt)
+    response = agent.run(prompt)
     print(response)
 #     st.write(response)
 # search = SerpAPIWrapper()
