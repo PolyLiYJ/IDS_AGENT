@@ -3,3 +3,10 @@ train_set.csv
 test_set.csv
 .env
 openai_key.txt
+./dataset
+./models
+*.joblib
+AutoGPT
+lagent
+results
+results.txt

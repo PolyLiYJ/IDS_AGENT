@@ -1,4 +1,4 @@
-192.168.1.211-192.168.1.1-46085-53-17
-**Final Classification: UDP Flood**
+192.168.1.45-192.168.1.162-59094-4321-6
+**Final Classification: OS Scan**
 
-The network traffic from the file `dataset/ACIIoT/test_set_small.csv` with the Flow ID `192.168.1.211-192.168.1.1-46085-53-17` has been classified using multiple classifiers. The Decision Tree classifier identified it as a **UDP Flood**, while both the K-Nearest Neighbors and Logistic Regression classifiers identified it as **Benign**. Given the aggressive stance in intrusion detection, we prioritize the detection of potential attacks immediately. Therefore, the final classification is **UDP Flood**.
+The network traffic from the file `dataset/ACIIoT/test_set_small.csv` with the Flow ID `192.168.1.45-192.168.1.162-59094-4321-6` has been classified as an **OS Scan** by all three classifiers: Decision Tree, K-Nearest Neighbors, and Logistic Regression. This indicates a consistent detection of a potential attack aimed at identifying operating system vulnerabilities. Immediate action is recommended to mitigate this threat.
