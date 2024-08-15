@@ -3,24 +3,24 @@ aiosignal==1.3.1
 altair==5.3.0
 annotated-types==0.7.0
 anyio==4.4.0
-asttokens @ file:///opt/conda/conda-bld/asttokens_1646925590279/work
+asttokens 
 async-timeout==4.0.3
 attrs==23.2.0
 beautifulsoup4==4.12.3
 blinker==1.8.2
-Bottleneck @ file:///croot/bottleneck_1707864210935/work
+Bottleneck 
 bs4==0.0.2
 cachetools==5.4.0
 certifi==2024.7.4
 charset-normalizer==3.3.2
 click==8.1.7
-comm @ file:///croot/comm_1709322850197/work
+comm
 dataclasses-json==0.6.7
-debugpy @ file:///croot/debugpy_1690905042057/work
-decorator @ file:///opt/conda/conda-bld/decorator_1643638310831/work
+debugpy 
+decorator @ file:///opt/conda/conda-bld/decorator_1643638310831/w
 distro==1.9.0
-exceptiongroup @ file:///croot/exceptiongroup_1706031385326/work
-executing @ file:///opt/conda/conda-bld/executing_1646925071911/work
+exceptiongroup 
+executing 
 frozenlist==1.4.1
 gitdb==4.0.11
 GitPython==3.1.43
@@ -98,28 +98,28 @@ requests==2.32.3
 rich==13.7.1
 rpds-py==0.19.1
 rsa==4.9
-scikit-learn @ file:///croot/scikit-learn_1721921875708/work
-scipy @ file:///croot/scipy_1710947333060/work/dist/scipy-1.12.0-cp310-cp310-linux_x86_64.whl#sha256=91bbd4c153610fb62d9555167f7bd4b7ae21086e636bd8b4c5db75d57d04ea05
-six @ file:///tmp/build/80754af9/six_1644875935023/work
+scikit-learn
+scipy 
+six 
 smmap==5.0.1
 sniffio==1.3.1
 soupsieve==2.5
 SQLAlchemy==2.0.31
-stack-data @ file:///opt/conda/conda-bld/stack_data_1646927590127/work
+stack-data 
 streamlit==1.37.0
 tenacity==8.5.0
-threadpoolctl @ file:///croot/threadpoolctl_1719407800858/work
+threadpoolctl 
 tiktoken==0.7.0
 toml==0.10.2
 toolz==0.12.1
-tornado @ file:///croot/tornado_1718740109488/work
+tornado 
 tqdm==4.66.4
-traitlets @ file:///croot/traitlets_1718227057033/work
+traitlets 
 typing-inspect==0.9.0
-typing_extensions @ file:///croot/typing_extensions_1715268824938/work
-tzdata @ file:///croot/python-tzdata_1690578112552/work
+typing_extensions 
+tzdata 
 uritemplate==4.1.1
 urllib3==2.2.2
 watchdog==4.0.1
-wcwidth @ file:///Users/ktietz/demo/mc3/conda-bld/wcwidth_1629357192024/work
+wcwidth 
 yarl==1.9.4

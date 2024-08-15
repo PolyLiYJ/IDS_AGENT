@@ -1,0 +1,242 @@
+Flow ID: 192.168.1.168-83.51.94.53-1123-0-17, True Label: UDP Flood, Predicted Label: Here are the classification results:
+Flow ID: 192.168.1.168-83.51.94.53-1123-0-17, True Label: UDP Flood, Predicted Label: UDP Flood
+Flow ID: 192.168.1.211-192.168.1.1-33509-53-17, True Label: UDP Flood, Predicted Label: UDP Flood
+Flow ID: 192.168.1.211-192.168.1.1-54123-53-17, True Label: UDP Flood, Predicted Label: UDP Flood
+Flow ID: 192.168.1.168-17.117.75.182-3430-0-17, True Label: UDP Flood, Predicted Label: Benign
+Flow ID: 192.168.1.211-192.168.1.1-54724-53-17, True Label: UDP Flood, Predicted Label: UDP Flood
+Flow ID: 192.168.1.211-192.168.1.1-55009-53-17, True Label: UDP Flood, Predicted Label: UDP Flood
+Flow ID: 192.168.1.183-255.255.255.255-49154-6667-17, True Label: Benign, Predicted Label: Benign
+Flow ID: 192.168.1.211-192.168.1.1-54230-53-17, True Label: UDP Flood, Predicted Label: UDP Flood
+Flow ID: 192.168.1.211-192.168.1.1-46244-53-17, True Label: UDP Flood, Predicted Label: Benign
+Flow ID: 192.168.1.211-192.168.1.1-43129-53-17, True Label: UDP Flood, Predicted Label: UDP Flood
+Flow ID: 192.168.1.183-100.21.156.247-25390-8886-6, True Label: UDP Flood, Predicted Label: Benign
+Flow ID: 192.168.1.211-192.168.1.1-52888-53-17, True Label: UDP Flood, Predicted Label: UDP Flood
+Flow ID: 192.168.1.211-192.168.1.1-60406-53-17, True Label: UDP Flood, Predicted Label: Benign
+Flow ID: 192.168.1.211-192.168.1.1-50927-53-17, True Label: UDP Flood, Predicted Label: UDP Flood
+Flow ID: 192.168.1.211-192.168.1.1-41314-53-17, True Label: UDP Flood, Predicted Label: UDP Flood
+Flow ID: 192.168.1.183-255.255.255.255-49154-6667-17, True Label: Benign, Predicted Label: Benign
+Flow ID: 192.168.1.211-192.168.1.1-33109-53-17, True Label: UDP Flood, Predicted Label: Mixed results from classifiers.
+Flow ID: 192.168.1.168-173.88.220.220-34257-0-17, True Label: UDP Flood, Predicted Label: UDP Flood
+Flow ID: 192.168.1.168-192.168.1.1-33478-53-17, True Label: UDP Flood, Predicted Label: UDP Flood
+Flow ID: 192.168.1.168-83.51.94.53-1123-0-17, True Label: UDP Flood, Predicted Label: : UDP Flood**
+Flow ID: 192.168.1.182-239.255.255.250-62669-1900-17, True Label: Benign, Predicted Label: : Benign**
+Flow ID: 192.168.1.211-192.168.1.1-39061-53-17, True Label: Benign, Predicted Label: : Benign**
+Flow ID: 192.168.1.211-192.168.1.1-47583-53-17, True Label: Benign, Predicted Label: : Benign**
+Flow ID: 192.168.1.182-239.255.255.250-56657-1900-17, True Label: Benign, Predicted Label: : Benign**
+Flow ID: 209.206.49.216-192.168.1.87-30001-39893-6, True Label: Benign, Predicted Label: : Benign**
+Flow ID: 192.168.1.185-34.160.144.191-55566-443-6, True Label: Benign, Predicted Label: : Benign**
+Flow ID: 192.168.1.81-239.255.255.250-60683-1900-17, True Label: Benign, Predicted Label: : Benign**
+Flow ID: 192.168.1.185-34.149.100.209-47452-443-6, True Label: Benign, Predicted Label: : Benign**
+Flow ID: 192.168.1.81-3.223.131.1-44414-443-6, True Label: Benign, Predicted Label: : Benign**
+Flow ID: 192.168.1.25-239.255.255.250-49448-1900-17, True Label: Benign, Predicted Label: : Benign**
+Flow ID: 192.168.1.11-224.0.0.22-0-0-0, True Label: Benign, Predicted Label: : ICMP Flood**
+Flow ID: 192.168.1.11-239.255.255.250-1900-1900-17, True Label: Benign, Predicted Label: : Benign**
+Flow ID: 192.168.1.207-142.250.65.174-47041-443-17, True Label: Benign, Predicted Label: : Benign**
+Flow ID: 104.126.117.162-192.168.1.249-443-49296-6, True Label: Benign, Predicted Label: : Benign**
+Flow ID: 192.168.1.45-192.168.1.11-40766-995-6, True Label: Benign, Predicted Label: : Ping Sweep**
+Flow ID: 192.168.1.172-157.240.241.55-58092-443-6, True Label: Benign, Predicted Label: : Benign**
+Flow ID: 192.168.1.211-192.168.1.1-39894-53-17, True Label: Benign, Predicted Label: : Benign**
+Flow ID: 192.168.1.182-10.210.146.113-51911-7680-6, True Label: Benign, Predicted Label: : Benign**
+Flow ID: 192.168.1.211-192.168.1.1-35641-53-17, True Label: Benign, Predicted Label: : Benign**
+Flow ID: 54.156.230.89-192.168.1.81-443-33462-6, True Label: Benign, Predicted Label: : Benign**
+Flow ID: 192.168.1.183-255.255.255.255-49154-6667-17, True Label: Benign, Predicted Label: : Benign**
+Flow ID: 192.168.1.211-192.168.1.1-60645-53-17, True Label: Benign, Predicted Label: : Benign**
+Flow ID: 192.168.1.211-192.168.1.1-53322-53-17, True Label: Benign, Predicted Label: : Benign**
+Flow ID: 192.168.1.182-10.50.20.2-63428-7680-6, True Label: Benign, Predicted Label: : Benign**
+Flow ID: 192.168.1.7-54.230.163.97-46572-443-6, True Label: Benign, Predicted Label: : Benign**
+Flow ID: 52.23.140.126-192.168.1.81-443-36994-6, True Label: Benign, Predicted Label: : Benign**
+Flow ID: 209.206.49.216-192.168.1.87-30001-47566-6, True Label: Benign, Predicted Label: : Benign**
+Flow ID: 192.168.3.6-35.224.170.84-36282-80-6, True Label: Benign, Predicted Label: : Benign**
+Flow ID: 192.168.1.211-192.168.1.1-48508-53-17, True Label: Benign, Predicted Label: : Benign**
+Flow ID: 192.168.1.108-197.21.0.239-7000-46980-6, True Label: Benign, Predicted Label: : Benign**
+Flow ID: 192.168.1.176-23.200.3.18-49868-80-6, True Label: Benign, Predicted Label: : Benign**
+Flow ID: 192.168.1.17-69.192.21.146-52773-443-6, True Label: Benign, Predicted Label: : Benign**
+Flow ID: 209.206.49.216-192.168.1.87-30001-47560-6, True Label: Benign, Predicted Label: : Benign**
+Flow ID: 192.168.1.7-224.0.0.251-5353-5353-17, True Label: Benign, Predicted Label: : Benign**
+Flow ID: 192.168.1.48-162.159.61.4-49680-443-6, True Label: Benign, Predicted Label: : Benign**
+Flow ID: 192.168.1.14-52.45.245.204-52433-443-6, True Label: Benign, Predicted Label: : Benign**
+Flow ID: 192.168.1.182-224.0.0.252-49211-5355-17, True Label: Benign, Predicted Label: : Benign**
+Flow ID: 192.168.3.5-185.125.190.48-56734-80-6, True Label: Benign, Predicted Label: : Benign**
+Flow ID: 209.206.49.216-192.168.1.87-30001-47566-6, True Label: Benign, Predicted Label: : Benign**
+Flow ID: 192.168.1.183-255.255.255.255-49154-6667-17, True Label: Benign, Predicted Label: : Benign**
+Flow ID: 142.251.40.142-192.168.1.9-443-56183-17, True Label: Benign, Predicted Label: : Benign**
+Flow ID: 54.161.152.147-192.168.1.9-443-65110-6, True Label: Benign, Predicted Label: : Benign**
+Flow ID: 18.197.213.150-192.168.1.9-80-55704-6, True Label: Benign, Predicted Label: : Benign**
+Flow ID: 192.168.1.20-35.224.170.84-48356-80-6, True Label: Benign, Predicted Label: : Benign**
+Flow ID: 192.168.1.81-192.168.1.1-44836-53-17, True Label: Benign, Predicted Label: : Benign**
+Flow ID: 192.168.1.168-192.168.1.1-65192-53-17, True Label: Benign, Predicted Label: : Benign**
+Flow ID: 192.168.1.17-52.113.194.132-53891-443-6, True Label: Benign, Predicted Label: : Benign**
+Flow ID: 209.206.49.216-192.168.1.87-30001-47579-6, True Label: Benign, Predicted Label: : Benign**
+Flow ID: 192.168.1.181-224.0.0.251-5353-5353-17, True Label: Benign, Predicted Label: : Benign**
+Flow ID: 192.168.1.81-3.33.190.236-60130-443-6, True Label: Benign, Predicted Label: : Slowloris**
+Flow ID: 192.168.1.183-255.255.255.255-49154-6667-17, True Label: Benign, Predicted Label: : Benign**
+Flow ID: 192.168.1.17-204.79.197.203-50689-80-6, True Label: Benign, Predicted Label: : Benign**
+Flow ID: 192.168.1.172-157.240.241.55-55930-443-6, True Label: Benign, Predicted Label: : Benign**
+Flow ID: 192.168.1.172-157.240.241.55-65296-443-6, True Label: Benign, Predicted Label: : Benign**
+Flow ID: 192.168.1.9-142.251.111.188-49764-5228-6, True Label: Benign, Predicted Label: : Benign**
+Flow ID: 13.226.34.4-192.168.1.9-443-65167-6, True Label: Benign, Predicted Label: : Benign**
+Flow ID: 192.168.1.45-209.54.177.153-48392-443-6, True Label: Benign, Predicted Label: : Benign**
+Flow ID: 192.168.1.81-3.223.131.1-57244-443-6, True Label: Benign, Predicted Label: : Benign**
+Flow ID: 0.0.0.0-255.255.255.255-68-67-17, True Label: Benign, Predicted Label: : Benign**
+Flow ID: 192.168.1.81-3.223.131.1-56924-443-6, True Label: Benign, Predicted Label: : Dictionary Attack**
+Flow ID: 209.206.49.216-192.168.1.87-30001-47576-6, True Label: Benign, Predicted Label: : Benign**
+Flow ID: 192.168.1.211-192.168.1.1-37438-53-17, True Label: Benign, Predicted Label: : Benign**
+Flow ID: 192.168.1.211-192.168.1.1-54705-53-17, True Label: Benign, Predicted Label: : Benign**
+Flow ID: 192.168.1.211-192.168.1.1-39734-53-17, True Label: Benign, Predicted Label: : Benign**
+Flow ID: 192.168.1.215-185.199.110.133-46104-443-6, True Label: Benign, Predicted Label: : Slowloris**
+Flow ID: 52.23.140.126-192.168.1.81-443-36994-6, True Label: Benign, Predicted Label: : Benign**
+Flow ID: 192.168.1.214-8.8.8.8-58074-53-17, True Label: Benign, Predicted Label: : Benign**
+Flow ID: 192.168.1.24-52.159.127.243-49832-443-6, True Label: Benign, Predicted Label: : Benign**
+Flow ID: 54.156.230.89-192.168.1.81-443-33462-6, True Label: Benign, Predicted Label: : Benign**
+Flow ID: 192.168.1.214-8.8.8.8-36528-53-17, True Label: Benign, Predicted Label: : Benign**
+Flow ID: 192.168.1.214-8.8.8.8-36125-53-17, True Label: Benign, Predicted Label: : Benign**
+Flow ID: 209.54.178.164-192.168.1.81-443-47746-6, True Label: Benign, Predicted Label: : Benign**
+Flow ID: 192.168.1.214-8.8.8.8-38535-53-17, True Label: Benign, Predicted Label: : Benign**
+Flow ID: 192.168.1.207-46.51.206.207-34962-443-6, True Label: Benign, Predicted Label: : Benign**
+Flow ID: 192.168.1.172-230.0.0.1-51504-6666-17, True Label: Benign, Predicted Label: : Benign**
+Flow ID: 209.206.49.216-192.168.1.87-30001-37460-6, True Label: Benign, Predicted Label: : Benign**
+Flow ID: 192.168.1.214-8.8.8.8-57434-53-17, True Label: Benign, Predicted Label: : Benign**
+Flow ID: 192.168.1.214-8.8.8.8-51676-53-17, True Label: Benign, Predicted Label: : Benign**
+Flow ID: 192.168.1.25-239.255.255.250-34153-1900-17, True Label: Benign, Predicted Label: : Benign**
+Flow ID: 192.168.1.17-52.111.229.30-51314-443-6, True Label: Benign, Predicted Label: : Benign**
+Flow ID: 209.206.49.216-192.168.1.87-30001-47562-6, True Label: Benign, Predicted Label: : Benign**
+Flow ID: 192.168.1.81-54.235.156.79-58992-443-6, True Label: Benign, Predicted Label: : Dictionary Attack**
+Flow ID: 192.168.1.45-18.189.81.211-59014-443-6, True Label: Benign, Predicted Label: : Dictionary Attack**
+Flow ID: 18.218.78.141-192.168.1.7-443-55592-6, True Label: Benign, Predicted Label: : Benign**
+Flow ID: 192.168.1.7-54.230.163.16-35272-443-6, True Label: Benign, Predicted Label: : Benign**
+Flow ID: 192.168.1.172-157.240.241.20-57695-443-6, True Label: Benign, Predicted Label: : Benign**
+Flow ID: 192.168.1.20-185.125.188.55-52720-443-6, True Label: Benign, Predicted Label: : Benign**
+Flow ID: 192.168.1.45-34.120.115.102-33838-443-6, True Label: Benign, Predicted Label: : Benign**
+Flow ID: 192.168.1.7-224.0.0.251-5353-5353-17, True Label: Benign, Predicted Label: : Benign**
+Flow ID: 192.168.1.168-192.168.1.1-12063-53-17, True Label: Benign, Predicted Label: : Benign**
+Flow ID: 192.168.1.211-192.168.1.1-42908-53-17, True Label: Benign, Predicted Label: : Benign**
+Flow ID: 192.168.1.81-52.94.228.85-52580-443-6, True Label: Benign, Predicted Label: : Benign**
+Flow ID: 192.168.1.252-224.0.0.251-5353-5353-17, True Label: Benign, Predicted Label: : Benign**
+Flow ID: 35.175.71.102-192.168.1.43-443-45164-6, True Label: Benign, Predicted Label: : Benign**
+Flow ID: 192.168.1.81-18.173.129.67-35188-443-6, True Label: Benign, Predicted Label: : Slowloris**
+Flow ID: 192.168.1.214-8.8.8.8-54901-53-17, True Label: Benign, Predicted Label: : Benign**
+Flow ID: 192.168.1.211-192.168.1.1-50259-53-17, True Label: Benign, Predicted Label: : Benign**
+Flow ID: 52.109.13.127-192.168.1.17-443-53195-6, True Label: Benign, Predicted Label: : Benign**
+Flow ID: 192.168.1.9-142.250.176.206-62427-443-17, True Label: Benign, Predicted Label: : Benign**
+Flow ID: 13.225.214.7-192.168.1.112-443-46478-6, True Label: Benign, Predicted Label: : Benign**
+Flow ID: 209.206.49.216-192.168.1.87-30001-47566-6, True Label: Benign, Predicted Label: : Benign**
+Flow ID: 192.168.1.211-192.168.1.1-59019-53-17, True Label: Benign, Predicted Label: : Benign**
+Flow ID: 209.206.49.216-192.168.1.87-30001-47566-6, True Label: Benign, Predicted Label: : Benign**
+Flow ID: 192.168.1.211-192.168.1.1-59019-53-17, True Label: Benign, Predicted Label: : Benign**
+Flow ID: 192.168.1.214-8.8.8.8-38827-53-17, True Label: Benign, Predicted Label: : Benign**
+Flow ID: 192.168.1.9-192.168.1.1-8080-47535-6, True Label: Benign, Predicted Label: : Benign**
+Flow ID: 192.168.1.211-192.168.1.1-35022-53-17, True Label: Benign, Predicted Label: : Benign**
+Flow ID: 192.168.1.207-3.224.194.203-45012-443-6, True Label: Benign, Predicted Label: : Benign**
+Flow ID: 192.168.1.172-23.38.168.16-62066-443-6, True Label: Benign, Predicted Label: : Benign**
+Flow ID: 54.156.230.89-192.168.1.81-443-33462-6, True Label: Benign, Predicted Label: : Benign**
+Flow ID: 192.168.1.207-224.0.0.7-8001-8001-17, True Label: Benign, Predicted Label: : Benign**
+Flow ID: 192.168.1.9-192.168.1.1-8080-37866-6, True Label: Benign, Predicted Label: : Benign**
+Flow ID: 192.168.1.43-54.165.210.53-45418-443-6, True Label: Benign, Predicted Label: : Benign**
+Flow ID: 192.168.1.214-8.8.8.8-42572-53-17, True Label: Benign, Predicted Label: : Benign**
+Flow ID: 192.168.1.211-192.168.1.1-60459-53-17, True Label: Benign, Predicted Label: : Benign**
+Flow ID: 192.168.1.181-224.0.0.251-0-0-0, True Label: Benign, Predicted Label: : ICMP Flood**
+Flow ID: 209.206.49.216-192.168.1.87-30001-37460-6, True Label: Benign, Predicted Label: : Benign**
+Flow ID: 20.189.173.4-192.168.1.182-443-65277-6, True Label: Benign, Predicted Label: : Benign**
+Flow ID: 192.168.1.9-74.125.135.94-57312-443-17, True Label: Benign, Predicted Label: : Benign**
+Flow ID: 192.168.1.207-34.225.145.231-49902-443-6, True Label: Benign, Predicted Label: : Benign**
+Flow ID: 192.168.1.9-151.101.1.140-61456-443-6, True Label: Benign, Predicted Label: : Benign**
+Flow ID: 192.168.1.45-192.168.1.9-40748-995-6, True Label: Benign, Predicted Label: : Ping Sweep**
+Flow ID: 192.168.1.211-192.168.1.1-35039-53-17, True Label: Benign, Predicted Label: : Benign**
+Flow ID: 192.168.1.108-25.179.186.253-7000-1678-6, True Label: Benign, Predicted Label: : Benign**
+Flow ID: 192.168.1.7-54.230.163.97-55512-443-6, True Label: Benign, Predicted Label: : Dictionary Attack**
+Flow ID: 192.168.1.172-157.240.241.55-62378-443-6, True Label: Benign, Predicted Label: : Benign**
+Flow ID: 192.168.1.43-54.234.240.68-38418-443-6, True Label: Benign, Predicted Label: : Benign**
+Flow ID: 3.217.147.217-192.168.1.43-443-40108-6, True Label: Benign, Predicted Label: : Slowloris**
+Flow ID: 192.168.1.81-162.159.200.1-33162-123-17, True Label: Benign, Predicted Label: : DNS Flood**
+Flow ID: 192.168.1.211-192.168.1.1-43938-53-17, True Label: Benign, Predicted Label: : Benign**
+Flow ID: 192.168.1.211-192.168.1.1-34254-53-17, True Label: Benign, Predicted Label: : Benign**
+Flow ID: 192.168.1.176-23.200.3.18-50300-80-6, True Label: Benign, Predicted Label: : Benign**
+Flow ID: 192.168.1.214-8.8.8.8-42490-53-17, True Label: Benign, Predicted Label: : Benign**
+Flow ID: 192.168.1.211-192.168.1.1-37444-53-17, True Label: Benign, Predicted Label: : Benign**
+Flow ID: 192.168.1.211-192.168.1.1-37319-53-17, True Label: Benign, Predicted Label: : Benign**
+Flow ID: 192.168.1.9-192.168.1.1-8080-34443-6, True Label: Benign, Predicted Label: : Benign**
+Flow ID: 192.168.1.211-192.168.1.1-37167-53-17, True Label: Benign, Predicted Label: : Benign**
+Flow ID: 192.168.1.211-192.168.1.1-45954-53-17, True Label: Benign, Predicted Label: : Benign**
+Flow ID: 192.168.1.81-108.138.109.12-35250-443-6, True Label: Benign, Predicted Label: : Benign**
+Flow ID: 192.168.1.9-192.168.1.1-8080-37338-6, True Label: Benign, Predicted Label: : Benign**
+Flow ID: 209.206.49.216-192.168.1.87-30001-51744-6, True Label: Benign, Predicted Label: : Benign**
+Flow ID: 192.168.1.181-224.0.0.251-5353-5353-17, True Label: Benign, Predicted Label: : Benign**
+Flow ID: 192.168.1.211-192.168.1.1-60809-53-17, True Label: Benign, Predicted Label: : Benign**
+Flow ID: 192.168.1.108-199.247.225.45-7000-25201-6, True Label: Benign, Predicted Label: : Benign**
+Flow ID: 192.168.1.81-52.22.138.197-55670-443-6, True Label: Benign, Predicted Label: : Benign**
+Flow ID: 192.168.1.11-239.255.255.250-1900-1900-17, True Label: Benign, Predicted Label: : Benign**
+Flow ID: 192.168.1.108-192.168.1.1-0-0-0, True Label: Benign, Predicted Label: : Benign**
+Flow ID: 192.168.1.247-52.96.111.34-51550-443-6, True Label: Benign, Predicted Label: : Benign**
+Flow ID: 192.168.1.108-38.86.108.207-7000-63153-6, True Label: Benign, Predicted Label: : Benign**
+Flow ID: 192.168.1.214-8.8.8.8-58694-53-17, True Label: Benign, Predicted Label: : Benign**
+Flow ID: 192.168.1.9-192.168.1.1-8080-37757-6, True Label: Benign, Predicted Label: : Benign**
+Flow ID: 192.168.1.9-192.168.1.1-8080-40496-6, True Label: Benign, Predicted Label: : Benign**
+Flow ID: 192.168.1.211-153.214.138.46-0-0-0, True Label: ICMP Flood, Predicted Label: : ICMP Flood**
+Flow ID: 238.84.77.150-192.168.1.168-0-0-0, True Label: ICMP Flood, Predicted Label: : ICMP Flood**
+Flow ID: 192.168.1.168-133.224.238.156-0-0-0, True Label: ICMP Flood, Predicted Label: : ICMP Flood**
+Flow ID: 225.100.214.26-192.168.1.25-0-0-0, True Label: ICMP Flood, Predicted Label: : ICMP Flood**
+Flow ID: 2.47.168.163-192.168.1.212-0-0-0, True Label: ICMP Flood, Predicted Label: : ICMP Flood**
+Flow ID: 31.154.193.43-192.168.1.212-0-0-0, True Label: ICMP Flood, Predicted Label: : ICMP Flood**
+Flow ID: 251.177.133.101-192.168.1.168-0-0-0, True Label: ICMP Flood, Predicted Label: : ICMP Flood**
+Flow ID: 49.116.96.114-192.168.1.183-0-0-0, True Label: ICMP Flood, Predicted Label: : ICMP Flood**
+Flow ID: 192.168.1.168-116.51.50.38-0-0-0, True Label: ICMP Flood, Predicted Label: : ICMP Flood**
+Flow ID: 147.226.24.30-192.168.1.212-0-0-0, True Label: ICMP Flood, Predicted Label: : ICMP Flood**
+Flow ID: 192.168.1.212-166.19.168.2-0-0-0, True Label: ICMP Flood, Predicted Label: : ICMP Flood**
+Flow ID: 118.231.192.203-192.168.1.168-0-0-0, True Label: ICMP Flood, Predicted Label: : ICMP Flood**
+Flow ID: 114.132.214.33-192.168.1.168-0-0-0, True Label: ICMP Flood, Predicted Label: : ICMP Flood**
+Flow ID: 159.212.153.228-192.168.1.25-0-0-0, True Label: ICMP Flood, Predicted Label: : ICMP Flood**
+Flow ID: 152.152.5.129-192.168.1.211-0-0-0, True Label: ICMP Flood, Predicted Label: : ICMP Flood**
+Flow ID: 57.112.137.246-192.168.1.183-0-0-0, True Label: ICMP Flood, Predicted Label: : ICMP Flood**
+Flow ID: 192.168.1.212-85.156.28.147-0-0-0, True Label: ICMP Flood, Predicted Label: : ICMP Flood**
+Flow ID: 225.33.234.88-192.168.1.212-0-0-0, True Label: ICMP Flood, Predicted Label: : ICMP Flood**
+Flow ID: 126.51.121.33-192.168.1.168-0-0-0, True Label: ICMP Flood, Predicted Label: : ICMP Flood**
+Flow ID: 198.237.234.121-192.168.1.168-0-0-0, True Label: ICMP Flood, Predicted Label: : ICMP Flood**
+Flow ID: 192.168.1.45-192.168.1.27-50724-80-6, True Label: Slowloris, Predicted Label: : Slowloris**
+Flow ID: 192.168.1.168-192.168.1.45-80-48160-6, True Label: Slowloris, Predicted Label: : Slowloris**
+Flow ID: 192.168.1.45-192.168.1.27-50050-80-6, True Label: Slowloris, Predicted Label: : Slowloris**
+Flow ID: 192.168.1.45-192.168.1.168-46602-80-6, True Label: Slowloris, Predicted Label: : Slowloris**
+Flow ID: 192.168.1.45-192.168.1.11-59194-80-6, True Label: Slowloris, Predicted Label: : Slowloris**
+Flow ID: 192.168.1.45-192.168.1.133-40386-80-6, True Label: Slowloris, Predicted Label: : Slowloris**
+Flow ID: 192.168.1.45-192.168.1.27-34474-80-6, True Label: Slowloris, Predicted Label: : Slowloris**
+Flow ID: 192.168.1.45-192.168.1.27-33418-80-6, True Label: Slowloris, Predicted Label: : Slowloris**
+Flow ID: 192.168.1.45-192.168.1.11-55626-80-6, True Label: Slowloris, Predicted Label: : Slowloris**
+Flow ID: 192.168.1.45-192.168.1.25-35136-80-6, True Label: Slowloris, Predicted Label: : Slowloris**
+Flow ID: 192.168.1.45-192.168.1.27-44702-80-6, True Label: Slowloris, Predicted Label: : Slowloris**
+Flow ID: 192.168.1.45-192.168.1.11-60196-80-6, True Label: Slowloris, Predicted Label: : Slowloris**
+Flow ID: 192.168.1.45-192.168.1.168-47804-80-6, True Label: Slowloris, Predicted Label: : Slowloris**
+Flow ID: 192.168.1.45-192.168.1.168-46632-80-6, True Label: Slowloris, Predicted Label: : Slowloris**
+Flow ID: 192.168.1.45-192.168.1.168-43106-80-6, True Label: Slowloris, Predicted Label: : Slowloris**
+Flow ID: 192.168.1.45-192.168.1.168-48136-80-6, True Label: Slowloris, Predicted Label: : Slowloris**
+Flow ID: 192.168.1.45-192.168.1.27-46438-80-6, True Label: Slowloris, Predicted Label: : Slowloris**
+Flow ID: 192.168.1.45-192.168.1.11-33870-80-6, True Label: Slowloris, Predicted Label: : Slowloris**
+Flow ID: 192.168.1.45-192.168.1.168-46910-80-6, True Label: Slowloris, Predicted Label: : Slowloris**
+Flow ID: 192.168.1.45-192.168.1.27-34776-80-6, True Label: Slowloris, Predicted Label: : Slowloris**
+Flow ID: 192.168.1.21-77.50.218.71-80-15038-6, True Label: SYN Flood, Predicted Label: : SYN Flood**
+Flow ID: 192.168.1.25-205.160.233.113-80-24753-6, True Label: SYN Flood, Predicted Label: : SYN Flood**
+Flow ID: 192.168.1.25-82.113.79.13-80-19730-6, True Label: SYN Flood, Predicted Label: : SYN Flood**
+Flow ID: 192.168.1.133-99.185.15.89-80-6885-6, True Label: SYN Flood, Predicted Label: : SYN Flood**
+Flow ID: 192.168.1.25-80.55.213.175-80-52836-6, True Label: SYN Flood, Predicted Label: : SYN Flood**
+Flow ID: 192.168.1.21-160.131.21.207-80-48394-6, True Label: SYN Flood, Predicted Label: : SYN Flood**
+Flow ID: 192.168.1.133-46.4.127.96-80-36553-6, True Label: SYN Flood, Predicted Label: : SYN Flood**
+Flow ID: 192.168.1.133-155.113.47.236-80-862-6, True Label: SYN Flood, Predicted Label: : SYN Flood**
+Flow ID: 192.168.1.25-76.26.62.22-80-1019-6, True Label: SYN Flood, Predicted Label: : SYN Flood**
+Flow ID: 192.168.1.21-110.232.207.255-80-19742-6, True Label: SYN Flood, Predicted Label: : SYN Flood**
+Flow ID: 192.168.1.133-154.178.251.21-80-15771-6, True Label: SYN Flood, Predicted Label: : SYN Flood**
+Flow ID: 192.168.1.21-83.114.6.59-80-50908-6, True Label: SYN Flood, Predicted Label: : SYN Flood**
+Flow ID: 192.168.1.25-56.80.175.113-80-64545-6, True Label: SYN Flood, Predicted Label: : SYN Flood**
+Flow ID: 192.168.1.25-65.16.62.252-80-10503-6, True Label: SYN Flood, Predicted Label: : SYN Flood**
+Flow ID: 192.168.1.25-172.211.169.194-80-64568-6, True Label: SYN Flood, Predicted Label: : SYN Flood**
+Flow ID: 192.168.1.25-80.234.126.27-80-51082-6, True Label: SYN Flood, Predicted Label: : SYN Flood**
+Flow ID: 192.168.1.133-129.169.206.236-80-58630-6, True Label: SYN Flood, Predicted Label: : SYN Flood**
+Flow ID: 192.168.1.25-151.113.212.41-80-59232-6, True Label: SYN Flood, Predicted Label: : SYN Flood**
+Flow ID: 192.168.1.133-66.254.169.235-80-21930-6, True Label: SYN Flood, Predicted Label: : SYN Flood**
+Flow ID: 192.168.1.25-240.169.145.150-80-62806-6, True Label: SYN Flood, Predicted Label: : SYN Flood**
+Flow ID: 192.168.1.168-38.27.240.155-1438-0-17, True Label: UDP Flood, Predicted Label: : Benign**
+Flow ID: 192.168.1.183-100.21.156.247-6372-8886-6, True Label: UDP Flood, Predicted Label: : Benign**
+Flow ID: 192.168.1.183-255.255.255.255-49154-6667-17, True Label: UDP Flood, Predicted Label: : UDP Flood**
+Flow ID: 192.168.1.211-192.168.1.1-53766-53-17, True Label: UDP Flood, Predicted Label: : UDP Flood**
+Flow ID: 192.168.1.183-255.255.255.255-49154-6667-17, True Label: UDP Flood, Predicted Label: : UDP Flood**
+Flow ID: 192.168.1.168-31.230.170.94-11337-0-17, True Label: UDP Flood, Predicted Label: : UDP Flood**
+Flow ID: 192.168.1.211-192.168.1.1-33011-53-17, True Label: UDP Flood, Predicted Label: : UDP Flood**
+Flow ID: 192.168.1.168-192.168.1.1-26578-53-17, True Label: UDP Flood, Predicted Label: : DNS Flood**
+Flow ID: 192.168.1.211-192.168.1.1-46085-53-17, True Label: UDP Flood, Predicted Label: : UDP Flood**

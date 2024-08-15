@@ -1,0 +1,121 @@
+### Classification Results
+
+The network traffic from the file `dataset/ACIIoT/test_set_small.csv` with the Flow ID `192.168.1.211-138.109.131.196-0-0-0` has been classified using three different classifiers:
+
+1. **Decision Tree**: ICMP Flood
+2. **K-Nearest Neighbors**: ICMP Flood
+3. **Random Forest**: ICMP Flood
+
+### Final Classification: **ICMP Flood Attack**
+
+### Explanation
+
+All three classifiers have unanimously identified the traffic as an **ICMP Flood Attack**. This type of attack involves overwhelming a target with ICMP Echo Request (ping) packets, causing a denial of service. The consistent results across multiple classifiers increase the confidence in this classification.
+
+### Summary
+
+Based on the classification results from the Decision Tree, K-Nearest Neighbors, and Random Forest models, the network traffic is identified as an **ICMP Flood Attack**. This indicates malicious activity aimed at disrupting the target's network services.
+### Classification Results
+
+The network traffic from the file `dataset/ACIIoT/test_set_small.csv` with the Flow ID `192.168.1.45-192.168.1.7-55295-12001-6` has been classified using three different classifiers:
+
+1. **Decision Tree**: Port Scan
+2. **K-Nearest Neighbors**: Port Scan
+3. **Random Forest**: Port Scan
+
+### Final Classification: **Port Scan Attack**
+
+### Explanation
+
+All three classifiers have unanimously identified the traffic as a **Port Scan Attack**. A port scan is a method used by attackers to identify open ports and services available on a networked device. This type of attack is often a precursor to more serious intrusions, as it helps attackers map out the network and identify potential vulnerabilities.
+
+The consistent results across multiple classifiers increase the confidence in the accuracy of this classification. Therefore, it is highly recommended to take appropriate security measures to mitigate this type of attack.
+### Classification Results:
+- **Decision Tree**: ICMP Flood
+- **K-Nearest Neighbors**: ICMP Flood
+- **Random Forest**: ICMP Flood
+
+### Final Classification: **ICMP Flood Attack**
+
+### Explanation:
+All three classifiers (Decision Tree, K-Nearest Neighbors, and Random Forest) have unanimously classified the network traffic as an "ICMP Flood" attack. This type of attack involves overwhelming a target with ICMP packets, which can lead to denial of service (DoS) by consuming bandwidth and resources.
+
+### Summary:
+The network traffic from the file `dataset/ACIIoT/test_set_small.csv` with the Flow ID `192.168.1.212-63.27.48.180-0-0-0` has been classified as an **ICMP Flood Attack** based on the consistent results from multiple machine learning classifiers. This indicates that the traffic is malicious and part of a DoS attack.
+### Classification Results
+
+The network traffic from the file `dataset/ACIIoT/test_set_small.csv` with the Flow ID `192.168.1.45-192.168.1.162-56262-119-6` has been classified using three different machine learning models. Here are the results:
+
+1. **Decision Tree**: Vulnerability Scan
+2. **K-Nearest Neighbors**: Vulnerability Scan
+3. **Random Forest**: Vulnerability Scan
+
+### Final Classification: **Vulnerability Scan**
+
+### Explanation
+
+All three classifiers have unanimously identified the traffic as a **Vulnerability Scan**. This type of attack typically involves an attacker scanning a network to identify vulnerabilities that can be exploited. The consistent results across different models increase the confidence in this classification.
+
+### Key Indicators
+
+- **Flow Duration**: The duration of the flow can indicate the nature of the traffic. In this case, the flow duration is relatively short.
+- **Packet Lengths**: Both forward and backward packet lengths are zero, which is unusual for normal traffic and can be indicative of scanning activity.
+- **Flow Packets/s**: The rate of packets per second is relatively high, which is common in scanning activities.
+- **Flag Counts**: The presence of SYN and RST flags along with an ACK flag is typical in scanning activities where the attacker is trying to establish and tear down connections quickly.
+
+### Conclusion
+
+Based on the classification results and the analysis of the traffic features, it is concluded that the network traffic is a **Vulnerability Scan**. This type of traffic is generally considered malicious and should be investigated further to prevent potential exploitation of identified vulnerabilities.
+### Classification Results:
+
+1. **Decision Tree**: Benign
+2. **K-Nearest Neighbors**: UDP Flood
+3. **Random Forest**: Benign
+
+### Final Classification: **UDP Flood**
+
+### Explanation:
+
+- **Decision Tree and Random Forest** models classified the traffic as benign. These models might have identified the traffic patterns as normal based on their training data.
+- **K-Nearest Neighbors (KNN)** classified the traffic as a UDP Flood attack. KNN is a distance-based algorithm and might have found the traffic features similar to known UDP Flood attack patterns in its training data.
+
+Given the mixed results, it is prudent to consider the possibility of an attack, especially since KNN identified it as a UDP Flood. UDP Flood attacks are characterized by a high rate of UDP packets, which can overwhelm the target system. The features such as high packet rate and specific flow characteristics might have triggered this classification.
+
+### Conclusion:
+Based on the classification results and the nature of the traffic, it is safer to classify this traffic as a **UDP Flood attack**. Further investigation and monitoring are recommended to confirm and mitigate any potential threats.
+### Classification Results
+
+The network traffic from the file `dataset/ACIIoT/test_set_small.csv` with the Flow ID `192.168.1.212-35.24.4.209-0-0-0` has been classified using three different classifiers. Here are the results:
+
+1. **Decision Tree**: ICMP Flood
+2. **K-Nearest Neighbors**: ICMP Flood
+3. **Random Forest**: ICMP Flood
+
+### Final Classification
+
+**Classification: ICMP Flood Attack**
+
+### Explanation
+
+All three classifiers have unanimously identified the traffic as an ICMP Flood attack. An ICMP Flood attack is a type of Denial-of-Service (DoS) attack where the attacker overwhelms the target with a high volume of ICMP Echo Request (ping) packets. This can lead to network congestion and make the target system unresponsive.
+
+Given the consistent results across multiple classifiers, it is highly likely that this traffic is indeed an ICMP Flood attack.
+### Classification Results:
+- **Decision Tree**: Vulnerability Scan
+- **K-Nearest Neighbors**: Vulnerability Scan
+- **Random Forest**: Vulnerability Scan
+
+### Final Classification: **Vulnerability Scan**
+
+### Explanation:
+All three classifiers (Decision Tree, K-Nearest Neighbors, and Random Forest) have unanimously classified the network traffic as a "Vulnerability Scan." This type of attack typically involves scanning a network to identify vulnerabilities that can be exploited. The consistent results across multiple classifiers increase the confidence in this classification.
+
+### Key Indicators:
+- **Flow Duration**: 8166 microseconds
+- **Flow Packets/s**: 244.92
+- **SYN Flag Count**: 1
+- **RST Flag Count**: 1
+- **ACK Flag Count**: 1
+- **FWD Init Win Bytes**: 64240
+
+These features are indicative of scanning behavior, where the attacker sends packets to probe the network and gather information about open ports and services. The presence of SYN and RST flags, along with a high packet rate, further supports the classification of this traffic as a vulnerability scan.

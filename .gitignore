@@ -1,3 +1,5 @@
 ACI-IoT-2023.csv
 train_set.csv
 test_set.csv
+.env
+openai_key.txt

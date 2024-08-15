@@ -1,0 +1,419 @@
+Flow ID: 192.168.1.45-192.168.1.7-55295-12001-6, True Label: Port Scan, Predicted Label: Port Scan
+Flow ID: 192.168.1.211-138.109.131.196-0-0-0, True Label: ICMP Flood, Predicted Label: ICMP Flood
+Flow ID: 192.168.1.45-192.168.1.7-55295-12001-6, True Label: Port Scan, Predicted Label: Port Scan
+Flow ID: 192.168.1.212-63.27.48.180-0-0-0, True Label: ICMP Flood, Predicted Label: ICMP Flood
+Flow ID: 192.168.1.45-192.168.1.162-56262-119-6, True Label: Vulnerability Scan, Predicted Label: Vulnerability Scan
+Flow ID: 192.168.1.87-162.159.200.123-38861-123-17, True Label: Benign, Predicted Label: UDP Flood
+Flow ID: 192.168.1.212-35.24.4.209-0-0-0, True Label: ICMP Flood, Predicted Label: ICMP Flood
+Flow ID: 192.168.1.45-192.168.1.48-53198-5902-6, True Label: Vulnerability Scan, Predicted Label: Vulnerability Scan
+Flow ID: 192.168.1.11-239.255.255.250-1900-1900-17, True Label: Benign, Predicted Label: Benign
+Flow ID: 192.168.1.45-192.168.1.10-55295-40505-6, True Label: Port Scan, Predicted Label: Port Scan
+Flow ID: 184.244.1.201-192.168.1.25-0-0-0, True Label: ICMP Flood, Predicted Label: ICMP Flood
+Flow ID: 192.168.1.45-192.168.1.9-55295-13550-6, True Label: Port Scan, Predicted Label: Port Scan
+Flow ID: 192.168.1.43-44.198.224.47-34628-443-6, True Label: Benign, Predicted Label: Benign
+Flow ID: 192.168.1.214-8.8.8.8-58000-53-17, True Label: Benign, Predicted Label: Benign
+Flow ID: 129.0.0.1-8.6.0.1-0-0-0, True Label: Benign, Predicted Label: Benign
+Flow ID: 192.168.1.211-192.168.1.1-41179-53-17, True Label: Benign, Predicted Label: Benign
+Flow ID: 192.168.1.7-224.0.0.251-5353-5353-17, True Label: Benign, Predicted Label: Benign
+Flow ID: 192.168.1.211-195.121.58.90-0-0-0, True Label: ICMP Flood, Predicted Label: ICMP Flood
+Flow ID: 192.168.1.45-192.168.1.1-55295-48027-6, True Label: Port Scan, Predicted Label: Port Scan
+Flow ID: 192.168.1.45-192.168.1.108-60962-3211-6, True Label: Vulnerability Scan, Predicted Label: Vulnerability Scan
+Flow ID: 192.168.1.207-108.138.106.90-44234-443-6, True Label: Benign, Predicted Label: Benign
+Flow ID: 192.168.1.211-192.168.1.1-47829-53-17, True Label: DNS Flood, Predicted Label: DNS Flood
+Flow ID: 192.168.1.45-192.168.1.212-34156-2222-6, True Label: Vulnerability Scan, Predicted Label: Vulnerability Scan
+Flow ID: 192.168.1.45-192.168.1.1-55295-31190-6, True Label: Port Scan, Predicted Label: Port Scan
+Flow ID: 192.168.1.45-192.168.1.26-55551-35071-6, True Label: Port Scan, Predicted Label: Port Scan
+Flow ID: 192.168.1.45-192.168.1.184-36498-211-6, True Label: Port Scan, Predicted Label: Port Scan
+Flow ID: 192.168.1.45-192.168.1.112-59094-27000-6, True Label: OS Scan, Predicted Label: OS Scan
+Flow ID: 192.168.1.108-35.232.36.115-7000-22177-6, True Label: Benign, Predicted Label: Benign
+Flow ID: 192.168.1.45-192.168.1.1-55295-19706-6, True Label: Port Scan, Predicted Label: Port Scan
+Flow ID: 192.168.1.45-192.168.1.214-40780-80-6, True Label: Benign, Predicted Label: Benign
+Flow ID: 192.168.1.45-192.168.1.1-55295-62180-6, True Label: Port Scan, Predicted Label: Port Scan
+Flow ID: 192.168.1.214-8.8.8.8-57094-53-17, True Label: Benign, Predicted Label: Benign
+Flow ID: 192.168.1.214-8.8.8.8-43984-53-17, True Label: Benign, Predicted Label: Benign
+Flow ID: 192.168.1.45-192.168.1.9-55295-47041-6, True Label: Port Scan, Predicted Label: Port Scan
+Flow ID: 192.168.1.17-52.245.128.79-51364-443-6, True Label: Benign, Predicted Label: Benign
+Flow ID: 192.168.1.45-192.168.1.162-55551-53416-6, True Label: Port Scan, Predicted Label: Port Scan
+Flow ID: 192.168.1.81-52.119.198.2-34230-443-6, True Label: Benign, Predicted Label: Benign
+Flow ID: 13.250.66.255-192.168.1.211-0-0-0, True Label: ICMP Flood, Predicted Label: ICMP Flood
+Flow ID: 192.168.1.211-192.168.1.1-34940-53-17, True Label: Benign, Predicted Label: Benign
+Flow ID: 192.168.1.21-202.14.230.129-80-15017-6, True Label: SYN Flood, Predicted Label: SYN Flood
+Flow ID: 192.168.1.45-192.168.1.184-55551-44215-6, True Label: Port Scan, Predicted Label: Port Scan
+Flow ID: 192.168.1.89-192.168.1.1-0-0-0, True Label: Benign, Predicted Label: Benign
+Flow ID: 192.168.1.45-192.168.1.10-55295-48247-6, True Label: Port Scan, Predicted Label: Port Scan
+Flow ID: 192.168.1.212-193.2.96.180-0-0-0, True Label: ICMP Flood, Predicted Label: ICMP Flood
+Flow ID: 192.168.1.45-192.168.1.153-40729-45100-6, True Label: Ping Sweep, Predicted Label: Ping Sweep
+Flow ID: 192.168.1.45-192.168.1.14-36498-9968-6, True Label: Port Scan, Predicted Label: Port Scan
+Flow ID: 192.168.1.211-192.168.1.1-44606-53-17, True Label: DNS Flood, Predicted Label: DNS Flood
+Flow ID: 192.168.1.45-192.168.1.7-55295-52-6, True Label: Port Scan, Predicted Label: Port Scan
+Flow ID: 192.168.1.45-192.168.1.21-47294-1080-6, True Label: Vulnerability Scan, Predicted Label: Vulnerability Scan
+Flow ID: 26.125.26.214-192.168.1.168-0-0-0, True Label: ICMP Flood, Predicted Label: ICMP Flood
+Flow ID: 192.168.1.185-34.117.65.55-59316-443-6, True Label: Benign, Predicted Label: Benign
+Flow ID: 192.168.1.45-192.168.1.9-55295-19747-6, True Label: Port Scan, Predicted Label: Port Scan
+Flow ID: 192.168.1.45-192.168.1.26-36498-32-6, True Label: Port Scan, Predicted Label: Port Scan
+Flow ID: 192.168.1.211-192.168.1.1-58675-53-17, True Label: DNS Flood, Predicted Label: DNS Flood
+Flow ID: 192.168.1.45-192.168.1.7-55295-63875-6, True Label: Port Scan, Predicted Label: Port Scan
+Flow ID: 192.168.1.45-192.168.1.89-40729-119-6, True Label: Ping Sweep, Predicted Label: Ping Sweep
+Flow ID: 157.240.241.55-192.168.1.172-443-54900-6, True Label: Benign, Predicted Label: Benign
+Flow ID: 192.168.1.45-192.168.1.10-55295-27293-6, True Label: Port Scan, Predicted Label: Port Scan
+Flow ID: 192.168.1.45-192.168.1.185-36498-2042-6, True Label: Port Scan, Predicted Label: Port Scan
+Flow ID: 192.168.1.7-54.230.163.16-46828-443-6, True Label: Benign, Predicted Label: Benign
+Flow ID: 242.144.56.182-192.168.1.183-0-0-0, True Label: ICMP Flood, Predicted Label: ICMP Flood
+Flow ID: 192.168.1.211-192.168.1.1-54661-53-17, True Label: Benign, Predicted Label: Benign
+Flow ID: 192.168.1.211-192.168.1.1-57762-53-17, True Label: Benign, Predicted Label: Benign
+Flow ID: 192.168.1.45-192.168.1.153-33830-777-6, True Label: Vulnerability Scan, Predicted Label: Vulnerability Scan
+Flow ID: 207.249.43.169-192.168.1.183-0-0-0, True Label: ICMP Flood, Predicted Label: ICMP Flood
+Flow ID: 192.168.1.45-192.168.1.81-40729-1071-6, True Label: Ping Sweep, Predicted Label: Ping Sweep
+Flow ID: 192.168.1.45-192.168.1.108-40729-5054-6, True Label: Ping Sweep, Predicted Label: Ping Sweep
+Flow ID: 192.168.1.45-192.168.1.11-36440-80-6, True Label: Slowloris, Predicted Label: Slowlor
+Flow ID: 192.168.1.172-192.168.1.255-49665-1947-17, True Label: Benign, Predicted Label: Benign
+Flow ID: 192.168.1.45-192.168.1.43-40970-16993-6, True Label: Benign, Predicted Label: Benign
+Flow ID: 192.168.1.249-23.203.240.27-60733-443-6, True Label: Benign, Predicted Label: Benign
+Flow ID: 192.168.1.45-192.168.1.9-55295-18946-6, True Label: Port Scan, Predicted Label: Port Scan
+Flow ID: 0.0.0.0-255.255.255.255-68-67-17, True Label: Benign, Predicted Label: Benign
+Flow ID: 192.168.1.172-31.13.71.51-57968-443-6, True Label: Benign, Predicted Label: Benign
+Flow ID: 192.168.1.45-192.168.1.1-55295-45264-6, True Label: Port Scan, Predicted Label: Port Scan
+Flow ID: 192.168.1.45-192.168.1.213-40729-13722-6, True Label: Ping Sweep, Predicted Label: Ping Sweep
+Flow ID: 192.168.1.45-192.168.1.1-55295-50942-6, True Label: Port Scan, Predicted Label: Port Scan
+Flow ID: 192.168.1.45-192.168.1.89-43282-1061-6, True Label: Vulnerability Scan, Predicted Label: Vulnerability Scan
+Flow ID: 192.168.1.45-192.168.1.1-55295-14419-6, True Label: Port Scan, Predicted Label: Port Scan
+Flow ID: 184.231.51.228-192.168.1.25-0-0-0, True Label: ICMP Flood, Predicted Label: ICMP Flood
+Flow ID: 13.226.34.87-192.168.1.9-443-50343-6, True Label: Benign, Predicted Label: Benign
+Flow ID: 35.168.79.40-192.168.1.225-443-56412-6, True Label: Benign, Predicted Label: Benign
+Flow ID: 192.168.1.45-192.168.1.89-40729-1069-6, True Label: Ping Sweep, Predicted Label: Ping Sweep
+Flow ID: 125.72.100.30-192.168.1.25-0-0-0, True Label: ICMP Flood, Predicted Label: ICMP Flood
+Flow ID: 192.168.1.108-101.244.189.87-7000-16201-6, True Label: Benign, Predicted Label: Benign
+Flow ID: 192.168.1.45-192.168.1.1-55295-51935-6, True Label: Port Scan, Predicted Label: Port Scan
+Flow ID: 192.168.1.45-192.168.1.81-59094-3517-6, True Label: OS Scan, Predicted Label: OS Scan
+Flow ID: 192.168.1.45-192.168.1.252-55551-36710-6, True Label: Port Scan, Predicted Label: Port Scan
+Flow ID: 192.168.1.45-192.168.1.167-55551-28704-6, True Label: Port Scan, Predicted Label: Port Scan
+Flow ID: 192.168.1.11-239.255.255.250-1900-1900-17, True Label: Benign, Predicted Label: Benign
+Flow ID: 192.168.1.45-192.168.1.1-55295-59399-6, True Label: Port Scan, Predicted Label: Port Scan
+Flow ID: 192.168.1.45-192.168.1.1-55295-60010-6, True Label: Port Scan, Predicted Label: Port Scan
+Flow ID: 192.168.1.45-192.168.1.10-55295-56518-6, True Label: Port Scan, Predicted Label: Port Scan
+Flow ID: 192.168.1.45-192.168.1.225-36498-900-6, True Label: Port Scan, Predicted Label: Port Scan
+Flow ID: 192.168.1.45-192.168.1.1-55295-30833-6, True Label: Port Scan, Predicted Label: Port Scan
+Flow ID: 192.168.1.45-192.168.1.14-40729-1002-6, True Label: Ping Sweep, Predicted Label: Ping Sweep
+Flow ID: 192.168.1.81-192.168.1.1-48100-53-17, True Label: Benign, Predicted Label: Benign
+Flow ID: 19.30.2.193-192.168.1.212-0-0-0, True Label: ICMP Flood, Predicted Label: ICMP Flood
+Flow ID: 192.168.1.212-192.168.1.45-22-55226-6, True Label: Dictionary Attack, Predicted Label: Diction
+Flow ID: 199.208.253.22-192.168.1.25-0-0-0, True Label: ICMP Flood, Predicted Label: ICMP Flood
+Flow ID: 192.168.1.207-224.0.0.7-8001-8001-17, True Label: Benign, Predicted Label: Benign
+Flow ID: 192.168.1.45-192.168.1.212-38352-5904-6, True Label: Vulnerability Scan, Predicted Label: Vulnerability Scan
+Flow ID: 192.168.1.153-34.122.121.32-43412-80-6, True Label: Benign, Predicted Label: Benign
+Flow ID: 192.168.1.81-52.23.140.126-53948-443-6, True Label: Benign, Predicted Label: Benign
+Flow ID: 192.168.1.45-192.168.1.10-55295-62765-6, True Label: Port Scan, Predicted Label: Port Scan
+Flow ID: 192.168.1.45-192.168.1.225-40729-1236-6, True Label: Ping Sweep, Predicted Label: Ping Sweep
+Flow ID: 192.168.1.45-192.168.1.10-55295-39454-6, True Label: Port Scan, Predicted Label: Port Scan
+Flow ID: 192.168.1.45-192.168.1.1-55295-2670-6, True Label: Port Scan, Predicted Label: Port Scan
+Flow ID: 192.168.1.45-192.168.1.1-55295-37839-6, True Label: Port Scan, Predicted Label: Port Scan
+Flow ID: 192.168.1.45-192.168.1.27-59094-1783-6, True Label: OS Scan, Predicted Label: OS Scan
+Flow ID: 192.168.1.212-128.28.30.43-0-0-0, True Label: ICMP Flood, Predicted Label: ICMP Flood
+Flow ID: 192.168.1.212-40.168.49.6-0-0-0, True Label: ICMP Flood, Predicted Label: ICMP Flood
+Flow ID: 45.18.30.226-192.168.1.212-0-0-0, True Label: ICMP Flood, Predicted Label: ICMP Flood
+Flow ID: 192.168.1.211-192.168.1.1-37733-53-17, True Label: Benign, Predicted Label: UDP Flood
+Flow ID: 85.26.5.137-192.168.1.168-0-0-0, True Label: ICMP Flood, Predicted Label: ICMP Flood
+Flow ID: 192.168.1.182-239.255.255.250-55117-1900-17, True Label: Benign, Predicted Label: Benign
+Flow ID: 192.168.1.45-192.168.1.89-38806-90-6, True Label: Vulnerability Scan, Predicted Label: Vulnerability Scan
+Flow ID: 126.9.28.110-192.168.1.212-0-0-0, True Label: ICMP Flood, Predicted Label: ICMP Flood
+Flow ID: 192.168.1.45-192.168.1.9-55295-31088-6, True Label: Port Scan, Predicted Label: Port Scan
+Flow ID: 192.168.1.45-192.168.1.211-37666-22-6, True Label: Dictionary Attack, Predicted Label: Diction
+Flow ID: 192.168.1.211-192.168.1.1-54899-53-17, True Label: DNS Flood, Predicted Label: DNS Flood
+Flow ID: 192.168.1.43-44.198.224.47-34636-443-6, True Label: Benign, Predicted Label: Benign
+Flow ID: 159.136.190.96-192.168.1.25-0-0-0, True Label: ICMP Flood, Predicted Label: ICMP Flood
+Flow ID: 192.168.1.172-157.240.241.55-56745-443-6, True Label: Benign, Predicted Label: Benign
+Flow ID: 192.168.1.211-125.250.131.213-0-0-0, True Label: ICMP Flood, Predicted Label: ICMP Flood
+Flow ID: 192.168.1.168-82.172.247.128-0-0-0, True Label: ICMP Flood, Predicted Label: ICMP Flood
+Flow ID: 92.80.13.9-192.168.1.211-0-0-0, True Label: ICMP Flood, Predicted Label: ICMP Flood
+Flow ID: 209.73.96.226-192.168.1.212-0-0-0, True Label: ICMP Flood, Predicted Label: ICMP Flood
+Flow ID: 214.198.254.54-192.168.1.168-0-0-0, True Label: ICMP Flood, Predicted Label: ICMP Flood
+Flow ID: 40.80.42.223-192.168.1.168-0-0-0, True Label: ICMP Flood, Predicted Label: ICMP Flood
+Flow ID: 192.168.1.9-192.168.1.1-8080-47191-6, True Label: Benign, Predicted Label: Benign
+Flow ID: 192.168.1.45-192.168.1.9-55295-10374-6, True Label: Port Scan, Predicted Label: Port Scan
+Flow ID: 192.168.1.45-192.168.1.183-36498-1106-6, True Label: Port Scan, Predicted Label: Port Scan
+Flow ID: 192.168.1.45-192.168.1.11-39758-80-6, True Label: Slowloris, Predicted Label: Slowlor
+Flow ID: 192.168.1.45-192.168.1.185-55551-51413-6, True Label: Port Scan, Predicted Label: Port Scan
+Flow ID: 6.73.181.111-192.168.1.212-0-0-0, True Label: ICMP Flood, Predicted Label: ICMP Flood
+Flow ID: 192.168.1.45-192.168.1.21-36498-8001-6, True Label: Port Scan, Predicted Label: Port Scan
+Flow ID: 192.168.1.45-192.168.1.89-40729-1044-6, True Label: Ping Sweep, Predicted Label: Ping Sweep
+Flow ID: 46.128.237.249-192.168.1.212-0-0-0, True Label: ICMP Flood, Predicted Label: ICMP Flood
+Flow ID: 179.54.190.80-192.168.1.168-0-0-0, True Label: ICMP Flood, Predicted Label: ICMP Flood
+Flow ID: 192.168.1.45-192.168.1.184-55551-42401-6, True Label: Port Scan, Predicted Label: Port Scan
+Flow ID: 192.168.1.45-192.168.1.10-55295-9097-6, True Label: Port Scan, Predicted Label: Port Scan
+Flow ID: 192.168.1.45-192.168.1.20-55551-16695-6, True Label: Port Scan, Predicted Label: Port Scan
+Flow ID: 151.101.194.49-192.168.1.153-443-55088-6, True Label: Benign, Predicted Label: Benign
+Flow ID: 192.168.1.212-2.46.70.57-0-0-0, True Label: ICMP Flood, Predicted Label: ICMP Flood
+Flow ID: 192.168.1.45-192.168.1.1-55295-38777-6, True Label: Port Scan, Predicted Label: Port Scan
+Flow ID: 192.168.3.5-185.125.188.59-35058-443-6, True Label: Benign, Predicted Label: Benign
+Flow ID: 192.168.1.45-192.168.1.184-40729-1272-6, True Label: Ping Sweep, Predicted Label: Ping Sweep
+Flow ID: 192.168.1.45-192.168.1.215-56412-110-6, True Label: Vulnerability Scan, Predicted Label: Vulnerability Scan
+Flow ID: 192.168.1.45-192.168.1.87-55680-443-6, True Label: Port Scan, Predicted Label: Port Scan
+Flow ID: 192.168.1.25-201.150.69.39-80-8694-6, True Label: SYN Flood, Predicted Label: SYN Flo
+Flow ID: 192.168.1.11-239.255.255.250-1900-1900-17, True Label: Benign, Predicted Label: Benign
+Flow ID: 192.168.1.45-209.54.181.98-34044-443-6, True Label: Benign, Predicted Label: Benign
+Flow ID: 16.81.93.190-192.168.1.25-0-0-0, True Label: ICMP Flood, Predicted Label: ICMP Flood
+Flow ID: 192.168.1.45-192.168.1.9-55295-57044-6, True Label: Port Scan, Predicted Label: Port Scan
+Flow ID: 192.168.1.211-192.168.1.1-42257-53-17, True Label: Benign, Predicted Label: Benign
+Flow ID: 192.168.1.45-192.168.1.215-40729-2021-6, True Label: Ping Sweep, Predicted Label: Ping Sweep
+Flow ID: 192.168.1.211-223.138.130.13-0-0-0, True Label: ICMP Flood, Predicted Label: ICMP Flood
+Flow ID: 192.168.1.45-192.168.1.1-55295-21056-6, True Label: Port Scan, Predicted Label: Port Scan
+Flow ID: 192.168.1.45-192.168.1.20-37076-2111-6, True Label: Vulnerability Scan, Predicted Label: Vulnerability Scan
+Flow ID: 192.168.1.45-192.168.1.9-55295-19131-6, True Label: Port Scan, Predicted Label: Port Scan
+Flow ID: 192.168.1.45-192.168.1.25-55551-27843-6, True Label: Port Scan, Predicted Label: Port Scan
+Flow ID: 233.131.182.227-192.168.1.25-0-0-0, True Label: ICMP Flood, Predicted Label: ICMP Flood
+Flow ID: 20.189.173.9-192.168.1.247-443-52052-6, True Label: Benign, Predicted Label: Benign
+Flow ID: 192.168.1.45-192.168.1.7-55295-21982-6, True Label: Port Scan, Predicted Label: Port Scan
+Flow ID: 192.168.1.45-192.168.1.27-56936-80-6, True Label: Slowloris, Predicted Label: Slowlor
+Flow ID: 192.168.1.102-239.255.255.250-50518-1900-17, True Label: Benign, Predicted Label: Benign
+Flow ID: 192.168.1.45-192.168.1.1-55295-29762-6, True Label: Port Scan, Predicted Label: Port Scan
+Flow ID: 192.168.1.45-192.168.1.185-58444-32779-17, True Label: Port Scan, Predicted Label: Port Scan
+Flow ID: 126.154.76.198-192.168.1.168-0-0-0, True Label: ICMP Flood, Predicted Label: ICMP Flood
+Flow ID: 34.117.237.239-192.168.1.45-443-45184-6, True Label: Benign, Predicted Label: Benign
+Flow ID: 192.168.1.207-54.76.43.90-57195-5223-6, True Label: Benign, Predicted Label: Benign
+Flow ID: 192.168.1.211-192.168.1.1-55637-53-17, True Label: Benign, Predicted Label: Benign
+Flow ID: 192.168.1.45-192.168.1.1-40729-8200-6, True Label: Ping Sweep, Predicted Label: Ping Sweep
+Flow ID: 96.211.87.30-192.168.1.212-0-0-0, True Label: ICMP Flood, Predicted Label: ICMP Flood
+Flow ID: 131.219.216.143-192.168.1.25-0-0-0, True Label: ICMP Flood, Predicted Label: ICMP Flood
+Flow ID: 192.168.1.45-192.168.1.1-55295-12277-6, True Label: Port Scan, Predicted Label: Port Scan
+Flow ID: 192.168.1.45-192.168.1.1-55295-6668-6, True Label: Port Scan, Predicted Label: Port Scan
+Flow ID: 192.168.1.211-69.167.38.41-0-0-0, True Label: ICMP Flood, Predicted Label: ICMP Flood
+Flow ID: 166.126.26.159-192.168.1.168-0-0-0, True Label: ICMP Flood, Predicted Label: ICMP Flood
+Flow ID: 192.168.1.45-52.94.241.146-58602-443-6, True Label: Benign, Predicted Label: Benign
+Flow ID: 192.168.1.217-192.168.1.45-58497-161-17, True Label: Port Scan, Predicted Label: Port Scan
+Flow ID: 192.168.1.17-151.101.65.140-52387-443-6, True Label: Benign, Predicted Label: Benign
+Flow ID: 86.4.2.170-192.168.1.212-0-0-0, True Label: ICMP Flood, Predicted Label: ICMP Flood
+Flow ID: 192.168.1.45-192.168.1.9-55295-24307-6, True Label: Port Scan, Predicted Label: Port Scan
+Flow ID: 192.168.1.45-192.168.1.9-55295-4044-6, True Label: Port Scan, Predicted Label: Port Scan
+Flow ID: 192.168.1.45-192.168.1.184-40729-1719-6, True Label: Ping Sweep, Predicted Label: Ping Sweep
+Flow ID: 195.246.69.85-192.168.1.211-0-0-0, True Label: ICMP Flood, Predicted Label: ICMP Flood
+Flow ID: 192.168.1.45-192.168.1.9-55295-49544-6, True Label: Port Scan, Predicted Label: Port Scan
+Flow ID: 192.168.1.45-192.168.1.217-59305-22-6, True Label: OS Scan, Predicted Label: OS Scan
+Flow ID: 80.177.26.224-192.168.1.168-0-0-0, True Label: ICMP Flood, Predicted Label: ICMP Flood
+Flow ID: 192.168.1.45-192.168.1.26-40729-2251-6, True Label: Ping Sweep, Predicted Label: Ping Sweep
+Flow ID: 192.168.1.211-192.168.1.1-35470-53-17, True Label: DNS Flood, Predicted Label: DNS Flood
+Flow ID: 192.168.1.211-192.168.1.1-34525-53-17, True Label: DNS Flood, Predicted Label: DNS Flood
+Flow ID: 192.168.1.108-216.220.52.141-57744-8190-6, True Label: Benign, Predicted Label: Benign
+Flow ID: 192.168.1.211-192.168.1.1-43217-53-17, True Label: Benign, Predicted Label: Benign
+Flow ID: 192.168.1.45-192.168.1.9-55295-38063-6, True Label: Port Scan, Predicted Label: Port Scan
+Flow ID: 192.168.1.168-140.125.60.237-0-0-0, True Label: ICMP Flood, Predicted Label: ICMP Flood
+Flow ID: 200.201.204.153-192.168.1.168-0-0-0, True Label: ICMP Flood, Predicted Label: ICMP Flood
+Flow ID: 192.168.1.81-54.235.156.79-37394-443-6, True Label: Benign, Predicted Label: Benign
+Flow ID: 192.168.1.45-192.168.1.21-36498-406-6, True Label: Port Scan, Predicted Label: Port Scan
+Flow ID: 192.168.1.45-192.168.1.9-55295-37721-6, True Label: Port Scan, Predicted Label: Port Scan
+Flow ID: 192.168.1.45-192.168.1.167-40729-1149-6, True Label: Ping Sweep, Predicted Label: Ping Sweep
+Flow ID: 192.168.1.211-192.168.1.1-55874-53-17, True Label: DNS Flood, Predicted Label: DNS Flood
+Flow ID: 192.168.1.45-192.168.1.1-55295-17133-6, True Label: Port Scan, Predicted Label: Port Scan
+Flow ID: 192.168.1.45-192.168.1.1-55295-62223-6, True Label: Port Scan, Predicted Label: Port Scan
+Flow ID: 192.168.1.211-192.168.1.1-36494-53-17, True Label: Benign, Predicted Label: Benign
+Flow ID: 192.168.1.81-108.138.109.12-59616-443-6, True Label: Benign, Predicted Label: Benign
+Flow ID: 192.168.1.214-8.8.8.8-50014-53-17, True Label: Benign, Predicted Label: Benign
+Flow ID: 192.168.1.45-192.168.1.10-55295-8653-6, True Label: Port Scan, Predicted Label: Port Scan
+Flow ID: 192.168.1.172-31.13.71.51-56097-443-6, True Label: Benign, Predicted Label: Benign
+Flow ID: 192.168.1.45-192.168.1.86-59094-5718-6, True Label: OS Scan, Predicted Label: OS Scan
+Flow ID: 192.168.1.45-192.168.1.1-55295-19354-6, True Label: Port Scan, Predicted Label: Port Scan
+Flow ID: 192.168.1.45-192.168.1.1-55295-21435-6, True Label: Port Scan, Predicted Label: Port Scan
+Flow ID: 130.152.62.69-192.168.1.211-0-0-0, True Label: ICMP Flood, Predicted Label: ICMP Flood
+Flow ID: 192.168.1.45-192.168.1.212-40808-1124-6, True Label: Vulnerability Scan, Predicted Label: Vulnerability Scan
+Flow ID: 192.168.1.45-192.168.1.1-55295-53583-6, True Label: Port Scan, Predicted Label: Port Scan
+Flow ID: 192.168.1.7-54.230.163.97-46246-443-6, True Label: Benign, Predicted Label: Benign
+Flow ID: 166.104.123.167-192.168.1.211-0-0-0, True Label: ICMP Flood, Predicted Label: ICMP Flood
+Flow ID: 192.168.1.211-192.168.1.1-58285-53-17, True Label: Benign, Predicted Label: Benign
+Flow ID: 192.168.1.45-192.168.1.129-36498-31038-6, True Label: Port Scan, Predicted Label: Port Scan
+Flow ID: 192.168.1.45-192.168.1.1-55295-35587-6, True Label: Port Scan, Predicted Label: Port Scan
+Flow ID: 13.94.221.143-192.168.1.211-0-0-0, True Label: ICMP Flood, Predicted Label: ICMP Flood
+Flow ID: 60.166.114.62-192.168.1.168-0-0-0, True Label: ICMP Flood, Predicted Label: ICMP Flood
+Flow ID: 192.168.1.172-224.0.0.251-5353-5353-17, True Label: Benign, Predicted Label: Benign
+Flow ID: 192.168.1.45-192.168.1.252-40729-1075-6, True Label: Ping Sweep, Predicted Label: Ping Sweep
+Flow ID: 243.123.138.164-192.168.1.211-0-0-0, True Label: ICMP Flood, Predicted Label: ICMP Flood
+Flow ID: 192.168.1.45-192.168.1.10-55295-42920-6, True Label: Port Scan, Predicted Label: Port Scan
+Flow ID: 192.168.1.45-192.168.1.9-55295-57363-6, True Label: Port Scan, Predicted Label: Port Scan
+Flow ID: 192.168.1.45-192.168.1.1-55295-3012-6, True Label: Port Scan, Predicted Label: Port Scan
+Flow ID: 192.168.1.45-192.168.1.10-55295-38216-6, True Label: Port Scan, Predicted Label: Port Scan
+Flow ID: 192.168.1.45-192.168.1.7-55295-36266-6, True Label: Port Scan, Predicted Label: Port Scan
+Flow ID: 192.168.1.211-107.50.138.181-0-0-0, True Label: ICMP Flood, Predicted Label: ICMP Flood
+Flow ID: 192.168.1.45-192.168.1.167-52646-1057-6, True Label: Vulnerability Scan, Predicted Label: Vulnerability Scan
+Flow ID: 192.168.1.45-192.168.1.162-59094-1011-6, True Label: OS Scan, Predicted Label: OS Scan
+Flow ID: 192.168.1.45-192.168.1.27-55551-39892-6, True Label: Port Scan, Predicted Label: Port Scan
+Flow ID: 192.168.1.45-192.168.1.7-55295-1738-6, True Label: Port Scan, Predicted Label: Port Scan
+Flow ID: 171.227.51.16-192.168.1.25-0-0-0, True Label: ICMP Flood, Predicted Label: ICMP Flood
+Flow ID: 192.168.1.212-193.18.87.152-0-0-0, True Label: ICMP Flood, Predicted Label: ICMP Flood
+Flow ID: 121.214.123.138-192.168.1.211-0-0-0, True Label: ICMP Flood, Predicted Label: ICMP Flood
+Flow ID: 192.168.1.45-192.168.1.9-55295-22349-6, True Label: Port Scan, Predicted Label: Port Scan
+Flow ID: 192.168.1.45-192.168.1.213-42640-14441-6, True Label: Vulnerability Scan, Predicted Label: Vulnerability Scan
+Flow ID: 192.168.1.45-192.168.1.112-40729-6666-6, True Label: Ping Sweep, Predicted Label: Ping Sweep
+Flow ID: 192.168.1.45-192.168.1.21-59094-1580-6, True Label: OS Scan, Predicted Label: OS Scan
+Flow ID: 192.168.1.211-192.168.1.1-41726-53-17, True Label: Benign, Predicted Label: Benign
+Flow ID: 192.168.1.81-239.255.255.250-60683-1900-17, True Label: Benign, Predicted Label: Benign
+Flow ID: 192.168.1.45-192.168.1.81-40729-6667-6, True Label: Ping Sweep, Predicted Label: Ping Sweep
+Flow ID: 192.168.1.81-44.194.254.66-43982-443-6, True Label: Benign, Predicted Label: Benign
+Flow ID: 192.168.1.45-192.168.1.153-55551-14854-6, True Label: Port Scan, Predicted Label: Port Scan
+Flow ID: 192.168.1.45-192.168.1.112-55551-37955-6, True Label: Port Scan, Predicted Label: Port Scan
+Flow ID: 192.168.1.45-192.168.1.9-55295-6420-6, True Label: Port Scan, Predicted Label: Port Scan
+Flow ID: 171.87.209.203-192.168.1.212-0-0-0, True Label: ICMP Flood, Predicted Label: ICMP Flood
+Flow ID: 192.168.1.45-192.168.1.10-55295-27420-6, True Label: Port Scan, Predicted Label: Port Scan
+Flow ID: 192.168.1.211-42.46.5.106-0-0-0, True Label: ICMP Flood, Predicted Label: ICMP Flood
+Flow ID: 192.168.1.45-192.168.1.1-55295-41014-6, True Label: Port Scan, Predicted Label: Port Scan
+Flow ID: 192.168.1.212-88.43.88.186-0-0-0, True Label: ICMP Flood, Predicted Label: ICMP Flood
+Flow ID: 250.104.214.115-192.168.1.211-0-0-0, True Label: ICMP Flood, Predicted Label: ICMP Flood
+Flow ID: 162.27.255.236-192.168.1.211-0-0-0, True Label: ICMP Flood, Predicted Label: ICMP Flood
+Flow ID: 82.127.76.60-192.168.1.168-0-0-0, True Label: ICMP Flood, Predicted Label: ICMP Flood
+Flow ID: 192.168.1.81-108.138.109.12-53798-443-6, True Label: Benign, Predicted Label: Benign
+Flow ID: 192.168.1.25-242.234.135.169-80-8697-6, True Label: SYN Flood, Predicted Label: SYN Flo
+Flow ID: 192.168.1.45-192.168.1.1-55295-39723-6, True Label: Port Scan, Predicted Label: Port Scan
+Flow ID: 92.223.238.9-192.168.1.211-0-0-0, True Label: ICMP Flood, Predicted Label: ICMP Flood
+Flow ID: 192.168.1.214-8.8.8.8-44650-53-17, True Label: Benign, Predicted Label: Benign
+Flow ID: 121.101.184.235-192.168.1.168-0-0-0, True Label: ICMP Flood, Predicted Label: ICMP Flood
+Flow ID: 192.168.1.211-192.168.1.1-51983-53-17, True Label: DNS Flood, Predicted Label: DNS Flood
+Flow ID: 26.55.93.0-192.168.1.25-0-0-0, True Label: ICMP Flood, Predicted Label: ICMP Flood
+Flow ID: 192.168.1.108-216.220.52.141-57744-8190-6, True Label: Benign, Predicted Label: Benign
+Flow ID: 192.168.1.45-192.168.1.7-55295-3518-6, True Label: Port Scan, Predicted Label: Port Scan
+Flow ID: 192.168.1.45-192.168.1.7-55295-61130-6, True Label: Port Scan, Predicted Label: Port Scan
+Flow ID: 192.168.1.211-192.168.1.1-59773-53-17, True Label: DNS Flood, Predicted Label: DNS Flood
+Flow ID: 192.168.1.45-192.168.1.9-55295-63489-6, True Label: Port Scan, Predicted Label: Port Scan
+Flow ID: 192.168.1.9-192.168.1.1-54215-53-17, True Label: Benign, Predicted Label: Benign
+Flow ID: 192.168.1.45-192.168.1.7-55295-60336-6, True Label: Port Scan, Predicted Label: Port Scan
+Flow ID: 192.168.1.11-239.255.255.250-1900-1900-17, True Label: Benign, Predicted Label: Benign
+Flow ID: 192.168.1.45-192.168.1.162-59094-26-6, True Label: OS Scan, Predicted Label: OS Scan
+Flow ID: 192.168.1.45-192.168.1.1-55295-64708-6, True Label: Port Scan, Predicted Label: Port Scan
+Flow ID: 192.168.1.45-192.168.1.48-55551-31814-6, True Label: Port Scan, Predicted Label: Port Scan
+Flow ID: 192.168.1.45-192.168.1.215-36498-5900-6, True Label: Port Scan, Predicted Label: Port Scan
+Flow ID: 192.168.1.211-192.168.1.1-38268-53-17, True Label: Benign, Predicted Label: Benign
+Flow ID: 192.168.1.45-192.168.1.7-59094-1521-6, True Label: OS Scan, Predicted Label: OS Scan
+Flow ID: 161.111.2.24-192.168.1.212-0-0-0, True Label: ICMP Flood, Predicted Label: ICMP Flood
+Flow ID: 207.1.56.143-192.168.1.25-0-0-0, True Label: ICMP Flood, Predicted Label: ICMP Flood
+Flow ID: 26.158.227.234-192.168.1.168-0-0-0, True Label: ICMP Flood, Predicted Label: ICMP Flood
+Flow ID: 192.168.1.81-54.235.156.79-42558-443-6, True Label: Benign, Predicted Label: Benign
+Flow ID: 142.210.116.181-192.168.1.212-0-0-0, True Label: ICMP Flood, Predicted Label: ICMP Flood
+Flow ID: 192.168.1.45-192.168.1.57-55551-26029-6, True Label: Port Scan, Predicted Label: Port Scan
+Flow ID: 192.168.1.45-192.168.1.253-55551-49238-6, True Label: Port Scan, Predicted Label: Port Scan
+Flow ID: 192.168.1.45-192.168.1.168-55551-52464-6, True Label: Port Scan, Predicted Label: Port Scan
+Flow ID: 192.168.1.45-192.168.1.9-43662-3945-6, True Label: Vulnerability Scan, Predicted Label: Vulnerability Scan
+Flow ID: 192.168.1.45-192.168.1.9-55295-44748-6, True Label: Port Scan, Predicted Label: Port Scan
+Flow ID: 192.168.1.45-192.168.1.9-55295-33664-6, True Label: Port Scan, Predicted Label: Port Scan
+Flow ID: 192.168.1.45-192.168.1.1-55295-56575-6, True Label: Port Scan, Predicted Label: Port Scan
+Flow ID: 192.168.1.214-8.8.8.8-59535-53-17, True Label: Benign, Predicted Label: Benign
+Flow ID: 192.168.1.45-192.168.1.9-55295-14637-6, True Label: Port Scan, Predicted Label: Port Scan
+Flow ID: 192.168.1.45-192.168.1.1-55295-43895-6, True Label: Port Scan, Predicted Label: Port Scan
+Flow ID: 192.168.1.45-192.168.1.48-55551-27425-6, True Label: Port Scan, Predicted Label: Port Scan
+Flow ID: 192.168.1.45-192.168.1.7-55295-39928-6, True Label: Port Scan, Predicted Label: Port Scan
+Flow ID: 192.168.1.45-192.168.1.194-40729-1352-6, True Label: Ping Sweep, Predicted Label: Ping Sweep
+Flow ID: 99.26.101.149-192.168.1.168-0-0-0, True Label: ICMP Flood, Predicted Label: ICMP Flood
+Flow ID: 192.168.1.214-8.8.8.8-52946-53-17, True Label: Benign, Predicted Label: Benign
+Flow ID: 192.168.1.7-54.230.163.97-46094-443-6, True Label: Benign, Predicted Label: Benign
+Flow ID: 192.168.1.45-192.168.1.9-55295-46427-6, True Label: Port Scan, Predicted Label: Port Scan
+Flow ID: 192.168.1.9-239.255.255.250-61508-1900-17, True Label: Benign, Predicted Label: Benign
+Flow ID: 192.168.1.168-126.54.26.177-0-0-0, True Label: ICMP Flood, Predicted Label: ICMP Flood
+Flow ID: 192.168.1.212-131.168.156.239-0-0-0, True Label: ICMP Flood, Predicted Label: ICMP Flood
+Flow ID: 194.188.97.61-192.168.1.183-0-0-0, True Label: ICMP Flood, Predicted Label: ICMP Flood
+Flow ID: 192.168.1.45-192.168.1.7-55295-39169-6, True Label: Port Scan, Predicted Label: Port Scan
+Flow ID: 192.168.1.45-192.168.1.217-36555-22-6, True Label: Port Scan, Predicted Label: Port Scan
+Flow ID: 192.168.1.45-192.168.1.162-35838-32780-6, True Label: Vulnerability Scan, Predicted Label: Vulnerability Scan
+Flow ID: 159.127.76.65-192.168.1.168-0-0-0, True Label: ICMP Flood, Predicted Label: ICMP Flood
+Flow ID: 54.156.230.89-192.168.1.81-443-33462-6, True Label: Benign, Predicted Label: Benign
+Flow ID: 192.168.1.45-192.168.1.81-55551-27749-6, True Label: Port Scan, Predicted Label: Port Scan
+Flow ID: 216.26.55.109-192.168.1.25-0-0-0, True Label: ICMP Flood, Predicted Label: ICMP Flood
+Flow ID: 192.168.1.45-192.168.1.1-55295-21841-6, True Label: Port Scan, Predicted Label: Port Scan
+Flow ID: 192.168.1.45-192.168.1.10-55295-22149-6, True Label: Port Scan, Predicted Label: Port Scan
+Flow ID: 192.168.2.4-35.224.170.84-37892-80-6, True Label: Benign, Predicted Label: Benign
+Flow ID: 192.168.1.45-192.168.1.14-40729-1163-6, True Label: Ping Sweep, Predicted Label: Ping Sweep
+Flow ID: 192.168.1.211-192.168.1.1-54853-53-17, True Label: Benign, Predicted Label: UDP Flood
+Flow ID: 192.168.1.211-192.168.1.1-58922-53-17, True Label: Benign, Predicted Label: Benign
+Flow ID: 192.168.1.211-219.130.118.106-0-0-0, True Label: ICMP Flood, Predicted Label: ICMP Flood
+Flow ID: 192.168.1.45-192.168.1.89-59094-1658-6, True Label: OS Scan, Predicted Label: OS Scan
+Flow ID: 142.251.40.164-192.168.1.87-80-35968-6, True Label: Benign, Predicted Label: Benign
+Flow ID: 192.168.1.45-192.168.1.211-55551-42031-6, True Label: Port Scan, Predicted Label: Port Scan
+Flow ID: 192.168.1.181-224.0.0.251-0-0-0, True Label: Benign, Predicted Label: ICMP Flood
+Flow ID: 192.168.1.45-192.168.1.7-55295-59015-6, True Label: Port Scan, Predicted Label: Port Scan
+Flow ID: 192.168.1.207-224.0.0.7-8001-8001-17, True Label: Benign, Predicted Label: Benign
+Flow ID: 192.168.1.211-192.168.1.1-47999-53-17, True Label: DNS Flood, Predicted Label: DNS Flood
+Flow ID: 192.168.1.45-192.168.1.1-59094-445-6, True Label: OS Scan, Predicted Label: OS Scan
+Flow ID: 192.168.1.45-192.168.1.1-55295-24478-6, True Label: Port Scan, Predicted Label: Port Scan
+Flow ID: 167.138.121.164-192.168.1.211-0-0-0, True Label: ICMP Flood, Predicted Label: ICMP Flood
+Flow ID: 192.168.1.45-192.168.1.253-55551-30950-6, True Label: Port Scan, Predicted Label: Port Scan
+Flow ID: 192.168.1.214-8.8.8.8-41255-53-17, True Label: Benign, Predicted Label: Benign
+Flow ID: 138.250.5.106-192.168.1.211-0-0-0, True Label: ICMP Flood, Predicted Label: ICMP Flood
+Flow ID: 129.0.0.1-8.6.0.1-0-0-0, True Label: Benign, Predicted Label: Benign
+Flow ID: 192.168.1.45-52.23.140.126-33820-443-6, True Label: Benign, Predicted Label: Benign
+Flow ID: 192.168.1.45-192.168.1.249-59114-19101-6, True Label: OS Scan, Predicted Label: OS Scan
+Flow ID: 192.168.1.45-192.168.1.9-55295-37698-6, True Label: Port Scan, Predicted Label: Port Scan
+Flow ID: 192.168.1.45-192.168.1.7-55295-64658-6, True Label: Port Scan, Predicted Label: Port Scan
+Flow ID: 192.168.1.207-142.250.65.174-55612-443-6, True Label: Benign, Predicted Label: Benign
+Flow ID: 192.168.1.45-192.168.1.129-36464-55055-6, True Label: Vulnerability Scan, Predicted Label: Vulnerability Scan
+Flow ID: 62.131.57.226-192.168.1.212-0-0-0, True Label: ICMP Flood, Predicted Label: ICMP Flood
+Flow ID: 192.168.1.249-224.0.0.251-5353-5353-17, True Label: Benign, Predicted Label: Benign
+Flow ID: 192.168.1.45-192.168.1.225-55551-52568-6, True Label: Port Scan, Predicted Label: Port Scan
+Flow ID: 192.168.1.45-192.168.1.9-55295-2473-6, True Label: Port Scan, Predicted Label: Port Scan
+Flow ID: 22.54.4.198-192.168.1.168-0-0-0, True Label: ICMP Flood, Predicted Label: ICMP Flood
+Flow ID: 47.38.26.196-192.168.1.168-0-0-0, True Label: ICMP Flood, Predicted Label: ICMP Flood
+Flow ID: 192.168.1.214-185.199.108.133-35322-443-6, True Label: Benign, Predicted Label: Benign
+Flow ID: 192.168.1.9-142.251.41.10-53904-443-17, True Label: Benign, Predicted Label: Benign
+Flow ID: 192.168.1.9-192.168.1.1-8080-34125-6, True Label: Benign, Predicted Label: Benign
+Flow ID: 192.168.1.45-192.168.1.1-55295-18427-6, True Label: Port Scan, Predicted Label: Port Scan
+Flow ID: 192.168.1.45-192.168.1.7-55295-54333-6, True Label: Port Scan, Predicted Label: Port Scan
+Flow ID: 192.168.1.212-141.9.96.2-0-0-0, True Label: ICMP Flood, Predicted Label: ICMP Flood
+Flow ID: 192.168.1.45-192.168.1.10-59972-1-6, True Label: OS Scan, Predicted Label: Port Scan
+Flow ID: 192.168.1.45-192.168.1.89-36498-3333-6, True Label: Port Scan, Predicted Label: Port Scan
+Flow ID: 192.168.1.45-192.168.1.7-55295-54244-6, True Label: Port Scan, Predicted Label: Port Scan
+Flow ID: 18.197.213.150-192.168.1.9-80-55704-6, True Label: Benign, Predicted Label: Benign
+Flow ID: 192.168.1.183-255.255.255.255-49154-6667-17, True Label: Benign, Predicted Label: Benign
+Flow ID: 192.168.1.211-193.130.138.80-0-0-0, True Label: ICMP Flood, Predicted Label: ICMP Flood
+Flow ID: 192.168.1.45-192.168.1.249-40729-1300-6, True Label: Ping Sweep, Predicted Label: Ping Sweep
+Flow ID: 192.168.1.45-192.168.1.213-36498-3268-6, True Label: Port Scan, Predicted Label: Port Scan
+Flow ID: 192.168.1.45-192.168.1.211-55551-16878-6, True Label: Port Scan, Predicted Label: Port Scan
+Flow ID: 192.168.1.212-50.88.76.186-0-0-0, True Label: ICMP Flood, Predicted Label: ICMP Flood
+Flow ID: 192.168.1.211-192.168.1.1-46934-53-17, True Label: Benign, Predicted Label: Benign
+Flow ID: 192.168.1.81-52.85.138.76-50408-443-6, True Label: Benign, Predicted Label: Benign
+Flow ID: 209.54.180.44-192.168.1.81-443-54354-6, True Label: Benign, Predicted Label: Benign
+Flow ID: 192.168.1.45-192.168.1.133-57658-617-6, True Label: Vulnerability Scan, Predicted Label: Vulnerability Scan
+Flow ID: 192.168.1.45-192.168.1.10-59094-49176-6, True Label: OS Scan, Predicted Label: OS Scan
+Flow ID: 130.98.97.250-192.168.1.211-0-0-0, True Label: ICMP Flood, Predicted Label: ICMP Flood
+Flow ID: 168.125.30.168-192.168.1.25-0-0-0, True Label: ICMP Flood, Predicted Label: ICMP Flood
+Flow ID: 192.168.1.108-7.85.253.109-7000-64807-6, True Label: Benign, Predicted Label: Benign
+Flow ID: 192.168.1.211-192.168.1.1-52675-53-17, True Label: Benign, Predicted Label: Benign
+Flow ID: 234.219.182.77-192.168.1.25-0-0-0, True Label: ICMP Flood, Predicted Label: ICMP Flood
+Flow ID: 192.168.1.45-192.168.1.7-55295-64452-6, True Label: Port Scan, Predicted Label: Port Scan
+Flow ID: 192.168.1.9-192.168.1.1-8080-47399-6, True Label: Benign, Predicted Label: Benign
+Flow ID: 192.168.1.81-108.138.109.12-59318-443-6, True Label: Benign, Predicted Label: Benign
+Flow ID: 235.208.6.102-192.168.1.183-0-0-0, True Label: ICMP Flood, Predicted Label: ICMP Flood
+Flow ID: 192.168.1.45-192.168.1.1-55295-63179-6, True Label: Port Scan, Predicted Label: Port Scan
+Flow ID: 192.168.1.45-192.168.1.9-55295-2721-6, True Label: Port Scan, Predicted Label: Port Scan
+Flow ID: 192.168.1.45-192.168.1.14-59094-13782-6, True Label: OS Scan, Predicted Label: OS Scan
+Flow ID: 209.206.49.216-192.168.1.87-30001-47562-6, True Label: Benign, Predicted Label: Benign
+Flow ID: 192.168.1.45-192.168.1.1-55295-63100-6, True Label: Port Scan, Predicted Label: Port Scan
+Flow ID: 192.168.1.9-192.168.1.1-8080-37389-6, True Label: Benign, Predicted Label: Benign
+Flow ID: 192.168.1.211-192.168.1.1-56058-53-17, True Label: DNS Flood, Predicted Label: DNS Flood
+Flow ID: 192.168.1.211-192.168.1.1-37272-53-17, True Label: Benign, Predicted Label: Benign
+Flow ID: 192.168.1.45-192.168.1.7-55295-56442-6, True Label: Port Scan, Predicted Label: Port Scan
+Flow ID: 192.168.1.217-192.168.1.45-443-50606-6, True Label: Vulnerability Scan, Predicted Label: Vulnerability Scan
+Flow ID: 34.107.221.82-192.168.1.48-80-35122-6, True Label: Benign, Predicted Label: Benign
+Flow ID: 192.168.1.81-192.168.1.1-57335-53-17, True Label: Benign, Predicted Label: Benign
+Flow ID: 192.168.1.207-108.138.106.96-48278-443-6, True Label: Benign, Predicted Label: Benign
+Flow ID: 192.168.1.81-192.168.1.1-60282-53-17, True Label: Benign, Predicted Label: Benign
+Flow ID: 18.218.78.141-192.168.1.7-443-55592-6, True Label: Benign, Predicted Label: Benign
+Flow ID: 192.168.1.45-192.168.1.27-55551-30776-6, True Label: Port Scan, Predicted Label: Port Scan
+Flow ID: 129.125.2.13-192.168.1.211-0-0-0, True Label: ICMP Flood, Predicted Label: ICMP Flood
+Flow ID: 192.168.1.45-192.168.1.25-34752-80-6, True Label: Slowloris, Predicted Label: Slowlor
+Flow ID: 192.168.1.45-192.168.1.57-59094-1461-6, True Label: OS Scan, Predicted Label: OS Scan
+Flow ID: 192.168.1.129-192.168.1.43-0-0-0, True Label: ARP Spoofing, Predicted Label: ICMP Flood
+Flow ID: 192.168.1.129-192.168.1.183-0-0-0, True Label: ARP Spoofing, Predicted Label: OS Scan
+Flow ID: 192.168.1.1-192.168.1.7-0-0-0, True Label: ARP Spoofing, Predicted Label: ICMP Flood
+Flow ID: 192.168.1.1-192.168.1.7-0-0-0, True Label: ARP Spoofing, Predicted Label: ICMP Flood
+
+Summary:
+Total Records: 399
+Confusion Matrix:
+0 0 0 0 0 3 1 0 0 0 0 0 0 0 0
+0 103 0 0 0 1 0 0 0 0 0 0 0 3 0
+0 0 11 0 0 0 0 0 0 0 0 0 0 0 0
+0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+0 0 0 2 0 0 0 0 0 0 0 0 0 0 0
+0 0 0 0 0 85 0 0 0 0 0 0 0 0 0
+0 0 0 0 0 0 15 0 1 0 0 0 0 0 0
+0 0 0 0 0 0 0 21 0 0 0 0 0 0 0
+0 0 0 0 0 0 0 0 127 0 0 0 0 0 0
+0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+0 0 0 0 0 0 0 0 0 2 1 0 0 0 0
+0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+0 0 0 0 0 0 0 0 0 0 0 4 0 0 0
+0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+0 0 0 0 0 0 0 0 0 0 0 0 0 0 19
