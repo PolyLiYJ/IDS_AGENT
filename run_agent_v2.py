@@ -692,7 +692,6 @@ async def run_agent(file_path = "dataset/CICIoT2023/test_set_small.csv",
             Action: knowledge_retriever  
             Action Input: {"query": "..."}  
             Observation: ... '.
-
         5. At the end, you should summarize the results from these classifiers and provide a final result.
         Summarize the classification with {attitude} sentitivity, which means {attitude_details}.
         The predicted_label should be original format of classifier prediction.

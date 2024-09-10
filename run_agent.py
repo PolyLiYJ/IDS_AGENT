@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # from llm_agents import Agent, ChatLLM, PythonREPLTool, SerpAPITool, GoogleSearchTool, HackerNewsSearchTool
 import joblib
 from langchain.tools import tool
@@ -36,6 +37,12 @@ with open('openai_key.txt', 'r') as file:
 
 # os.environ["GOOGLE_CSE_ID"] = ""
 # os.environ["GOOGLE_API_KEY"] = ""
+=======
+from llm_agents import Agent, ChatLLM, PythonREPLTool, SerpAPITool, GoogleSearchTool, HackerNewsSearchTool
+
+
+
+>>>>>>> 101711d2b704910742fc4eda7ce368b674c43e15
 # DataProcessingTool
 # Context extraction
 # FeatureSelectionTool
@@ -43,6 +50,7 @@ with open('openai_key.txt', 'r') as file:
 # huggingface model
 # Arkiv Tool
 # 结合Snort，Suricata进行实时流量监控和入侵响应。
+<<<<<<< HEAD
 # 调用XAI解释
 # knowledge 用来解释分类结果
 
@@ -408,3 +416,23 @@ if __name__ == "__main__":
         model_name = ["Decision Tree", "K-Nearest Neighbors", "Logistic Regression", "Random Forest", "Support Vector Classifier"] 
     
     asyncio.run(run_agent(file_path=args.file_path, model_name=model_name, attitude=args.attitude))
+=======
+#调用XAI解释
+# knowledge 用来解释分类结果
+
+if __name__ == '__main__':
+    # prompt = input("Enter a question / task for the agent: ")
+    prompt = '''You are a cyber security expert and ask to do intrusion detection based on provided files. 
+                The files is at '/home/yanjieli/IDS_Agent/train_set.csv'.
+                You should follow the following steps: 
+                1. Data processing. You should write a python code to process the traffic data. For example, remove the nan value and ID field.
+                2. Select important features. You can use online papers/website to collect knowledge.
+                3. Load multiple classifier models. Here are pretrained ML models.
+                4. Real time classfication, load the test file line by line.
+                4. Based on the classfication results, explain the classfication reasons if the example is be classified as malicous.'''
+
+    agent = Agent(llm=ChatLLM(), tools=[DataProcessingTool(), PythonREPLTool(), SerpAPITool(), GoogleSearchTool(), HackerNewsSearchTool()])
+    result = agent.run(prompt)
+
+    print(f"Final answer is {result}")
+>>>>>>> 101711d2b704910742fc4eda7ce368b674c43e15

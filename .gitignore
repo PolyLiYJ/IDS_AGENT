@@ -12,3 +12,13 @@ lagent
 results
 results.txt
 propcess.ipynb
+./results
+./longmemory
+*.csv
+*.txt
+./documents
+./db
+./db-llama
+./db-long-memory
+./models
+./model_CICIoT
