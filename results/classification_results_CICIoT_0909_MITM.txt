@@ -1,0 +1,82 @@
+[
+    {
+        "line_number": 130,
+        "analysis": "The traffic features from line 130 were classified using multiple classifiers. The majority of classifiers predicted the traffic as 'BenignTraffic' with high confidence. Other predictions included 'MITM-ArpSpoofing' and 'Recon-HostDiscovery', but these had significantly lower confidence scores. This indicates that the traffic is likely benign.",
+        "predicted_label_top_1": "BenignTraffic",
+        "predicted_label_top_2": "MITM-ArpSpoofing",
+        "predicted_label_top_3": "Recon-HostDiscovery",
+        "true_label": "MITM-ArpSpoofing"
+    },
+    {
+        "line_number": 131,
+        "analysis": "The traffic features indicate a potential MITM-ArpSpoofing attack, as it received the highest confidence from multiple classifiers. However, there is also a significant indication of benign traffic, particularly from the Support Vector Classifier, which suggests that further investigation may be warranted to confirm the nature of the traffic.",
+        "predicted_label_top_1": "MITM-ArpSpoofing",
+        "predicted_label_top_2": "BenignTraffic",
+        "predicted_label_top_3": "Recon-PortScan",
+        "true_label": "MITM-ArpSpoofing"
+    },
+    {
+        "line_number": 132,
+        "analysis": "The traffic features from line 132 were classified using multiple classifiers. All classifiers predominantly predicted 'BenignTraffic' with high confidence levels, indicating that the traffic is likely benign.",
+        "predicted_label_top_1": "BenignTraffic",
+        "predicted_label_top_2": "MITM-ArpSpoofing",
+        "predicted_label_top_3": "Recon-PortScan",
+        "true_label": "MITM-ArpSpoofing"
+    },
+    {
+        "line_number": 133,
+        "analysis": "The majority of classifiers predict the traffic as BenignTraffic, with a notable prediction of MITM-ArpSpoofing from the Support Vector Classifier. This indicates a potential benign nature of the traffic, but caution is advised due to the conflicting prediction.",
+        "predicted_label_top_1": "BenignTraffic",
+        "predicted_label_top_2": "MITM-ArpSpoofing",
+        "predicted_label_top_3": "BenignTraffic",
+        "true_label": "MITM-ArpSpoofing"
+    },
+    {
+        "line_number": 134,
+        "analysis": "The majority of classifiers (5 out of 6) predict the traffic as MITM-ArpSpoofing, indicating a strong consensus on this classification. The only outlier is the Logistic Regression classifier, which predicts DDoS-UDP_Fragmentation. However, the high confidence scores for MITM-ArpSpoofing suggest that this is the most likely classification.",
+        "predicted_label_top_1": "MITM-ArpSpoofing",
+        "predicted_label_top_2": "DDoS-UDP_Fragmentation",
+        "predicted_label_top_3": "Recon-PortScan",
+        "true_label": "MITM-ArpSpoofing"
+    },
+    {
+        "line_number": 135,
+        "analysis": "The traffic features indicate a mix of benign and potentially malicious activity. The classifiers show a strong indication of benign traffic, but also highlight the presence of MITM-ArpSpoofing and DoS-UDP_Flood as possible threats. The Decision Tree classifier strongly indicates Recon-HostDiscovery.",
+        "predicted_label_top_1": "BenignTraffic",
+        "predicted_label_top_2": "MITM-ArpSpoofing",
+        "predicted_label_top_3": "DoS-UDP_Flood",
+        "true_label": "MITM-ArpSpoofing"
+    },
+    {
+        "line_number": 136,
+        "analysis": "The traffic features were classified using multiple classifiers, with the majority predicting 'BenignTraffic' as the top label. The classifiers showed high confidence in this prediction, indicating that the traffic is likely benign.",
+        "predicted_label_top_1": "BenignTraffic",
+        "predicted_label_top_2": "MITM-ArpSpoofing",
+        "predicted_label_top_3": "Recon-OSScan",
+        "true_label": "MITM-ArpSpoofing"
+    },
+    {
+        "line_number": 137,
+        "analysis": "The traffic features indicate a potential MITM-ArpSpoofing attack based on the Decision Tree classifier's strong prediction. Other classifiers also suggest benign traffic but with lower confidence. The overall consensus leans towards a possible attack scenario.",
+        "predicted_label_top_1": "MITM-ArpSpoofing",
+        "predicted_label_top_2": "BenignTraffic",
+        "predicted_label_top_3": "Recon-HostDiscovery",
+        "true_label": "MITM-ArpSpoofing"
+    },
+    {
+        "line_number": 138,
+        "analysis": "The majority of classifiers predict the traffic as BenignTraffic with high confidence, indicating that the traffic is likely not malicious.",
+        "predicted_label_top_1": "BenignTraffic",
+        "predicted_label_top_2": "MITM-ArpSpoofing",
+        "predicted_label_top_3": "Recon-OSScan",
+        "true_label": "MITM-ArpSpoofing"
+    },
+    {
+        "line_number": 139,
+        "analysis": "The majority of classifiers predict MITM-ArpSpoofing with high confidence, while Logistic Regression indicates a possibility of benign traffic. The consensus among the classifiers suggests a strong likelihood of an MITM attack.",
+        "predicted_label_top_1": "MITM-ArpSpoofing",
+        "predicted_label_top_2": "BenignTraffic",
+        "predicted_label_top_3": "DDoS-UDP_Flood",
+        "true_label": "MITM-ArpSpoofing"
+    }
+]

@@ -25,6 +25,15 @@ import matplotlib.pyplot as plt
 # from langchain_community.utilities import GoogleSearchAPIWrapper
 from langchain_core.tools import Tool
 import re
+from sklearn.metrics import classification_report, ConfusionMatrixDisplay
+import argparse
+import os
+with open('openai_key.txt', 'r') as file:
+    # Read the first line from the file
+    first_line = file.readline()
+    os.environ["OPENAI_API_KEY"] = first_line
+
+
 # os.environ["GOOGLE_CSE_ID"] = ""
 # os.environ["GOOGLE_API_KEY"] = ""
 # DataProcessingTool
@@ -187,7 +196,7 @@ async def classifier(modelname: str, traffic_features: list) -> str:
 
 async def run_agent(file_path = "dataset/ACIIoT/test_set_small.csv",
                     model_name = ["Decision Tree", "K-Nearest Neighbors", "Logistic Regression"],
-                    attitude ="Aggresive"):
+                    attitude ="Balanced"):
     llm = ChatOpenAI(model="gpt-4o", temperature=0)
     prompt = ChatPromptTemplate.from_messages(
         [
@@ -222,7 +231,7 @@ async def run_agent(file_path = "dataset/ACIIoT/test_set_small.csv",
             attitude_details = "discover the attack at the first time"
         if attitude == "Conservative":
             attitude_details = "donot alert unless you are very sure"
-        if attitude == "Balance":
+        if attitude == "Balanced":
             attitude_details = "balance the false alarm rate and the missing alarm rate"
         
         prompt_text = f"""
@@ -253,21 +262,19 @@ async def run_agent(file_path = "dataset/ACIIoT/test_set_small.csv",
         print(prompt_text)
 
         # Initialize the LLM
-        
+        # os.environ["GOOGLE_CSE_ID"] = "66297c07f31dc4c6d"
+        # os.environ["GOOGLE_API_KEY"] = "AIzaSyDE0ErQezoMG9H33i7IZ6x663yLzUe7_hA"
+        # google_search = GoogleSearchAPIWrapper(k=1)
+        # search_tool = Tool(
+        #     name="google_search",
+        #     description="Search Google for recent results.",
+        #     func=google_search.run,
+        # )
         # Get the prompt
         # prompt = hub.pull("hwchase17/openai-functions-agent")
         # prompt = hub.pull("hwchase17/openai-tools-agent")
         # print(prompt.messages) -- to see the prompt
 
-
-        # # Define the tools
-        # search = GoogleSearchAPIWrapper(k=1)
-
-        # google_search_tool = Tool(
-        #     name="google_search",
-        #     description="Search Google for recent results.",
-        #     func=search.run,
-        # )
         
         
         # api_wrapper = WikipediaAPIWrapper(top_k_results=1, doc_content_chars_max=100)
@@ -331,9 +338,12 @@ async def run_agent(file_path = "dataset/ACIIoT/test_set_small.csv",
             
 
     # Compute the confusion matrix
+    # Remove the first row and first column
+
+    
     cm = confusion_matrix(true_labels, predicted_labels)    
     print(cm)   
-    print(classification_report(true_labels, predicted_labels, target_names=np.unique(true_labels)))
+    # print(classification_report(true_labels, predicted_labels, target_names=np.unique(true_labels)))
     with open("classification_results.txt", "a") as f:
         f.write("\nSummary:\n")
         f.write(f"Total Records: {len(true_labels)}\n")
@@ -341,6 +351,24 @@ async def run_agent(file_path = "dataset/ACIIoT/test_set_small.csv",
         # Write the confusion matrix to the file
         f.write("Confusion Matrix:\n")
         np.savetxt(f, cm, fmt='%d')
+        
+    modified_confusion_matrix = cm[1:, 1:] # remove the APR attack
+    labels = np.unique(true_labels)
+    modified_labels = labels[1:]
+
+    # Generate synthetic y_true and y_pred based on the modified confusion matrix
+    y_true = []
+    y_pred = []
+
+    for i, row in enumerate(modified_confusion_matrix):
+        for j, count in enumerate(row):
+            y_true.extend([modified_labels[i]] * count)
+            y_pred.extend([modified_labels[j]] * count)
+
+    # Calculate and print the classification report
+    report = classification_report(y_true, y_pred, target_names=modified_labels)
+    print(report)   
+    
         
     # Optionally, display the confusion matrix
     
@@ -367,5 +395,16 @@ async def run_agent(file_path = "dataset/ACIIoT/test_set_small.csv",
     # print(f"Weighted F1 Score: {weighted_f1:.4f}")
 
 
-asyncio.run(run_agent())
-# After the loop, you can also save a summary or the confusion matrix results to the text file if needed
+if __name__ == "__main__":
+    parser = argparse.ArgumentParser(description='Run intrusion detection agent.')
+    parser.add_argument('--file_path', type=str, default="dataset/ACIIoT/test_set_small.csv", help='Path to the CSV file containing the traffic data.')
+    parser.add_argument('--model_num', type=int, default=5, help='List of models to use for classification.')
+    parser.add_argument('--attitude', type=str, default="Aggressive", help='Classification attitude (Aggressive, Conservative, Balanced).')
+
+    args = parser.parse_args()
+    if args.model_num == 3:
+        model_name = ["Decision Tree", "K-Nearest Neighbors", "Logistic Regression"]
+    if args.model_num == 5:
+        model_name = ["Decision Tree", "K-Nearest Neighbors", "Logistic Regression", "Random Forest", "Support Vector Classifier"] 
+    
+    asyncio.run(run_agent(file_path=args.file_path, model_name=model_name, attitude=args.attitude))

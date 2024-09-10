@@ -1,0 +1,764 @@
+{
+    "Random Forest": {
+        "BenignTraffic": {
+            "precision": 0.23,
+            "recall": 0.9,
+            "f1-score": 0.36
+        },
+        "DDoS-ACK_Fragmentation": {
+            "precision": 1.0,
+            "recall": 1.0,
+            "f1-score": 1.0
+        },
+        "DDoS-HTTP_Flood": {
+            "precision": 0.58,
+            "recall": 0.7,
+            "f1-score": 0.64
+        },
+        "DDoS-ICMP_Flood": {
+            "precision": 1.0,
+            "recall": 1.0,
+            "f1-score": 1.0
+        },
+        "DDoS-ICMP_Fragmentation": {
+            "precision": 1.0,
+            "recall": 1.0,
+            "f1-score": 1.0
+        },
+        "DDoS-PSHACK_Flood": {
+            "precision": 1.0,
+            "recall": 1.0,
+            "f1-score": 1.0
+        },
+        "DDoS-RSTFINFlood": {
+            "precision": 1.0,
+            "recall": 1.0,
+            "f1-score": 1.0
+        },
+        "DDoS-SYN_Flood": {
+            "precision": 0.69,
+            "recall": 0.9,
+            "f1-score": 0.78
+        },
+        "DDoS-SlowLoris": {
+            "precision": 1.0,
+            "recall": 0.7,
+            "f1-score": 0.82
+        },
+        "DDoS-SynonymousIP_Flood": {
+            "precision": 0.88,
+            "recall": 0.7,
+            "f1-score": 0.78
+        },
+        "DDoS-TCP_Flood": {
+            "precision": 0.53,
+            "recall": 1.0,
+            "f1-score": 0.69
+        },
+        "DDoS-UDP_Flood": {
+            "precision": 0.56,
+            "recall": 0.9,
+            "f1-score": 0.69
+        },
+        "DDoS-UDP_Fragmentation": {
+            "precision": 1.0,
+            "recall": 0.9,
+            "f1-score": 0.95
+        },
+        "DoS-HTTP_Flood": {
+            "precision": 0.78,
+            "recall": 0.7,
+            "f1-score": 0.74
+        },
+        "DoS-SYN_Flood": {
+            "precision": 0.8,
+            "recall": 0.8,
+            "f1-score": 0.8
+        },
+        "DoS-TCP_Flood": {
+            "precision": 1.0,
+            "recall": 0.2,
+            "f1-score": 0.33
+        },
+        "DoS-UDP_Flood": {
+            "precision": 0.75,
+            "recall": 0.3,
+            "f1-score": 0.43
+        },
+        "MITM-ArpSpoofing": {
+            "precision": 0.8,
+            "recall": 0.4,
+            "f1-score": 0.53
+        },
+        "Mirai-greeth_flood": {
+            "precision": 1.0,
+            "recall": 0.9,
+            "f1-score": 0.95
+        },
+        "Mirai-greip_flood": {
+            "precision": 0.91,
+            "recall": 1.0,
+            "f1-score": 0.95
+        },
+        "Mirai-udpplain": {
+            "precision": 0.91,
+            "recall": 1.0,
+            "f1-score": 0.95
+        },
+        "Recon-HostDiscovery": {
+            "precision": 0.62,
+            "recall": 0.5,
+            "f1-score": 0.56
+        },
+        "Recon-OSScan": {
+            "precision": 0.5,
+            "recall": 0.2,
+            "f1-score": 0.29
+        },
+        "Recon-PingSweep": {
+            "precision": 0.0,
+            "recall": 0.0,
+            "f1-score": 0.0
+        },
+        "Recon-PortScan": {
+            "precision": 0.67,
+            "recall": 0.2,
+            "f1-score": 0.31
+        }
+    },
+    "Logistic Regression": {
+        "BenignTraffic": {
+            "precision": 0.19,
+            "recall": 1.0,
+            "f1-score": 0.31
+        },
+        "DDoS-ACK_Fragmentation": {
+            "precision": 1.0,
+            "recall": 1.0,
+            "f1-score": 1.0
+        },
+        "DDoS-HTTP_Flood": {
+            "precision": 0.33,
+            "recall": 0.1,
+            "f1-score": 0.15
+        },
+        "DDoS-ICMP_Flood": {
+            "precision": 0.91,
+            "recall": 1.0,
+            "f1-score": 0.95
+        },
+        "DDoS-ICMP_Fragmentation": {
+            "precision": 1.0,
+            "recall": 1.0,
+            "f1-score": 1.0
+        },
+        "DDoS-PSHACK_Flood": {
+            "precision": 1.0,
+            "recall": 1.0,
+            "f1-score": 1.0
+        },
+        "DDoS-RSTFINFlood": {
+            "precision": 1.0,
+            "recall": 1.0,
+            "f1-score": 1.0
+        },
+        "DDoS-SYN_Flood": {
+            "precision": 0.5,
+            "recall": 0.9,
+            "f1-score": 0.64
+        },
+        "DDoS-SlowLoris": {
+            "precision": 0.0,
+            "recall": 0.0,
+            "f1-score": 0.0
+        },
+        "DDoS-SynonymousIP_Flood": {
+            "precision": 0.62,
+            "recall": 0.8,
+            "f1-score": 0.7
+        },
+        "DDoS-TCP_Flood": {
+            "precision": 0.48,
+            "recall": 1.0,
+            "f1-score": 0.65
+        },
+        "DDoS-UDP_Flood": {
+            "precision": 0.67,
+            "recall": 1.0,
+            "f1-score": 0.8
+        },
+        "DDoS-UDP_Fragmentation": {
+            "precision": 0.9,
+            "recall": 0.9,
+            "f1-score": 0.9
+        },
+        "DoS-HTTP_Flood": {
+            "precision": 0.86,
+            "recall": 0.6,
+            "f1-score": 0.71
+        },
+        "DoS-SYN_Flood": {
+            "precision": 0.5,
+            "recall": 0.3,
+            "f1-score": 0.38
+        },
+        "DoS-TCP_Flood": {
+            "precision": 0.0,
+            "recall": 0.0,
+            "f1-score": 0.0
+        },
+        "DoS-UDP_Flood": {
+            "precision": 0.83,
+            "recall": 0.5,
+            "f1-score": 0.62
+        },
+        "MITM-ArpSpoofing": {
+            "precision": 0.0,
+            "recall": 0.0,
+            "f1-score": 0.0
+        },
+        "Mirai-greeth_flood": {
+            "precision": 0.83,
+            "recall": 1.0,
+            "f1-score": 0.91
+        },
+        "Mirai-greip_flood": {
+            "precision": 1.0,
+            "recall": 0.8,
+            "f1-score": 0.89
+        },
+        "Mirai-udpplain": {
+            "precision": 1.0,
+            "recall": 1.0,
+            "f1-score": 1.0
+        },
+        "Recon-HostDiscovery": {
+            "precision": 0.4,
+            "recall": 0.4,
+            "f1-score": 0.4
+        },
+        "Recon-OSScan": {
+            "precision": 0.0,
+            "recall": 0.0,
+            "f1-score": 0.0
+        },
+        "Recon-PingSweep": {
+            "precision": 0.0,
+            "recall": 0.0,
+            "f1-score": 0.0
+        },
+        "Recon-PortScan": {
+            "precision": 0.5,
+            "recall": 0.1,
+            "f1-score": 0.17
+        }
+    },
+    "K-Nearest Neighbors": {
+        "BenignTraffic": {
+            "precision": 0.21,
+            "recall": 0.9,
+            "f1-score": 0.34
+        },
+        "DDoS-ACK_Fragmentation": {
+            "precision": 1.0,
+            "recall": 1.0,
+            "f1-score": 1.0
+        },
+        "DDoS-HTTP_Flood": {
+            "precision": 0.8,
+            "recall": 0.4,
+            "f1-score": 0.53
+        },
+        "DDoS-ICMP_Flood": {
+            "precision": 0.91,
+            "recall": 1.0,
+            "f1-score": 0.95
+        },
+        "DDoS-ICMP_Fragmentation": {
+            "precision": 1.0,
+            "recall": 1.0,
+            "f1-score": 1.0
+        },
+        "DDoS-PSHACK_Flood": {
+            "precision": 1.0,
+            "recall": 1.0,
+            "f1-score": 1.0
+        },
+        "DDoS-RSTFINFlood": {
+            "precision": 1.0,
+            "recall": 1.0,
+            "f1-score": 1.0
+        },
+        "DDoS-SYN_Flood": {
+            "precision": 0.33,
+            "recall": 0.1,
+            "f1-score": 0.15
+        },
+        "DDoS-SlowLoris": {
+            "precision": 0.88,
+            "recall": 0.7,
+            "f1-score": 0.78
+        },
+        "DDoS-SynonymousIP_Flood": {
+            "precision": 0.86,
+            "recall": 0.6,
+            "f1-score": 0.71
+        },
+        "DDoS-TCP_Flood": {
+            "precision": 0.0,
+            "recall": 0.0,
+            "f1-score": 0.0
+        },
+        "DDoS-UDP_Flood": {
+            "precision": 0.6,
+            "recall": 0.3,
+            "f1-score": 0.4
+        },
+        "DDoS-UDP_Fragmentation": {
+            "precision": 1.0,
+            "recall": 0.9,
+            "f1-score": 0.95
+        },
+        "DoS-HTTP_Flood": {
+            "precision": 0.8,
+            "recall": 0.8,
+            "f1-score": 0.8
+        },
+        "DoS-SYN_Flood": {
+            "precision": 0.41,
+            "recall": 0.9,
+            "f1-score": 0.56
+        },
+        "DoS-TCP_Flood": {
+            "precision": 0.44,
+            "recall": 0.8,
+            "f1-score": 0.57
+        },
+        "DoS-UDP_Flood": {
+            "precision": 0.53,
+            "recall": 0.8,
+            "f1-score": 0.64
+        },
+        "MITM-ArpSpoofing": {
+            "precision": 0.67,
+            "recall": 0.4,
+            "f1-score": 0.5
+        },
+        "Mirai-greeth_flood": {
+            "precision": 1.0,
+            "recall": 1.0,
+            "f1-score": 1.0
+        },
+        "Mirai-greip_flood": {
+            "precision": 1.0,
+            "recall": 1.0,
+            "f1-score": 1.0
+        },
+        "Mirai-udpplain": {
+            "precision": 0.91,
+            "recall": 1.0,
+            "f1-score": 0.95
+        },
+        "Recon-HostDiscovery": {
+            "precision": 0.57,
+            "recall": 0.4,
+            "f1-score": 0.47
+        },
+        "Recon-OSScan": {
+            "precision": 0.5,
+            "recall": 0.2,
+            "f1-score": 0.29
+        },
+        "Recon-PingSweep": {
+            "precision": 0.0,
+            "recall": 0.0,
+            "f1-score": 0.0
+        },
+        "Recon-PortScan": {
+            "precision": 0.5,
+            "recall": 0.2,
+            "f1-score": 0.29
+        }
+    },
+    "MLP": {
+        "BenignTraffic": {
+            "precision": 0.21,
+            "recall": 0.9,
+            "f1-score": 0.35
+        },
+        "DDoS-ACK_Fragmentation": {
+            "precision": 0.91,
+            "recall": 1.0,
+            "f1-score": 0.95
+        },
+        "DDoS-HTTP_Flood": {
+            "precision": 0.78,
+            "recall": 0.7,
+            "f1-score": 0.74
+        },
+        "DDoS-ICMP_Flood": {
+            "precision": 1.0,
+            "recall": 1.0,
+            "f1-score": 1.0
+        },
+        "DDoS-ICMP_Fragmentation": {
+            "precision": 1.0,
+            "recall": 1.0,
+            "f1-score": 1.0
+        },
+        "DDoS-PSHACK_Flood": {
+            "precision": 1.0,
+            "recall": 1.0,
+            "f1-score": 1.0
+        },
+        "DDoS-RSTFINFlood": {
+            "precision": 1.0,
+            "recall": 1.0,
+            "f1-score": 1.0
+        },
+        "DDoS-SYN_Flood": {
+            "precision": 0.67,
+            "recall": 0.8,
+            "f1-score": 0.73
+        },
+        "DDoS-SlowLoris": {
+            "precision": 1.0,
+            "recall": 0.9,
+            "f1-score": 0.95
+        },
+        "DDoS-SynonymousIP_Flood": {
+            "precision": 0.78,
+            "recall": 0.7,
+            "f1-score": 0.74
+        },
+        "DDoS-TCP_Flood": {
+            "precision": 0.5,
+            "recall": 1.0,
+            "f1-score": 0.67
+        },
+        "DDoS-UDP_Flood": {
+            "precision": 0.59,
+            "recall": 1.0,
+            "f1-score": 0.74
+        },
+        "DDoS-UDP_Fragmentation": {
+            "precision": 1.0,
+            "recall": 0.9,
+            "f1-score": 0.95
+        },
+        "DoS-HTTP_Flood": {
+            "precision": 0.82,
+            "recall": 0.9,
+            "f1-score": 0.86
+        },
+        "DoS-SYN_Flood": {
+            "precision": 0.78,
+            "recall": 0.7,
+            "f1-score": 0.74
+        },
+        "DoS-TCP_Flood": {
+            "precision": 0.0,
+            "recall": 0.0,
+            "f1-score": 0.0
+        },
+        "DoS-UDP_Flood": {
+            "precision": 1.0,
+            "recall": 0.3,
+            "f1-score": 0.46
+        },
+        "MITM-ArpSpoofing": {
+            "precision": 0.75,
+            "recall": 0.3,
+            "f1-score": 0.43
+        },
+        "Mirai-greeth_flood": {
+            "precision": 1.0,
+            "recall": 0.9,
+            "f1-score": 0.95
+        },
+        "Mirai-greip_flood": {
+            "precision": 0.91,
+            "recall": 1.0,
+            "f1-score": 0.95
+        },
+        "Mirai-udpplain": {
+            "precision": 0.91,
+            "recall": 1.0,
+            "f1-score": 0.95
+        },
+        "Recon-HostDiscovery": {
+            "precision": 0.57,
+            "recall": 0.4,
+            "f1-score": 0.47
+        },
+        "Recon-OSScan": {
+            "precision": 0.0,
+            "recall": 0.0,
+            "f1-score": 0.0
+        },
+        "Recon-PingSweep": {
+            "precision": 0.0,
+            "recall": 0.0,
+            "f1-score": 0.0
+        },
+        "Recon-PortScan": {
+            "precision": 0.5,
+            "recall": 0.2,
+            "f1-score": 0.29
+        }
+    },
+    "Decision Tree": {
+        "BenignTraffic": {
+            "precision": 0.26,
+            "recall": 0.8,
+            "f1-score": 0.39
+        },
+        "DDoS-ACK_Fragmentation": {
+            "precision": 1.0,
+            "recall": 1.0,
+            "f1-score": 1.0
+        },
+        "DDoS-HTTP_Flood": {
+            "precision": 0.56,
+            "recall": 0.5,
+            "f1-score": 0.53
+        },
+        "DDoS-ICMP_Flood": {
+            "precision": 0.91,
+            "recall": 1.0,
+            "f1-score": 0.95
+        },
+        "DDoS-ICMP_Fragmentation": {
+            "precision": 1.0,
+            "recall": 1.0,
+            "f1-score": 1.0
+        },
+        "DDoS-PSHACK_Flood": {
+            "precision": 0.91,
+            "recall": 1.0,
+            "f1-score": 0.95
+        },
+        "DDoS-RSTFINFlood": {
+            "precision": 1.0,
+            "recall": 1.0,
+            "f1-score": 1.0
+        },
+        "DDoS-SYN_Flood": {
+            "precision": 0.67,
+            "recall": 0.8,
+            "f1-score": 0.73
+        },
+        "DDoS-SlowLoris": {
+            "precision": 1.0,
+            "recall": 0.7,
+            "f1-score": 0.82
+        },
+        "DDoS-SynonymousIP_Flood": {
+            "precision": 0.78,
+            "recall": 0.7,
+            "f1-score": 0.74
+        },
+        "DDoS-TCP_Flood": {
+            "precision": 0.53,
+            "recall": 1.0,
+            "f1-score": 0.69
+        },
+        "DDoS-UDP_Flood": {
+            "precision": 0.56,
+            "recall": 0.9,
+            "f1-score": 0.69
+        },
+        "DDoS-UDP_Fragmentation": {
+            "precision": 1.0,
+            "recall": 0.9,
+            "f1-score": 0.95
+        },
+        "DoS-HTTP_Flood": {
+            "precision": 0.78,
+            "recall": 0.7,
+            "f1-score": 0.74
+        },
+        "DoS-SYN_Flood": {
+            "precision": 0.7,
+            "recall": 0.7,
+            "f1-score": 0.7
+        },
+        "DoS-TCP_Flood": {
+            "precision": 0.5,
+            "recall": 0.1,
+            "f1-score": 0.17
+        },
+        "DoS-UDP_Flood": {
+            "precision": 0.8,
+            "recall": 0.4,
+            "f1-score": 0.53
+        },
+        "MITM-ArpSpoofing": {
+            "precision": 0.6,
+            "recall": 0.3,
+            "f1-score": 0.4
+        },
+        "Mirai-greeth_flood": {
+            "precision": 0.9,
+            "recall": 0.9,
+            "f1-score": 0.9
+        },
+        "Mirai-greip_flood": {
+            "precision": 0.83,
+            "recall": 1.0,
+            "f1-score": 0.91
+        },
+        "Mirai-udpplain": {
+            "precision": 1.0,
+            "recall": 1.0,
+            "f1-score": 1.0
+        },
+        "Recon-HostDiscovery": {
+            "precision": 0.46,
+            "recall": 0.6,
+            "f1-score": 0.52
+        },
+        "Recon-OSScan": {
+            "precision": 0.17,
+            "recall": 0.1,
+            "f1-score": 0.12
+        },
+        "Recon-PingSweep": {
+            "precision": 0.0,
+            "recall": 0.0,
+            "f1-score": 0.0
+        },
+        "Recon-PortScan": {
+            "precision": 0.5,
+            "recall": 0.2,
+            "f1-score": 0.29
+        }
+    },
+    "Support Vector Classifier": {
+        "BenignTraffic": {
+            "precision": 0.17,
+            "recall": 1.0,
+            "f1-score": 0.29
+        },
+        "DDoS-ACK_Fragmentation": {
+            "precision": 1.0,
+            "recall": 1.0,
+            "f1-score": 1.0
+        },
+        "DDoS-HTTP_Flood": {
+            "precision": 0.67,
+            "recall": 0.2,
+            "f1-score": 0.31
+        },
+        "DDoS-ICMP_Flood": {
+            "precision": 1.0,
+            "recall": 1.0,
+            "f1-score": 1.0
+        },
+        "DDoS-ICMP_Fragmentation": {
+            "precision": 1.0,
+            "recall": 1.0,
+            "f1-score": 1.0
+        },
+        "DDoS-PSHACK_Flood": {
+            "precision": 1.0,
+            "recall": 1.0,
+            "f1-score": 1.0
+        },
+        "DDoS-RSTFINFlood": {
+            "precision": 1.0,
+            "recall": 1.0,
+            "f1-score": 1.0
+        },
+        "DDoS-SYN_Flood": {
+            "precision": 0.53,
+            "recall": 0.8,
+            "f1-score": 0.64
+        },
+        "DDoS-SlowLoris": {
+            "precision": 0.75,
+            "recall": 0.3,
+            "f1-score": 0.43
+        },
+        "DDoS-SynonymousIP_Flood": {
+            "precision": 0.5,
+            "recall": 0.8,
+            "f1-score": 0.62
+        },
+        "DDoS-TCP_Flood": {
+            "precision": 0.5,
+            "recall": 1.0,
+            "f1-score": 0.67
+        },
+        "DDoS-UDP_Flood": {
+            "precision": 0.59,
+            "recall": 1.0,
+            "f1-score": 0.74
+        },
+        "DDoS-UDP_Fragmentation": {
+            "precision": 1.0,
+            "recall": 0.9,
+            "f1-score": 0.95
+        },
+        "DoS-HTTP_Flood": {
+            "precision": 0.89,
+            "recall": 0.8,
+            "f1-score": 0.84
+        },
+        "DoS-SYN_Flood": {
+            "precision": 0.75,
+            "recall": 0.3,
+            "f1-score": 0.43
+        },
+        "DoS-TCP_Flood": {
+            "precision": 0.0,
+            "recall": 0.0,
+            "f1-score": 0.0
+        },
+        "DoS-UDP_Flood": {
+            "precision": 1.0,
+            "recall": 0.3,
+            "f1-score": 0.46
+        },
+        "MITM-ArpSpoofing": {
+            "precision": 1.0,
+            "recall": 0.3,
+            "f1-score": 0.46
+        },
+        "Mirai-greeth_flood": {
+            "precision": 1.0,
+            "recall": 1.0,
+            "f1-score": 1.0
+        },
+        "Mirai-greip_flood": {
+            "precision": 1.0,
+            "recall": 1.0,
+            "f1-score": 1.0
+        },
+        "Mirai-udpplain": {
+            "precision": 1.0,
+            "recall": 1.0,
+            "f1-score": 1.0
+        },
+        "Recon-HostDiscovery": {
+            "precision": 0.57,
+            "recall": 0.4,
+            "f1-score": 0.47
+        },
+        "Recon-OSScan": {
+            "precision": 0.0,
+            "recall": 0.0,
+            "f1-score": 0.0
+        },
+        "Recon-PingSweep": {
+            "precision": 0.0,
+            "recall": 0.0,
+            "f1-score": 0.0
+        },
+        "Recon-PortScan": {
+            "precision": 1.0,
+            "recall": 0.2,
+            "f1-score": 0.33
+        }
+    }
+}

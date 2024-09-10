@@ -1,0 +1,18 @@
+[
+    {
+        "line_number": 130,
+        "analysis": "All classifiers consistently predict the traffic as BenignTraffic, indicating no signs of intrusion.",
+        "predicted_label_top_1": "BenignTraffic",
+        "predicted_label_top_2": "MITM-ArpSpoofing",
+        "predicted_label_top_3": "Recon-HostDiscovery",
+        "true_label": "MITM-ArpSpoofing"
+    },
+    {
+        "line_number": 131,
+        "analysis": "The traffic features indicate a potential MITM-ArpSpoofing attack based on the majority of classifier predictions, with a significant presence of benign traffic as well. The Decision Tree's prediction of Recon-OSScan suggests a need for further investigation.",
+        "predicted_label_top_1": "MITM-ArpSpoofing",
+        "predicted_label_top_2": "BenignTraffic",
+        "predicted_label_top_3": "Recon-PortScan",
+        "true_label": "MITM-ArpSpoofing"
+    }
+]

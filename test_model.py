@@ -41,6 +41,14 @@ def plot_confusion_matrix(y_true, y_pred, labels):
     # plt.show()
     plt.savefig('sine_wave_plot.png', dpi=600, bbox_inches='tight')
 
+def calculate_fnr(confusion_matrix, labels):
+    fnr = {}
+    for i, label in enumerate(labels):
+        fn = confusion_matrix[i, :].sum() - confusion_matrix[i, i]
+        tp = confusion_matrix[i, i]
+        fnr[label] = fn / (fn + tp) if (fn + tp) > 0 else 0
+    return fnr
+
 
 def classify_and_plot(file_path, model_name):
     """Load model, classify data, and plot confusion matrix."""
@@ -76,6 +84,18 @@ def classify_and_plot(file_path, model_name):
     
     # Plot the confusion matrix
     plot_confusion_matrix(y_true, y_pred, labels)
+    from sklearn.metrics import classification_report
+    # Calculate and print the classification report
+    report = classification_report(y_true, y_pred, target_names=labels)
+    print(report)
+    cm = confusion_matrix(y_true, y_pred, labels=labels)
+
+    # Calculate and print the False Negative Rate (FNR)
+    fnr = calculate_fnr(cm, labels)
+    print("\nFalse Negative Rate (FNR) for each class:")
+    for label, rate in fnr.items():
+        print(f"{label}: {rate:.2f}")
+
 
 
 def vote(file_path, model_names):
@@ -121,7 +141,7 @@ def vote(file_path, model_names):
 
 
 if __name__ == "__main__":
-    test_file_path = 'dataset/ACIIoT/test_set_small.csv'
+    test_file_path = 'dataset/ACIIoT/test_set.csv'
     model_names = ['models/Logistic Regression.joblib', 'models/Decision Tree.joblib', 'models/K-Nearest Neighbors.joblib']
-    
-    vote(test_file_path, model_names)
+    classify_and_plot(test_file_path, model_name = "models/Random Forest.joblib")
+    # vote(test_file_path, model_names)
