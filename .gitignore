@@ -3,6 +3,7 @@ train_set.csv
 test_set.csv
 .env
 openai_key.txt
+openai_key_mine.txt
 ./dataset
 ./models
 *.joblib

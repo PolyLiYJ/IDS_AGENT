@@ -1,4 +1,4 @@
-192.168.1.45-192.168.1.162-59094-4321-6
-**Final Classification: OS Scan**
+192.168.1.1-192.168.1.7-0-0-0
+**Final Classification: ICMP Flood**
 
-The network traffic from the file `dataset/ACIIoT/test_set_small.csv` with the Flow ID `192.168.1.45-192.168.1.162-59094-4321-6` has been classified as an **OS Scan** by all three classifiers: Decision Tree, K-Nearest Neighbors, and Logistic Regression. This indicates a consistent detection of a potential attack aimed at identifying operating system vulnerabilities. Immediate action is recommended to mitigate this threat.
+The network traffic from the file `dataset/ACIIoT/test_set_small.csv` with the Flow ID `192.168.1.1-192.168.1.7-0-0-0` has been classified as an **ICMP Flood** attack. Multiple classifiers were used, and the aggressive approach to intrusion detection has identified this traffic as malicious.
