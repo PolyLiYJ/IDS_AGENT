@@ -56,6 +56,16 @@ from scipy.spatial.distance import euclidean
 from functools import partial
 
 import json
+
+# success_memory_path = "longmemory/success_example_test_set0912_chatgpt35.json"
+# full_memory_path = "longmemory/all_example_test_set0912_chatgpt35.json"
+# result_path = "results/classification_results_CICIoT_0912_chatgpt35.txt"
+success_memory_path = "longmemory/success_example_test_set0912_chatgpt35.json"
+full_memory_path = "longmemory/all_example_test_set0912_chatgpt35.json"
+result_path = "results/classification_results_CICIoT_0920.txt"
+
+
+
 # os.environ["GOOGLE_CSE_ID"] = ""
 # os.environ["GOOGLE_API_KEY"] = ""
 # DataProcessingTool
@@ -67,41 +77,6 @@ import json
 # 结合Snort，Suricata进行实时流量监控和入侵响应。
 # 调用XAI解释
 # knowledge 用来解释分类结果
-
-
-# class CustomToolException(Exception):
-#     """Custom LangChain tool exception."""
-
-#     def __init__(self, tool_call: ToolCall, exception: Exception) -> None:
-#         super().__init__()
-#         self.tool_call = tool_call
-#         self.exception = exception
-
-
-# def tool_custom_exception(msg: AIMessage, config: RunnableConfig) -> Runnable:
-#     try:
-#         return complex_tool.invoke(msg.tool_calls[0]["args"], config=config)
-#     except Exception as e:
-#         raise CustomToolException(msg.tool_calls[0], e)
-
-
-# def exception_to_messages(inputs: dict) -> dict:
-#     exception = inputs.pop("exception")
-
-#     # Add historical messages to the original input, so the model knows that it made a mistake with the last tool call.
-#     messages = [
-#         AIMessage(content="", tool_calls=[exception.tool_call]),
-#         ToolMessage(
-#             tool_call_id=exception.tool_call["id"], content=str(exception.exception)
-#         ),
-#         HumanMessage(
-#             content="The last tool call raised an exception. Try calling the tool again with corrected arguments. Do not repeat mistakes."
-#         ),
-#     ]
-#     inputs["last_output"] = messages
-#     return inputs
-
-# Define your custom error handling function
 
 def write_success_example_to_log(text_list, filename):
     # Name of the file to write
@@ -115,8 +90,6 @@ def write_success_example_to_log(text_list, filename):
 
     print(f"Strings have been written to {filename}")
 
-
-
 def custom_error_handler(error) -> str:
     if error is None:
         return "Received None as an Action Input, please provide a valid input."
@@ -125,7 +98,7 @@ def custom_error_handler(error) -> str:
 
 def load_traffic(filepath, line_number):
     # file_path = "/Users/yanjieli/program/IDS_AGENT/dataset/CICIoT2023/test_set_small.csv"
-    data = pd.read_csv(file_path)
+    data = pd.read_csv(filepath)
     columns_to_drop = ["label", "final_label"]
     data.drop(columns=columns_to_drop, inplace=True)
     
@@ -180,15 +153,15 @@ def retriever_qa_creation(folder, chroma_db_database, init = False):
     
     embedder = OpenAIEmbeddings()
     if init:
-        vector_db = kb.initiate_document_injection_pipeline(embedder, chroma_db_database)
+        kb.initiate_document_injection_pipeline(embedder, chroma_db_database)
     retriever = kb.return_retriever_from_persistant_vector_db(embedder, chroma_db_database)
-    llm = ChatOpenAI(model="gpt-4o-mini", temperature=0) 
+    llm = ChatOpenAI(model="gpt-4o", temperature=0) 
 
     qa = RetrievalQA.from_chain_type(llm=llm, chain_type = "stuff", retriever = retriever)
     return qa
 
-retriever_qa_chain = retriever_qa_creation(folder = "/Users/yanjieli/program/IDS_AGENT/documents/Recon", chroma_db_database = "db"  )
-retriever_success_samples = retriever_qa_creation(folder = "/Users/yanjieli/program/IDS_AGENT/longmemory/text", chroma_db_database = "db-long-memory", init=False  )
+retriever_qa_chain = retriever_qa_creation(folder = "/Users/yanjieli/program/IDS_AGENT/documents/Unknown", chroma_db_database = "db", init=False  )
+retriever_success_samples = retriever_qa_creation(folder = "/Users/yanjieli/program/IDS_AGENT/documents/Unknown", chroma_db_database = "db-long-memory", init=False  )
 
 def custom_sort_criteria(action_list, feature):
     """
@@ -245,14 +218,15 @@ async def load_memory(processed_feature_list:list, num_samples:int) -> list:
 
 
     # Open the JSON file and load the list
-    with open("longmemory/success_example.json", "r") as file:
+    with open(success_memory_path, "r") as file:
         my_list = json.load(file)
-    
-    distances = []
-    
-    partial_sort_criteria = partial(custom_sort_criteria, feature=processed_feature_list)
-    sorted_list = sorted(my_list, key=partial_sort_criteria)
-
+    new_list = []
+    for i in range(len(my_list)):
+        if custom_sort_criteria(my_list[i],processed_feature_list) is not None:
+            new_list.append(my_list[i])
+        
+    partial_sort_criteria = partial(custom_sort_criteria, feature=processed_feature_list)    
+    sorted_list = sorted(new_list, key=partial_sort_criteria)
 
     # Get the closest `num_samples` entries
     closest_samples = sorted_list[:num_samples]
@@ -320,7 +294,10 @@ async def data_loader(file_path: str, line_number: int) -> str:
     # Read the CSV file
     # file_path = "/Users/yanjieli/program/IDS_AGENT/dataset/CICIoT2023/test_set_small.csv"
     data = pd.read_csv(file_path)
-    columns_to_drop = ["label", "final_label"]
+    if "final_label" in data.columns:
+        columns_to_drop = ["label", "final_label"]
+    else:
+        columns_to_drop = ["label"]
     data.drop(columns=columns_to_drop, inplace=True)
     
     # Select the specified line number
@@ -380,16 +357,16 @@ def softmax(x):
 class ClassifyInput(BaseModel):
     modelname: str = Field(description="This is a classfication model name")
     traffic_features: list = Field(description="This is the preprocessed data to be classified")
-    top_k: int = Field(default=3, description="Number of top predictions to return")
+   # top_k: int = Field(default=3, description="Number of top predictions to return")
     
 @tool("classifier", args_schema=ClassifyInput, return_direct=False)
-async def classifier(modelname: str, traffic_features: list, top_k: int = 3) -> str:
+async def classifier(modelname: str, traffic_features: list) -> str:
     """Classify the traffic features using a machine learning model to determine if the traffic record is an attack.
     params:
         modelname
         traffic_features
     """
-    
+    top_k = 3
     # Load the model
     model = joblib.load(f"models_CICIoT/{modelname}.joblib")
     
@@ -571,8 +548,8 @@ def react_prompt():
 async def run_agent(file_path = "dataset/CICIoT2023/test_set_small.csv",
                     model_name = ["Random Forest", "K-Nearest Neighbors", "Logistic Regression", "MLP", "Support Vector Classifier","Decision Tree"],
                     attitude ="Balanced",
-                    #llm_model_name = "gpt-3.5-turbo-0125"
-                    llm_model_name = "gpt-4o-mini"
+                    # llm_model_name = "gpt-3.5-turbo-0125"
+                    llm_model_name = "gpt-4o",
                     ):
 
     llm = ChatOpenAI(model=llm_model_name, temperature=0)
@@ -587,7 +564,26 @@ async def run_agent(file_path = "dataset/CICIoT2023/test_set_small.csv",
     predicted_labels = []
     flow_ids = []
     
-    predicts_analysis = []
+    # predicts_analysis = []
+    if os.path.exists(result_path):
+        with open(result_path, "r") as file:
+            predict_analysis = json.load(file)
+    else:
+        predict_analysis = []
+    predicted_index = []
+    # reserve the samples that true label is correct
+    
+    # need_to_classify = ["DDoS-SlowLoris","MITM-ArpSpoofing", "Recon-PingSweep"]
+    
+    for i in range(0, len(predict_analysis)):
+        truelabel  = df.iloc[predict_analysis[i]["line_number"]]["label"]
+        if truelabel == predict_analysis[i]["true_label"]:
+            # if predict_analysis[i]["predicted_label_top_1"] == predict_analysis[i]["true_label"]:
+            predicted_index.append(predict_analysis[i]["line_number"])
+    predicted_index.sort()
+    linenumbers = [i for i in range(len(df)) if i not in predicted_index]
+    print(linenumbers)
+    
     
     # define agent
     os.environ["GOOGLE_CSE_ID"] = "66297c07f31dc4c6d"
@@ -607,14 +603,15 @@ async def run_agent(file_path = "dataset/CICIoT2023/test_set_small.csv",
     api_wrapper = WikipediaAPIWrapper(top_k_results=1, doc_content_chars_max=1000)
     wiki_tool = WikipediaQueryRun(api_wrapper=api_wrapper)
 
-    # tools = [load_data_line, data_preprocessing, classifier, search_tool, wiki_tool]
-    tools = [data_loader, data_preprocessing, classifier, knowledge_retriever, search_tool, wiki_tool, load_memory]
+    # tools = [load_data_line, data_preprocessing, classifier, search_tool, wiki_tool, , search_tool, wiki_tool, knowledge_retriever,long_memory_retriever]
+    # tools = [data_loader, data_preprocessing, classifier]
+    tools = [data_loader, data_preprocessing, classifier]
     message_history = RedisChatMessageHistory(
-        url="redis://127.0.0.1:6379/0", ttl=600, session_id="0904"
+        url="redis://127.0.0.1:6379/0", ttl=600, session_id="chatgpt35"
     )
     
-    #prompt = hub.pull("hwchase17/openai-tools-agent")
-    #agent = create_openai_tools_agent(llm, tools, prompt)
+    prompt = hub.pull("hwchase17/openai-tools-agent")
+    agent = create_openai_tools_agent(llm, tools, prompt)
     
     # prompt = hub.pull("hwchase17/react-chat-json")
     # prompt = chat_json_prompt()
@@ -623,8 +620,8 @@ async def run_agent(file_path = "dataset/CICIoT2023/test_set_small.csv",
     # prompt = ids_system_prompt()
     # agent = create_tool_calling_agent(llm, tools, prompt)
     
-    prompt = react_prompt()
-    agent = create_react_agent(llm, tools, prompt, stop_sequence = True)
+    #prompt = react_prompt()
+    #agent = create_react_agent(llm, tools, prompt, stop_sequence = True)
 
     # Create the agent executor
     agent_executor = AgentExecutor(agent=agent, tools=tools, verbose=True, return_intermediate_steps = True, handle_parsing_errors=True)
@@ -643,20 +640,26 @@ async def run_agent(file_path = "dataset/CICIoT2023/test_set_small.csv",
     
     react_log = []
     # load memory
-    with open("longmemory/success_and_fail_example_test_set_small.json", "r") as file:
-        final_list = json.load(file)
-    # final_list = []
-    success_example = {}
-
-    for line_number in range(0, len(df)):
-        react_log_example = ""
+    if os.path.exists(success_memory_path):
+        with open(success_memory_path, "r") as file:
+            success_list = json.load(file)
+    else:
+        success_list = []
+    if os.path.exists(full_memory_path):
+        with open(full_memory_path, "r") as file:
+            final_list = json.load(file)
+    else:
+        final_list = []
         
+
+    for line_number in linenumbers:
+        react_log_example = ""
         # Define the prompt for the agent
         # flow_id = df.at[line_number,"Flow ID"]
         # If there is a significant discrepancy in the model predictions, consider the possibility of `Unknown` attacks. 
         
-        if  df.at[line_number,"label"] not in ["MITM-ArpSpoofing","Recon-OSScan", "Recon-PortScan", "Recon-HostDiscovery"]:
-            continue
+        # if  df.at[line_number,"label"] not in ["BenignTraffic"]:
+        #     continue
     
         # traffic = load_traffic(line_number)
 
@@ -677,30 +680,40 @@ async def run_agent(file_path = "dataset/CICIoT2023/test_set_small.csv",
         # For example, you can call the knowledge_retriever `what features push the prediction to recon` if you cannot distinguish benign and recon-xxx attack.
         # For example, when one model classify the data as DDoS, and another classify the data as DoS, you can search on knowledge_retriever for "The features of DoS,and the features DDoS and their difference".
         #
+        
+        # There are some examples:
+        #     1)You can first search from the long memory using the long_memory_retriever tool, by query like: "what is the features of xxx attacks"
+        #     2)You can call the knowledge_retriever or wiki tool 'what is xxx and how to detect it' and 'what is the difference about a potential xxx attack and benign example'.
+        #     3)You can call the knowledge_retriever `what features push the prediction to recon` if you cannot distinguish benign and recon attack.
+        #     4)When one model classify the data as DDoS, and another classify the data as DoS, you can search on knowledge_retriever for "The features of DoS,and the features DDoS and their difference".
+        # 
+        
+        # Summarize the classification with {attitude} sentitivity, {attitude_details}.
 
+        
         prompt_text = f"""
         You are a helpful assisstant that can implement multi-step tasks, such as intrusion detection. I will give you the traffic features, you are asked to classfiy it using tools.
         The final output mush be in a json format according to the classifier results. You should follow the plan:
         1. Load the traffic features from the CSV file using tools. You can use the data_loader tool to obtain the complete traffic_string.
         2. Preprocessing the feature. This can be done using data_preprocessing tool. Input the tarffic string in original format.
-        3. load the previous sucess examples from the long memory. This can be done using the load_memory tool, return the top 2 results.
-        3. load classifiers for classification.This can be done using classifier tool. You can use multiple classifiers, 
+        3. load the previous sucess examples from the long memory if there is a load_memory_retriever tool, the input is the original traffic features
+        4. load classifiers for classification.This can be done using classifier tool. You can use multiple classifiers, 
         The tool params include the classifier name, which must be one from {model_name}.  and the preprocessed features.
-        4. you need to search from long_memory_retriver\knowledge_retriever\Wikipedia\Google to get more information to help you to make decision.
-        You can first search from the long memory about the use case about these tools, using the long_memory_retriever tool, by asking question like:
-            'retrieve some successful instance of knowledge_retriver tool, which in this format
-            Action: knowledge_retriever  
-            Action Input: {"query": "..."}  
-            Observation: ... '.
-        5. At the end, you should summarize the results from these classifiers and provide a final result.
-        Summarize the classification with {attitude} sentitivity, which means {attitude_details}.
-        The predicted_label should be original format of classifier prediction.
+        5. When there are discrepancy/disagreements for different models or you are unsure about the classification results, search from long_memory_retriver\knowledge_retriever\Wikipedia\Google to get more information to help you to make decision.
+        Here are some useful knowledge:
+            If the Decision Tree model strongly indicates a potential MITM-ArpSpoofing attack, while other models suggest benign traffic, classfify it as a benign.
+        6. At the end, you should summarize the results from these classifiers and provide a final result. If over three classifiers (especially MLP) has low confidences (such as, less than 0.5), think it is an unknown attack and classify it as "UnknownAttack". 
+        example:
+            "analysis": "Random Forest predicted DoS-SYN_Flood with 0.2900, K-Nearest Neighbors predicted Recon-PortScan with 0.4000, Logistic Regression predicted Recon-HostDiscovery with 0.3204, MLP predicted DDoS-SYN_Flood with 0.5241, Support Vector Classifier predicted Recon-HostDiscovery with 0.3116, and Decision Tree predicted DDoS-HTTP_Flood with 1.0000,
+            "The classifiers show varied predictions with low confidence levels, indicating uncertainty. Dsue to discrepancies and low confidence from other models, this is classified as an UnknownAttack.",
+            "predicted_label_top_1": "UnknownAttack",
+
         The final output format **must** be: 
         Final Answer:
         ```json
         {{
-            'line_number': line_number, 
-            'analysis':  str,  \here is the Analysis, 
+            'line_number': \line_number, should be same with the line number in the input prompt
+            'analysis':  str,  \here is the Analysis, include the different model results and confidence
             'predicted_label_top_1': str,
             'predicted_label_top_2': str, 
             'predicted_label_top_3': str, 
@@ -710,6 +723,7 @@ async def run_agent(file_path = "dataset/CICIoT2023/test_set_small.csv",
         
         Now, classsify the traffic from line_number {line_number} in the file {file_path}
         """
+        # Otherwise, the predicted_label should be original format of classifier prediction.
         
         # Summarize the classification with {attitude} attitude, which means {attitude_details}.
         # When there are discrepancy/disagreements for different models, you can search from vector database/google/wiki to get more information about the difference of attacks to help you to make decision.
@@ -738,8 +752,8 @@ async def run_agent(file_path = "dataset/CICIoT2023/test_set_small.csv",
 
         # f = open("response_results_CICIoT_0904.txt","a")
 
-        # async for chunk in agent_executor.astream({"input": prompt_text}):
-        async for chunk in agent_with_chat_history.astream({"input": prompt_text},config={"configurable": {"session_id": "0904"}}):
+        async for chunk in agent_executor.astream({"input": prompt_text}):
+        # async for chunk in agent_with_chat_history.astream({"input": prompt_text},config={"configurable": {"session_id": "0904"}}):
             chunks.append(chunk)
             current_output = {} 
             # print(chunk)
@@ -773,18 +787,19 @@ async def run_agent(file_path = "dataset/CICIoT2023/test_set_small.csv",
                     data_line = df.iloc[line_number]
                     true_label = data_line['label']
                     true_labels.append(true_label)
+                    pred_dict["line_number"] = line_number
                     pred_dict["true_label"] = true_label
-                    predicts_analysis.append(pred_dict)
+                    predict_analysis.append(pred_dict)
                     current_output["final_classification"] = final_classification
                     current_output["true_label"] = true_label
                     current_output["prediction_details"] = pred_dict
                     
-                    with open("results/classification_results_CICIoT_0909.txt", "w") as f_class:
-                        json.dump(predicts_analysis, f_class, indent=4)
-                    # print(f"line_number: {line_number}, True Label: {true_label}, Predicted Label: {final_classification}\n")
+                    with open(result_path, "w") as f_class:
+                        json.dump(predict_analysis, f_class, indent=4)
+                    print(f"line_number: {line_number}, True Label: {true_label}, Predicted Label: {final_classification}\n")
                     if true_label == final_classification:
                         react_log_example += "Final Answer:" + response
-                        write_success_example_to_log(react_log_example, "results/recon_success_examples")
+                        write_success_example_to_log(react_log_example, "results/success_examples0910.txt")
                 else:
                     print("Final Classification not found.")
             elif "steps" in chunk:
@@ -799,18 +814,30 @@ async def run_agent(file_path = "dataset/CICIoT2023/test_set_small.csv",
         
             output_list.append(current_output)
             
-        # if true_label == final_classification:
-        final_list.append(output_list)
+        if true_label == final_classification:
+            success_list.append(output_list)
+        # final_list.append(output_list)
             # Save the entire output as JSON after processing all chunks
-        json_output_path = "longmemory/success_and_fail_example_test_set.json"
-        with open(json_output_path, "w") as json_file:
-            json.dump(final_list, json_file, indent=4)        
+        with open(success_memory_path, "w") as json_file:
+            json.dump(success_list, json_file, indent=4)    
+        with open(full_memory_path, "w") as json_file:
+            json.dump(final_list, json_file, indent=4)      
 
 
     # Compute the confusion matrix
     # Remove the first row and first column
 
-    
+        
+    with open(result_path, "r") as f_class:
+        data = json.load(f_class)
+
+
+    # Extract the predicted labels and true labels
+    predicted_labels = [entry['predicted_label_top_1'] for entry in data]
+    true_labels = [entry['true_label'] for entry in data]
+    print("total:", len(true_labels))
+    # Compute the confusion matrix
+    labels = np.unique(true_labels)  # Get all unique labels
     cm = confusion_matrix(true_labels, predicted_labels)    
     print(cm)   
     # print(classification_report(true_labels, predicted_labels, target_names=np.unique(true_labels)))
@@ -826,7 +853,7 @@ async def run_agent(file_path = "dataset/CICIoT2023/test_set_small.csv",
     print(report)   
     # f.write(report)
     
-    disp = ConfusionMatrixDisplay(confusion_matrix=cm, display_labels=np.unique(labels))
+    disp = ConfusionMatrixDisplay(confusion_matrix=cm, display_labels=labels)
     disp.plot(cmap=plt.cm.Blues)
     plt.title("Confusion Matrix")
     # plt.show()
@@ -1044,9 +1071,10 @@ async def run_agent(file_path = "dataset/CICIoT2023/test_set_small.csv",
 
 if __name__ == "__main__":
     parser = argparse.ArgumentParser(description='Run intrusion detection agent.')
-    parser.add_argument('--file_path', type=str, default="dataset/CICIoT2023/test_set_small.csv", help='Path to the CSV file containing the traffic data.')
+    parser.add_argument('--file_path', type=str, default="dataset/CICIoT2023/unknowattack-small.csv", help='Path to the CSV file containing the traffic data.')
+    # parser.add_argument('--file_path', type=str, default="dataset/CICIoT2023/test-small.csv", help='Path to the CSV file containing the traffic data.')
     parser.add_argument('--model_num', type=int, default=6, help='List of models to use for classification.')
-    parser.add_argument('--attitude', type=str, default="Balanced", help='Classification attitude (Aggressive, Conservative, Balanced).')
+    parser.add_argument('--attitude', type=str, default="Aggresive", help='Classification attitude (Aggressive, Conservative, Balanced).')
 
     args = parser.parse_args()
     if args.model_num == 3:
