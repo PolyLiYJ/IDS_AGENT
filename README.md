@@ -3,6 +3,8 @@
 ## Overview
 This repository contains the implementation of IDS-Agent, an intrusion detection system agent capable of detecting unknown attacks in IoT networks. The system consists of two main components:
 - `run_agent_v2.py`: Primary detection module with unknown attack detection capability
+- `train_model.py': Training ML models to classify the traffic sample
+
 
 ## Features
 - Detection of unknown attacks in IoT networks
