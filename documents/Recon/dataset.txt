@@ -1,0 +1,57 @@
+Army Cyber Institute (ACI) Internet of Things (IoT) Network Traffic Dataset 2023
+
+Our primary objective is to introduce a novel dataset tailored for machine learning (ML) applications in the realm of IoT network security. This effort focuses on delivering a distinctive and realistic dataset designed to train and evaluate ML models for IoT network environments. By addressing a gap in existing resources, this dataset aims to propel advancements in ML-based solutions, ultimately fortifying the security of IoT operations.
+
+ACI IoTRL Experimentation Setup
+
+Our experimentation took place within the Internet of Things Research Lab (IoTRL) at the Army Cyber Institute (ACI), meticulously designed to emulate a realistic home environment. The IoTRL replicates the conditions of a typical home IoT network, encompassing a diverse array of both wired and wirelessly connected devices. This heterogeneous mix includes various IoT devices and regular networked devices commonly found in home environments.
+
+To streamline the control and management of IoT devices, we seamlessly integrated Home Assistant within our lab. Home Assistant is a free and open-source software for home automation, designed to be a central control system for smart home devices. We use the platform to orchestrate interactions and automations among the diverse range of devices within our network.
+For data collection, we strategically deployed network sniffers and monitoring points throughout the lab to capture both wired and wireless network traffic. This lab setup aims to create a realistic and dynamic environment, simulating the conditions of a home network with diverse IoT devices, enabling us to conduct experiments that closely mirror real-world scenarios.
+
+Experimentation Overview
+
+Over the span of a week, we performed a series of cyber-attacks and collected both the malicious and benign network traffic. The attacks executed are as follows:
+Monday, October 30th - Recon 
+* Host Discovery: (9:01 - 9:05)
+* Ping Sweep: (9:06 - 9:09), (9:12 - 11:04)
+* OS Scan: (11:06 - 12:09)
+* Vulnerability Scan: (12:10-12:16)		
+* Port Scan: (12:20 - 3:56)
+Note- Host Disovery has no representation in extracted features. Fully represented in PCAPs.
+Tuesday, October 31st - Benign 1
+* Normal traffic along with various Home Assistant automations: (9:00   16:05)
+Wednesday, November 1st - DoS
+* ICMP Flooding: (9:30 - 9:55)
+* Slowloris: (9:58 - 10:26)
+* SYN Flood: (10:28 - 10:53)
+* UDP Flood: (10:54 - 11:21)
+* DNS Flood: (11:23 - 11:49)
+Thursday, November 2nd - Brute Force and Spoofing
+* Dictionary Brute Force: (9:30 - 11:44)
+* ARP Spoofing: (12:12 - 13:48)
+Note- ARP Spoofing has limited representation in extracted features. Fully represented in PCAPs.
+Friday, November 3rd - Benign 2
+* Normal traffic along with various Home Assistant automations: (9:00 - 16:05)
+These attack categories were meticulously selected to encompass a diverse range of threats commonly encountered in real-world IoT scenarios. An accompanying time sheet is packaged with the dataset giving more detailed information as to when attacks and automations were run.
+
+Dataset Structure Overview:
+
+We’ve provided the following files within this dataset:
+•	ACI-IoT-2023.csv – Labeled dataset containing netflow features
+•	ACI-IoT-2023-Payload.csv – Labeled dataset using Payload-Byte, an open-source tool for extracting and labeling network packets
+•	pcap_combined – A directory containing all PCAP data collected during experimentation 
+•	Timsheets – A directory containing timestamps for all attacks executed 
+
+Novel Contributions and Dataset Overview:
+
+In comparison to existing datasets, our contribution to the IoT security research landscape stands out for the following key reasons:
+1. Dynamic Mix of IoT Devices
+a. Our dataset presents a dynamic mix of IoT devices, creating a realistic representation of the heterogeneous nature of contemporary home environments. This diversity extends beyond traditional datasets, offering a nuanced understanding of device interactions.
+2. Simulated Home Environment
+a. The IoTRL serves as a unique simulated home environment, replicating the conditions of a typical home IoT network. This setting goes beyond simplistic lab setups and synthetic environments commonly found in existing datasets.
+3. Behavioral Analysis and Holistic Security Evaluation:
+a. Our dataset focuses on behavioral analysis of IoT devices, delving into intricate network behaviors in both normal and adversarial scenarios. This approach allows for a holistic security evaluation, not just in terms of attack detection but also understanding the broader impact on the network.
+4. Multi-Modal Data Representation:
+a. Our dataset incorporates multi-modal data representation, including network traffic patterns, device communication, and device-specific characteristics. This multi-faceted approach enables researchers to explore varied dimensions of IoT security, surpassing the limitations of datasets with a single focus.
+

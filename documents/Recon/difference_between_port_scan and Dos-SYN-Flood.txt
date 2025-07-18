@@ -1,0 +1,23 @@
+The difference between Recon-PortScan and DoS-SYN_Flood lies in their objectives, behavior, and impact on the network:
+
+1. Recon-PortScan:
+Objective: The goal of a Recon-PortScan is to gather information about a target system. Attackers use port scanning techniques to probe a network or system to identify open ports, services, and vulnerabilities. This is typically done as a precursor to further attacks.
+Behavior:
+Low-volume traffic that involves sending requests to multiple ports on a target system to determine which ones are open.
+Small packet sizes and interactions with a wide range of ports, typically focusing on lower port numbers (1-1024).
+No direct disruption to the system occurs during the scanning process; it is more of a reconnaissance activity aimed at gathering intelligence.
+Impact:
+It is a passive attack and usually does not disrupt the services on the target system. However, it is often a precursor to active attacks such as exploiting vulnerabilities discovered during the scan.
+2. DoS-SYN_Flood:
+Objective: The aim of a DoS-SYN_Flood is to disrupt the target system or network by overwhelming it with a flood of incomplete connection requests. This type of Denial of Service (DoS) attack seeks to exhaust the system's resources, rendering it unable to handle legitimate requests.
+Behavior:
+A high-volume traffic attack where the attacker sends numerous SYN (synchronize) requests to the target system but does not complete the TCP handshake by sending the corresponding ACK (acknowledge) messages.
+The target system allocates resources to handle each incoming connection request, and as the number of incomplete requests grows, the system's resources are depleted.
+Primarily focuses on one or a few ports on the target system, typically TCP ports.
+Impact:
+It is an active attack designed to make the system or service unavailable to legitimate users by overloading the target with traffic.
+Can cause significant disruptions to network services, making the target system unresponsive or slow to process legitimate traffic.
+Summary of Differences:
+Recon-PortScan is focused on information gathering and is usually passive, while DoS-SYN_Flood is a disruptive attack aimed at causing service downtime.
+Recon-PortScan scans multiple ports to identify vulnerabilities, whereas DoS-SYN_Flood targets one or a few ports with high-volume traffic to overload the system.
+Recon-PortScan is part of the reconnaissance phase in the attack lifecycle, while DoS-SYN_Flood is an attack that directly impacts the availability of a service or system.

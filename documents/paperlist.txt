@@ -1,0 +1,490 @@
+
+arxiv.org
+[2402.00790] From Pre-Quantum to Post-Quantum IoT Security: A Survey on Quantum-Resistant Cryptosystems for the Internet of Things - arXiv
+
+ideas.repec.org
+Security Issues and Vulnerability of IoT Devices - IDEAS/RePEc
+
+en.wikipedia.org
+Denial-of-service attack - Wikipedia
+
+
+illumio.com
+Cybersecurity 101: Distributed Denial of Service (DDoS) Attack | Illumio
+
+
+cloudflare.com
+What is a denial-of-service (DoS) attack? - Cloudflare
+
+
+journals.ust.edu
+Development of a Classification Model for Intrusion Attacks in Internet-Of-Things (IoT) Networks | Journal of Science and Technology
+
+
+radware.com
+What Is a DDoS Attack? How It Works, Trends, Types & Mitigation - Radware
+
+
+researchgate.net
+IEEE Standards and Deep Learning Techniques for Securing Internet of Things (IoT) Devices Against Cyber Attacks - ResearchGate
+
+
+f5.com
+What Is a SYN Flood Attack? - F5 Networks
+
+
+checkpoint.com
+What Is a SYN Flood Attack? - Check Point Software
+
+
+cloudflare.com
+www.cloudflare.com
+
+
+verizon.com
+www.verizon.com
+
+
+networksimulationtools.com
+Spoofing attack Network Security Projects (Guidance)
+
+
+contrastsecurity.com
+Spoofing - Contrast Security
+
+
+thedecisionlab.com
+Spoofing - The Decision Lab
+
+
+cymulate.com
+What is Cybersecurity Reconnaissance? Spot & Stop Early Threats
+
+
+proofpoint.com
+What Is a Distributed Denial of Service (DDoS) Attack? | Proofpoint US
+
+
+engpaper.com
+IOT SECURITY IEEE PAPER 2022 - Engpaper
+
+
+jumpcloud.com
+IoT Security Risks: Stats and Trends to Know in 2025 - JumpCloud
+
+
+globalsign.com
+Common Cyber-Attacks in the IoT | GlobalSign
+
+
+shodan.io
+Shodan Search Engine
+
+
+paloaltonetworks.co.uk
+What Is an Advanced Persistent Threat? - Palo Alto Networks
+
+
+infosecinstitute.com
+Anatomy of an APT attack: Step by step approach - Infosec
+
+
+checkpoint.com
+IoT Botnet - Check Point Software
+
+
+cm-alliance.com
+IoT Security: 5 cyber-attacks caused by IoT security vulnerabilities
+
+
+blackcloak.io
+IoT Vulnerabilities & BotNet Infections: What Executives Must Know - BlackCloak
+
+
+splunk.com
+Indicators of Compromise (IoCs): An Introductory Guide - Splunk
+
+
+myrasecurity.com
+HTTP flood attack: definition, functionality, types - Myra Security
+
+
+microsoft.com
+What Are Indicators of Compromise (IOC)? | Microsoft Security
+
+
+cloudflare.com
+What are indicators of compromise (IoC)? - Cloudflare
+
+
+indusface.com
+www.indusface.com
+
+
+cloudflare.com
+SYN flood DDoS attack - Cloudflare
+
+
+medium.com
+How IoT is Making DDoS Attacks More Dangerous? | by Brij Gupta | Medium
+
+
+zenarmor.com
+What is SYN Flood Attack? - zenarmor.com
+
+
+indusface.com
+SYN Flood Attack: The What, Impact, and Prevention Methods
+
+
+researchgate.net
+Attack cases of APTs in recent years. - ResearchGate
+
+
+tandfonline.com
+Denial of service attack detection through machine learning for the IoT - Taylor and Francis
+
+
+mdpi.com
+An Intrusion Detection and Classification System for IoT Traffic with ...
+
+
+digi.com
+IoT Security Risks and Best Practices for Cybersecurity | Digi ...
+
+
+researchgate.net
+Classification of Intrusion Detection Systems for IoT. | Download ...
+
+
+pmc.ncbi.nlm.nih.gov
+Exploring security threats and solutions Techniques for Internet of ...
+
+
+springerprofessional.de
+Detection and Analysis of Cyber-Attacks on IoT Network Devices ...
+
+
+springerprofessional.de
+A Review and Case Study on Attacking and Security Tools at ...
+
+
+pmc.ncbi.nlm.nih.gov
+Analysis of IoT Security Challenges and Its Solutions Using Artificial ...
+
+
+mdpi.com
+A Critical Cybersecurity Analysis and Future Research Directions for ...
+
+
+researchgate.net
+(PDF) Distributed denial of service attacks in cloud: State-of-the-art of scientific and commercial solutions - ResearchGate
+
+
+perception-point.io
+APT Security: Understanding, Detecting, and Mitigating the Threat - Perception Point
+
+
+researchgate.net
+Analytical Study on Advanced Persistent Threat Detecting, Defending and Mitigating | Request PDF - ResearchGate
+
+
+ceur-ws.org
+Machine Learning for Intrusion Detection System in IoT Environment With Permutation Importance - CEUR-WS
+
+
+researchgate.net
+Towards Resource-Efficient DDoS Detection in IoT: Leveraging Feature Engineering of System and Network Usage Metrics - ResearchGate
+
+
+pmc.ncbi.nlm.nih.gov
+Automatic Verification and Execution of Cyber Attack on IoT Devices - PMC
+
+
+researchgate.net
+A Survey on Machine and Deep Learning Based Intrusion Detection Systems for IoT
+
+
+pmc.ncbi.nlm.nih.gov
+An AI-Driven Hybrid Framework for Intrusion Detection in IoT-Enabled E-Health - PMC
+
+
+researchgate.net
+A Review on Internet of Things (IoT): Security Challenges, Issuesand the Countermeasures approaches - ResearchGate
+
+
+orbit.dtu.dk
+A Survey of Trust Management for Internet of Things - Welcome to DTU Research Database
+
+
+cyberpress.io
+40+ Best Cyber Security News Sites and Blogs | 2025 July - Cyberpress
+
+
+spin.ai
+Best Cybersecurity Blogs to Follow - Spin.AI
+
+
+draft.dev
+20 Best Cybersecurity Blogs to Follow in 2025 - Draft.dev
+
+
+micromindercs.com
+Common DDoS Mitigation Strategies: A Comprehensive Guide | Microminder Cyber Security
+
+
+researchgate.net
+(PDF) Vulnerability analysis and method of selection of communication protocols for information transfer in Internet of Things systems - ResearchGate
+
+
+researchgate.net
+DISTR: Detecting multi-stage IoT botnets through contextual traffic and causal analytics
+
+
+researchgate.net
+(PDF) An Automated and Comprehensive Framework for IoT Botnet Detection and Analysis (IoT-BDA) - ResearchGate
+
+
+radware.com
+What Is a Botnet? Types, Examples, and 7 Defensive Measures | Radware
+
+
+cyber.gc.ca
+Protecting your organization against denial of service attacks (ITSAP.80.100) - Canadian Centre for Cyber Security
+
+
+controleng.com
+Why DDoS attacks are a major threat to industrial control systems
+
+
+industrialcyber.co
+CISA warns of targeted DoS, DDoS attacks across organizations in various sectors
+
+
+controleng.com
+Throwback Attack: DDoS attacks are born in the Big Ten - Control Engineering
+
+
+cisa.gov
+Understanding Denial-of-Service Attacks | CISA
+
+
+researchgate.net
+(PDF) Analysing Recent APT Incidents: Case Studies and Lessons ...
+
+
+researchgate.net
+(PDF) Simulation and detection strategy of denial of service (DoS ...
+
+
+arxiv.org
+CoAP-DoS: An IoT Network Intrusion Dataset
+
+
+pmc.ncbi.nlm.nih.gov
+Systematic Literature Review of IoT Botnet DDOS Attacks and ...
+
+
+akamai.com
+What Is an HTTP Flood DDoS Attack? | How Does HTTP Flood Work ...
+
+
+esecurityplanet.com
+Reconnaissance in Cybersecurity: Types & Prevention
+
+
+cloudflare.com
+HTTP flood DDoS attack | Cloudflare
+
+
+researchgate.net
+(PDF) A Survey on IoT Security: Attacks, Challenges and ...
+
+
+thehackernews.com
+IoT Security | News & Insights | The Hacker News
+
+
+schneier.com
+The Reverse Cascade: Enforcing Security on the Global IoT Supply Chain
+
+
+krebsonsecurity.com
+Internet of Things (IoT) - Krebs on Security
+
+
+krebsonsecurity.com
+Some Basic Rules for Securing Your IoT Stuff
+
+
+pmc.ncbi.nlm.nih.gov
+Software-Defined-Networking-Based One-versus-Rest Strategy for Detecting and Mitigating Distributed Denial-of-Service Attacks in Smart Home Internet of Things Devices - PubMed Central
+
+
+astrj.com
+Anomaly detection and security threats in Internet of Things: A study of data integrity in the measurement process
+
+
+researchgate.net
+MQTT Broker Optimization: Comparative Analysis of Round Robin and Least Response Time - ResearchGate
+
+
+core.ac.uk
+IoT-MQTT based denial of service attack modelling and detection - CORE
+
+
+mdpi.com
+Detection of TCP and MQTT-Based DoS/DDoS Attacks on MUD IoT Networks - MDPI
+
+
+researchgate.net
+(PDF) Detection of TCP and MQTT-Based DoS/DDoS Attacks on MUD IoT Networks
+
+
+digitalcommons.jsu.edu
+Performance Evaluation of Different Rasberry PI Models as MQTT Servers and Clients - JSU Digital Commons - Jacksonville State University
+
+
+cloudflare.com
+What is a distributed denial-of-service (DDoS) attack? | Cloudflare
+
+
+pmc.ncbi.nlm.nih.gov
+Securing IIoT systems against DDoS attacks with adaptive moving target defense strategies
+
+
+deviceauthority.com
+Mitigating IoT Denial of Service Attacks: Essential Strategies for Protection - Device Authority
+
+
+pmc.ncbi.nlm.nih.gov
+A Taxonomy of DDoS Attack Mitigation Approaches Featured by SDN Technologies in IoT Scenarios - PubMed Central
+
+
+imperva.com
+DDoS Attack Types & Mitigation Methods | Imperva
+
+
+arxiv.org
+A Comparative Analysis of Machine Learning Models for DDoS Detection in IoT Networks
+
+
+pmc.ncbi.nlm.nih.gov
+DDoS Attack Prevention for Internet of Thing Devices Using Ethereum Blockchain Technology - PMC - PubMed Central
+
+
+mdpi.com
+A Survey of DDOS Attack Detection Techniques for IoT Systems Using BlockChain Technology - MDPI
+
+
+researchgate.net
+Layered architecture of DDoS attacks on IoT | Download Scientific Diagram - ResearchGate
+
+
+scitepress.org
+Comparative Analysis of Machine Learning Techniques for DDoS Intrusion Detection in IoT Environments - SciTePress
+
+
+ijraset.com
+Mitigating DDoS Attacks on IoT Networks: Strategies and Solutions - IJRASET
+
+A Novel Transformer based on Kolmogorov-Arnold Network for Intrusion Detection in IoT Environment. (Link: https://www.researchgate.net/figure/Classification-of-Intrusion-Detection-Systems-for-IoT_fig2_336806120)    
+
+An Adaptive CNN-based Intrusion Detection System for Internet of Vehicles. (Link: https://www.researchgate.net/figure/Classification-of-Intrusion-Detection-Systems-for-IoT_fig2_336806120)    
+
+A Predictive Machine Learning Model to Detect and Classify Network Activity in an IoT System. (Link: https://www.mdpi.com/2076-3417/12/23/12336)    
+
+Development of a Classification Model for Intrusion Attacks in Internet-Of-Things (IoT) Networks. (Link: https://journals.ust.edu/index.php/JST/article/view/2517)    
+
+Enhanced inf-tesla protocol: A continuous connectivity and low overhead authentication protocol via iot devices. (Link: https://qiita.com/kaizen_nagoya/items/ec5e4e4491228db534c0)    
+
+An Extensive review on IoT security challenges and LWC implementation on tiny hardware for node level security evaluation. (Link: https://www.engpaper.com/iot-security-ieee-paper.html)    
+
+Intelligent IoT Security Monitoring based on Fuzzy Optimum-Path Forest Classifier. (Link: https://www.engpaper.com/iot-security-ieee-paper.html)    
+
+A Review of IoT Applications, Attacks and Its Recent Defense Methods. (Link: https://www.engpaper.com/iot-security-ieee-paper.html)    
+
+A Review on Intrusion Detection Systems to Secure IoT Networks. (Link: https://www.engpaper.com/iot-security-ieee-paper.html)    
+
+Blockchain: A Security Solution for the IoT. (Link: https://www.engpaper.com/iot-security-ieee-paper.html)    
+
+IEEE Standards and Deep Learning Techniques for Securing Internet of Things (IoT) Devices Against Cyber Attacks. (Link: https://www.researchgate.net/publication/385074420_IEEE_Standards_and_Deep_Learning_Techniques_for_Securing_Internet_of_Things_IoT_Devices_Against_Cyber_Attacks)    
+
+Security Issues and Vulnerability of IoT Devices. (Link: https://ideas.repec.org/a/aif/journl/v5y2021i3p101-115.html)    
+
+From Pre-Quantum to Post-Quantum IoT Security: A Survey on Quantum-Resistant Cryptosystems for the Internet of Things. (Link: https://arxiv.org/abs/2402.00790)    
+
+Detection and Analysis of Cyber-Attacks on IoT Network Devices. (Link: https://www.springerprofessional.de/en/detection-and-analysis-of-cyber-attacks-on-iot-network-devices/50573726)    
+
+A Review and Case Study on Attacking and Security Tools at Application-Layer of IoT. (Link: https://www.springerprofessional.de/en/a-review-and-case-study-on-attacking-and-security-tools-at-appli/19210474)    
+
+A Survey on IoT Security: Attacks, Challenges and Countermeasures. (Link: https://www.researchgate.net/publication/358050390_A_Survey_on_IoT_Security_Attacks_Challenges_and_Countermeasures)    
+
+A Critical Cybersecurity Analysis and Future Research Directions for the Internet of Things: A Comprehensive Review. (Link: https://www.mdpi.com/1424-8220/23/8/4117)    
+
+Analysis of IoT Security Challenges and Its Solutions Using Artificial Intelligence. (Link: https://pmc.ncbi.nlm.nih.gov/articles/PMC10136937/)    
+
+Attack cases of APTs in recent years. (Link: https://www.researchgate.net/figure/Attack-cases-of-APTs-in-recent-years_tbl2_372384366)    
+
+Analysing Recent APT Incidents: Case Studies and Lessons Learned. (Link: https://www.researchgate.net/publication/387298480_Analysing_Recent_APT_Incidents_Case_Studies_and_Lessons_Learned)    
+
+Simulation and detection strategy of denial of service (DoS) attacks on MQTT transactions. (Link: https://www.researchgate.net/publication/360838722_Simulation_and_detection_strategy_of_denial_of_service_DoS_attacks_on_MQTT_transactions)    
+
+A New CoAP DoS Attack Data Set for NIDS in an IoT Environment. (Link: https://arxiv.org/pdf/2206.14341)    
+
+An Application Layer DoS Attack Detection Framework for MQTT Protocol. (Link: https://www.tandfonline.com/doi/full/10.1080/24751839.2020.1767484)    
+
+Analytical Study on Advanced Persistent Threat: Detecting, Defending, and Mitigating. (Link: https://www.researchgate.net/publication/390732576_Analytical_Study_on_Advanced_Persistent_Threat_Detecting_Defending_and_Mitigating)    
+
+Automated Penetration Test on IoT Devices. (Link: https://pmc.ncbi.nlm.nih.gov/articles/PMC9864476/)    
+
+Detection of TCP and MQTT-Based DoS/DDoS Attacks on MUD IoT Networks. (Link: https://www.researchgate.net/publication/390965061_Detection_of_TCP_and_MQTT-Based_DoSDDoS_Attacks_on_MUD_IoT_Networks)    
+
+Towards Resource-Efficient DDoS Detection in IoT Leveraging Feature Engineering of System and Network Usage Metrics. (Link: https://www.researchgate.net/publication/379921027_Towards_Resource-Efficient_DDoS_Detection_in_IoT_Leveraging_Feature_Engineering_of_System_and_Network_Usage_Metrics)    
+
+Distributed denial of service attacks in cloud: State-of-the-art of scientific and commercial solutions. (Link: https://www.researchgate.net/publication/348097190_Distributed_denial_of_service_attacks_in_cloud_State-of-the-art_of_scientific_and_commercial_solutions)    
+
+DISTR: Detecting multi-stage IoT botnets through contextual traffic and causal analytics. (Link: https://www.researchgate.net/publication/392001800_DISTR_Detecting_multi-stage_IoT_botnets_through_contextual_traffic_and_causal_analytics)    
+
+An Automated and Comprehensive Framework for IoT Botnet Detection and Analysis. (Link: https://www.researchgate.net/publication/354350232_An_Automated_and_Comprehensive_Framework_for_IoT_Botnet_Detection_and_Analysis_IoT-BDA)    
+
+Vulnerability analysis and method of selection of communication protocols for information transfer in Internet of Things systems. (Link: https://www.researchgate.net/publication/350968505_Vulnerability_analysis_and_method_of_selection_of_communication_protocols_for_information_transfer_in_Internet_of_Things_systems)    
+
+A Review on Internet of Things (IoT) Security: Challenges, Issues and the Countermeasures approaches. (Link: https://www.researchgate.net/publication/349674033_A_Review_on_Internet_of_Things_IoT_Security_Challenges_Issuesand_the_Countermeasures_approaches)    
+
+A Survey of Trust Management for Internet of Things. (Link: https://orbit.dtu.dk/en/publications/a-survey-of-trust-management-for-internet-of-things)    
+
+A Survey on Machine and Deep Learning Based Intrusion Detection Systems for IoT. (Link: https://www.researchgate.net/publication/371963843_A_Survey_on_Machine_and_Deep_Learning_Based_Intrusion_Detection_Systems_for_IoT)    
+
+An AI-Driven SDN-Enabled Intrusion Detection Framework for E-Health and IoMT. (Link: https://pmc.ncbi.nlm.nih.gov/articles/PMC9420579/)    
+
+MQTT Broker Optimization: Comparative Analysis of Round Robin and Least Response Time. (Link: https://www.researchgate.net/publication/386429226_MQTT_Broker_Optimization_Comparative_Analysis_of_Round_Robin_and_Least_Response_Time)    
+
+Application Layer DoS Attacks on MQTT. (Link: https://core.ac.uk/download/323493951.pdf)    
+
+Detection of TCP- and MQTT-based DoS/DDoS attacks. (Link: https://www.mdpi.com/2079-9292/14/8/1653)    
+
+Performance Evaluation of the MQTT Protocol for IoT. (Link: https://digitalcommons.jsu.edu/cgi/viewcontent.cgi?article=1212&context=fac_res)    
+
+Anomaly detection and data security in the Internet of Things. (Link: https://www.astrj.com/pdf-204321-125456?filename=Anomaly%20detection%20and.pdf)    
+
+A Moving Target Defense Approach for Mitigating DDoS Attacks in IIoT. (Link: https://pmc.ncbi.nlm.nih.gov/articles/PMC11923148/)    
+
+A Survey on DDoS Mitigation using SDN. (Link: https://pmc.ncbi.nlm.nih.gov/articles/PMC7309081/)    
+
+A Comparative Analysis of Machine Learning Models for DDoS Attack Detection in IoT Networks. (Link: https://arxiv.org/html/2411.05890v1)    
+
+A Survey on the Security of IoT Systems: Vulnerabilities, Attacks, and Countermeasures. (Link: https://www.mdpi.com/2079-9292/11/23/3892)    
+
+A Lightweight DDoS Intrusion Detection System for IoT Networks using Machine Learning. (Link: https://www.scitepress.org/Papers/2024/127652/127652.pdf)    
+
+Mitigating DDoS Attacks on IoT Networks: Strategies and Solutions. (Link: https://www.ijraset.com/research-paper/mitigating-ddos-attacks-on-iot-networks-strategies-and-solutions)    
+
+A Comprehensive Review on DDoS Attacks in IoT Networks. (Link: https://pmc.ncbi.nlm.nih.gov/articles/PMC9505972/)    
+
+Layered architecture of DDoS attacks on IoT. (Link: https://www.researchgate.net/figure/Layered-architecture-of-DDoS-attacks-on-IoT_fig4_334375035)    
+
+The Reverse Cascade: A Model for Resilient IoT Security. (Link: https://www.schneier.com/academic/archives/2020/06/the_reverse_cascade_.html)    
+
+A Survey of Security Challenges, Attacks Taxonomy and Advanced Countermeasures in the Internet of Things. (Link: https://www.researchgate.net/publication/358050390_A_Survey_on_IoT_Security_Attacks_Challenges_and_Countermeasures)    
+

@@ -1,0 +1,42 @@
+What Is the Difference Between DoS Attacks and DDoS Attacks?
+A denial-of-service (DoS) attack floods a server with traffic, making a website or resource unavailable. A distributed denial-of-service (DDoS) attack is a DoS attack that uses multiple computers or machines to flood a targeted resource. Both types of attacks overload a server or web application with the goal of interrupting services. 
+
+As the server is flooded with more Transmission Control Protocol/User Datagram Protocol (TCP/UDP) packets than it can process, it may crash, the data may become corrupted, and resources may be misdirected or even exhausted to the point of paralyzing the system.
+
+The principal difference between a DoS attack and a DDoS attack is that the former is a system-on-system attack, while the latter involves several systems attacking a single system. There are other differences, however, involving either their nature or detection, including:
+
+Ease of detection/mitigation: Since a DoS comes from a single location, it is easier to detect its origin and sever the connection. In fact, a proficient firewall can do this. On the other hand, a DDoS attack comes from multiple remote locations, disguising its origin.
+Speed of attack: Because a DDoS attack comes from multiple locations, it can be deployed much faster than a DoS attack that originates from a single location. The increased speed of attack makes detecting it more difficult, meaning increased damage or even a catastrophic outcome. 
+Traffic volume: A DDoS attack employs multiple remote machines (zombies or bots), which means that it can send much larger amounts of traffic from various locations simultaneously, overloading a server rapidly in a manner that eludes detection.
+Manner of execution: A DDoS attack coordinates multiple hosts infected with malware (bots), creating a botnet managed by a command-and-control (C&C) server. In contrast, a DoS attack typically uses a script or a tool to carry out the attack from a single machine.
+Tracing of source(s): The use of a botnet in a DDoS attack means that tracing the actual origin is much more complicated than tracing the origin of a DoS attack.
+
+Global Threat Landscape Report 2H 2023
+
+FortiGuard Labs Global Threat Landscape Report 2H 2023 shows Cybercriminals Exploiting New Industry Vulnerabilities 43% Faster than 1H 2023.
+
+Download Now
+Types of DoS Attacks and DDoS Attacks
+DoS and DDoS attacks can take many forms and be used for various means. It can be to make a company lose business, to cripple a competitor, to distract from other attacks, or simply to cause trouble or make a statement. The following are some common forms taken by such attacks.
+
+Teardrop attack
+A teardrop attack is a DoS attack that sends countless Internet Protocol (IP) data fragments to a network. When the network tries to recompile the fragments into their original packets, it is unable to. 
+
+For example, the attacker may take very large data packets and break them down into multiple fragments for the targeted system to reassemble. However, the attacker changes how the packet is disassembled to confuse the targeted system, which is then unable to reassemble the fragments into the original packets.
+
+Flooding attack
+A flooding attack is a DoS attack that sends multiple connection requests to a server but then does not respond to complete the handshake. 
+
+For example, the attacker may send various requests to connect as a client, but when the server tries to communicate back to verify the connection, the attacker refuses to respond. After repeating the process countless times, the server becomes so inundated with pending requests that real clients cannot connect, and the server becomes “busy” or even crashes.
+
+IP fragmentation attack
+An IP fragmentation attack is a type of DoS attack that delivers altered network packets that the receiving network cannot reassemble. The network becomes bogged down with bulky unassembled packets, using up all its resources.
+
+Volumetric attack
+A volumetric attack is a type of DDoS attack used to target bandwidth resources. For example, the attacker uses a botnet to send a high volume of request packets to a network, overwhelming its bandwidth with Internet Control Message Protocol (ICMP) echo requests. This causes services to slow down or even cease entirely.
+
+Protocol attack
+A protocol attack is a type of DDoS attack that exploits weaknesses in Layers 3 and 4 of the OSI model. For example, the attacker may exploit the TCP connection sequence, sending requests but either not answering as expected or responding with another request using a spoofed source IP address. Unanswered requests use up the resources of the network until it becomes unavailable.
+
+
+

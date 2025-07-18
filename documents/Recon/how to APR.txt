@@ -1,0 +1,72 @@
+How To Do A Man-in-the-Middle Attack Using ARP Spoofing & Poisoning
+Ugnes
+Ugnes
+
+·
+Follow
+
+6 min read
+·
+Dec 7, 2017
+265
+
+
+1
+
+
+
+
+
+The following article is going to show the execution of “Man in the Middle (MITM)” attack, using ARP Poisoning. There are tons of articles and blogs available online which explains what this attack is. So, I am not going to do that here. The reason why these attacks work is due to the lack of any kind of authentication mechanism while updating ARP cache. New IP to MAC values always overwrite the previous values in the ARP cache.
+
+Network Details
+
+Gateway: 172.31.81.129 (00:16:d4:74:6e:7f)
+
+Victim Node: 172.31.81.160 (14:58:d0:c8:c8:70)
+
+My Node: 172.31.81.186 (30:f9:ed:d5:dc:04)
+
+Requirements: Ettercap, Wireshark about the network on Layer 2 and Layer 3 will be helpful. I encourage you to read about ARP protocol before going on.
+
+Readers knowledge on Layer 2 (Data Link Layer) and Layer 3 (Network Layer) will be helpful. I also encourage you to read about ARP protocol before going on.
+
+Open Ettercap in graphical mode. You can do this is by running the following command in the terminal
+
+ettercap -G
+
+This will open the ettercap interface. Now click on the sniff option in the bar and select unified sniffing and select the interface (usually eth0). This will change the graphical interface to this
+
+
+Figure 1: Ettercap Graphical Interface
+Now what you need to do, is scan all the available hosts in your subnet. Click ‘Hosts’ on the bar and select scan hosts. This will start the scan and output of the result will be posted in the terminal like window (present below in the interface). This will typically show the number of total hosts that were found active during the time of the scan. During the scan, Ettercap sends a number of ARP broadcast requests to the hosts (or potentially active hosts). All the replies are recorded for their MAC addresses. I started wireshark along with this in order to record the scan which started around 21:53:30. You can see (in the image below, Figure 2) bunch of ARP requests and replies taking place from serial number 41 to 111. The image below shed the light over this.
+
+
+Figure 2: Wireshark Illustrating ARP packets
+After you have performed the scan, you need to select the two hosts between which you want to execute your man in the middle attack. All the end nodes typically send their packets to the gateway whenever the packet is destined outside the subnet. The gateway of the subnet I am in is “172.31.81.129”. So, one of my hosts will be the gateway (“172.31.81.129”) and the other one will be the victim node. You can select any host from the scanned list. I chose the host with IP address “172.31.81.160”. Go to the scanned list by selecting “Hosts” from the bar and clicking on ‘host list’. Now right click on the hosts and add them as targets 1 and 2 correspondingly. The choice of target 1 and 2 won’t matter in our case as we will be intercepting packets from both directions.
+
+Now comes the part where you poison the ARP cache and/or table. In order to do that click Mitm (short form for Man in the Middle) on the bar and select ARP poisoning. This will temper the values of ARP cache present in the victim nodes. Analyzing the packet we can observe that (serial no. 236) my PC spoofed itself with IP “172.31.81.129” by sending an ARP reply to “172.31.81.160”. As you can see, there was a warning (duplicate IP address detected) showing that this IP address is being used by another IP node, which not taken seriously by the ARP modules and is mostly for administrators. Similarly (in serial no. 237) my PC spoofed itself as 172.31.81.160 by sending the ARP reply to the gateway. Similar duplicate IP address warning was there. This tempers the ARP cache of the gateway. Similar attempts were made by my PC as can be seen in serial numbers 245–246 and 251–252. Now we are ready and the attack can take place successfully.
+
+
+Figure 3: Spoofed ARP packets
+As can be seen, from serial number 247, all the packets with source and destination addresses of 172 .31 .81 .160 and 172 .31 .102 .14 are going through my PC. The victim node is surely connected to the 172.31.102.14 proxy-server. So all the packets from the victim node is first coming to my PC, then going to the gateway. Similarly, any packet destined for the victim node is first forwarded from the gateway to me and then my PC forwards it to the victim
+
+
+Figure 4: Captured Packets of the Victim (1)
+
+Figure 5: Captured Packets of the Victim (2)
+Important Points
+
+Let’s see what happens after the ARP cache is poisoned in the gateway and the host. Notice that the cache is not poisoned in my PC, it knows the correct MAC address for IP addresses. Victim’s packet has the destination IP address of the Proxy server he is connected to (172.31.102.14 in our case) and his source IP. The next hop address is the gateway. When Link Layer receives the packet it needs to add MAC address of the gateway. Since the ARP cache is corrupted, the destination MAC address of my PC will be inserted. When my link layer receives the packet it sends it to the upper layer (Network Layer). The next hop address is not mine, and thus my ARP module inserts the correct MAC address and forwards the packet to the gateway. We are good here as our Wireshark has already received the packet and can be analyzed later on. The same thing happens when gateway needs to forward the packet to our victim.
+
+One thing that you can ponder about, is why this attack only works when the victim is present in your subnet?
+
+For an attacker, this is normally not a big problem. He can easily take his laptop to the network he is planning to attack. These kind of attacks are very common in public Wi-Fi and other open places.
+
+It is very unlikely though, that one can find something confidential in the packets. Today almost all layers encrypt data before forwarding it to the next layer. In application layer, most of the web pages use https protocol, which is a secure method of communication. The transport layer is often enhanced with SSL for encryption purposes. Similarly, Network layer implements IPsec. Cryptography doesn’t seem that bad now.
+
+There are many other attacks, like Denial of Services (DoS), which can be executed. There many other kinds of information that the attacker can gain regarding the host, which can be used to launch other attacks. What can be done, is left on the readers to think about. After all the network is full of attacks and hacks. The attack described above is a passive attack as no intercepted packet was tempered. Someone can extend the above attack to active, and then things can actually become very nasty.
+
+Now comes the non-technical part. The document was presented just for educational purposes. Readers must carefully consider their actions before implementing them. Also, don’t try this in the switches and subnets that don’t belong to you or are present in the public domain.
+
+Editors Note: Put a WEBGAP between you and the malware with a browser isolation technology or by leveraging a remote browser service.

@@ -1,0 +1,97 @@
+What Is the Difference Between DoS and DDoS Attacks?
+Twitter
+LinkedIn
+What is a DoS Attack?
+What is a DDoS Attack?
+What are the Most Common Forms of DDoS Attacks?
+What are the Most Common Forms of DoS Attacks?
+Key Differences Between DoS and DDoS Attacks
+In a distributed denial-of-service (DDoS) attack, hackers flood a target website with so much traffic from multiple systems that it is rendered inaccessible to legitimate users. A DDoS attack is different than a denial-of-service (Dos) attack, which usually attacks from a single system.
+
+Because DDoS attacks originate from multiple sources and send a larger volume of traffic into the system at once, it is difficult for network administrators to quickly detect and eliminate the threat. As such, DDoS attacks are more damaging than standard DoS attacks as they put an excessive drain on resources and sometimes completely take down an entire network or website.
+
+In this article, we'll explore the difference between these two types of attacks and provide tips on how you can protect your systems from them.
+
+Dos vs DDoS Attack
+What is a DoS Attack?
+A DoS attack is a malicious attempt to degrade the performance of a server or disrupt its availability. This type of attack works by overwhelming the targeted resource with multiple requests, reducing the system resources available and eventually leading to an interruption of service. It works like this: Let's say a hacker sends a flood of fake requests to an online marketplace. The platform receives abnormal amounts of requests beyond its capacity, slows down and eventually stops working completely. DoS attacks can be used as a tool for extortion or to make political or other relevant statements, which is why it is important to protect yourself from these types of malicious activities.
+
+What is a DDoS Attack?
+A DDoS attack is a malicious attempt to disrupt the normal operations of a network or server. It is typically achieved by flooding it with superfluous requests from multiple sources, crippling the handling capacity and hindering its ability to respond to legitimate requests. This type of attack differs from DoS attacks as DDoS involves multiple machines—known as bots—to launch the attack from different locations. This masks the identity of the culprit and makes it more difficult for organizations to prevent or mitigate. In order to amplify the effect, some bots can even use thousands of machines in a single attack, making responding an arduous task. Therefore, it is important for businesses and organizations to invest both time and effort into equipping their networks with adequate security measures that can protect against possible DDoS attacks.
+
+
+DDoS Attacks Rose 94% in 2023.
+Choose the right protection for your organization. Read our free guide now!
+GET THE GUIDE
+What are the Most Common Forms of DDoS Attacks?
+There are various types of DDoS attacks, the most common of which are SYN flooding, HTTP flooding, and UDP flooding.
+
+SYN Flood
+SYN flood is a type of DDoS attack that exploits the three-way handshake process in the Transmission Control Protocol (TCP), which is the underlying protocol of most internet communication. SYN floods aim to overwhelm a target system by consuming its resources and rendering it unable to respond to legitimate requests. In a SYN flood attack, the attacker sends a high volume of spoofed SYN packets to the target server without completing the final step of the three-way handshake. The server allocates resources to handle these incomplete connections and waits for the final ACK packet that never arrives. Consequently, the server's resource pool becomes exhausted, leading to legitimate requests being ignored or denied.
+
+HTTP Flood
+HTTP flood is a type of DDoS attack that targets web servers by overwhelming them with a massive volume of HTTP requests. The attack floods the target server with numerous legitimate-looking requests, exhausting its resources and rendering it unable to respond to legitimate user traffic. The attackers often use botnets, which are networks of compromised computers, to orchestrate the attack. By sending a continuous stream of HTTP requests, the attack aims to consume the server's processing power, memory, and network bandwidth. This flood of requests creates a bottleneck, causing the server to become overloaded and unresponsive, resulting in a denial of service for legitimate users trying to access the web server.
+
+UDP Flood
+UDP flood is a type of DDoS attack that targets network infrastructure by overwhelming it with a flood of User Datagram Protocol (UDP) packets. Unlike TCP, UDP is connectionless and does not require a handshake process, making it easier for attackers to generate high volumes of traffic with minimal overhead. In a UDP flood attack, the attacker sends a massive number of UDP packets to the target server or network, often using spoofed source IP addresses to make tracing difficult. Since UDP does not have built-in mechanisms to ensure packet delivery or verify the recipient, the target infrastructure has to process and respond to each incoming packet. As a result, the network becomes inundated with an overwhelming number of UDP packets, consuming its available bandwidth, processing power, and other resources. This flood of UDP packets causes congestion, network slowdowns, and can even lead to service disruptions for legitimate users trying to communicate with the targeted infrastructure.
+
+What are the Most Common Forms of DoS Attacks?
+In addition to being able to perform SYN floods and UDP floods like a DDoS attack as described above, DoS attacks also include:
+
+ICMP/ Ping Flood
+ICMP floods, also known as Ping floods, are a type of DDoS attack that targets network devices by overwhelming them with an excessive number of Internet Control Message Protocol (ICMP) Echo Request (Ping) packets. ICMP is used for network diagnostics and troubleshooting, including the well-known "ping" command. In an ICMP flood attack, the attacker sends a massive volume of ICMP Echo Request packets to the target device or network, often using botnets or multiple compromised computers to amplify the attack. Each Echo Request packet prompts the target device to reply with an Echo Reply packet, but in a flood attack, the sheer volume of requests quickly saturates the target's bandwidth and processing capabilities. This flood of ICMP traffic can lead to network congestion, increased response times, and even complete unresponsiveness of the target device, disrupting legitimate network communication.
+
+Low Orbit Ion Canon (LOIC) attacks
+Low Orbit Ion Canon (LOIC) is a network stress testing tool that gained notoriety for being used in distributed denial-of-service (DDoS) attacks. LOIC attacks typically involve multiple individuals coordinating to simultaneously flood a target server or website with a massive volume of traffic. These attackers may be part of a hacker group or anonymous online communities aiming to disrupt or protest a particular website or organization. When activated, LOIC allows each attacker to send a constant stream of HTTP, UDP, or TCP packets to the target, overwhelming its network resources and causing a denial of service. Due to its straightforward nature, LOIC attacks are relatively easy to execute, but they lack sophistication and often reveal the attackers' identities through IP addresses. As a result, LOIC attacks are not widely used by sophisticated threat actors but have been associated with low-level hacktivism or individuals seeking to cause temporary disruption without strong concealment measures.
+
+
+Get Expert DDoS Insights That Can Help You Stay Safe.
+Talk to our experts to find out how Radware stands out in DDoS protection.
+CONTACT US
+Key Differences Between DoS and DDoS Attacks
+Criteria	DoS Attack	DDoS Attack
+Definition	A DoS attack is an attempt to make an online service unavailable by overwhelming it with traffic from a single source	A DDoS attack is an attempt to make an online service unavailable by overwhelming it with traffic from multiple sources
+Source of Attack	Single source, usually one machine or IP	Multiple sources, coordinated botnets, or compromised IPs
+Complexity	Relatively simple and easy to execute	More complex, requires coordination and larger resources
+Volume of Traffic	Lower volume of traffic	Significantly higher volume of traffic
+Detection and Mitigation	Easier to detect and mitigate as traffic comes from a single source	Harder to detect and mitigate due to traffic coming from many different sources
+Impact	Limited impact on the target	Severe impact, capable of overwhelming the target
+Conclusion
+Both DoS and DDoS attacks are illegal and unethical, as they cause harm to targeted systems and disrupt legitimate users' access to services. Organizations should employ appropriate security measures to protect against such attacks, including DDoS protection services and network security configurations.
+
+DoS vs DDoS attacks: What are the main differences?
+Both DoS and DDoS attacks aim to overload the servers of a particular system to make it unresponsive. The main difference between the two is that while a DoS attack hinders the targeted system using one device, DDoS attacks are conducted through multiple devices operating on different networks that usually form a botnet.
+
+By using a number of remote devices at once, DDoS attacks send a higher volume of malicious traffic to the targeted system than DoS ever could. Devices used for DDoS attacks can originate in different locations, making it harder to locate the actual source of the attack.
+
+Meanwhile, DoS attacks use a script or other specific tools to run the attack, achieving a comparatively lower attack volume and making the attacker more traceable.
+
+DoS attack	DDoS attack
+How does it work?	DoS attack floods the targeted network with malicious traffic coming from a single source	DoSS attack floods the targeted network with malicious traffic coming from several sources
+What’s the source of the attack?	One machine or an IP	Various sources, including infected devices, botnets, and compromised IPs
+Is it hard to execute?	Fairly easy to execute	Harder to execute, requires additional resources
+Is it hard to detect?	Relatively easy to detect because the traffic comes from one source	Hard to detect because traffic may come from multiple sources and different locations
+What impact does it have?	Limited impact	Severe impact
+What is a DoS attack?
+A denial-of-service attack is a cyber-attack that floods the targeted servers with more User Datagram Protocol/Transmission Control Protocol (UDP and TCP) packets than the system can handle. It corrupts data, makes the system crash, or completely paralyzes it, making its network inaccessible to users. DoS attacks are fairly easy to operate and highly effective, which makes them one of the most prevalent cybersecurity threats.
+
+What is a DDoS attack?
+A distributed denial-of-service attack is a DoS attack that hampers the system by flooding it with malicious traffic through multiple computers or a botnet. A hacker behind the DDoS attack aims to spread the net of infected devices so that more computers would act as bots. Through them, hackers can send large amounts of internet traffic to the targeted system at once, rapidly overflowing it.
+
+Hackers also try to infect devices originating in multiple locations because it helps disguise the actual location and device from which the attack is coordinated. Besides, with multiple devices in remote spots, attackers can launch their offensives much faster. These reasons make DoS and DDoS an attractive choice for cyberterrorism and other cyberwarfare practices.
+
+DoS vs DDoS attacks: What are their main types?
+DoS and DDoS attacks can transform into a number of specified offensives that target particular elements within the attacked system. These specialized attacks can be divided into four main types:
+
+Volume-based attacks. They overwhelm the targeted network’s bandwidth by flooding it with Internet Control Message Protocol (ICMP) echo requests or launching a UDP flood attack. Afterward, the network slows down or ceases to have any bandwidth left to use, making it inaccessible to users and their devices. It’s the most common type of DoS and DDoS attacks.
+Protocol attacks. These attacks exploit vulnerabilities in the connection between the protocol and the Open Systems Interconnection (OSI) model. Protocol attacks typically affect the OSI’s model layer 3, which is responsible for the data routing across networks, and layer 4, which controls the end-to-end connection. The most commonly exploited protocols are TCP, UDP, and ICMP. Depending on the protocol, hackers can target the handshake process between the protocol and the web server or the connection’s request and reply system.
+Application layer attacks. Application-based attacks target OSI’s model layer 7, responsible for all the system’s applications. The hacker usually sends an abundance of partial data packets to the application, which is unable to resolve them. This way, the application keeps getting flooded with unsolvable requests, and because of them, it cannot develop new legitimate connections. Application layer attacks are hard to detect because they use a minimum amount of bandwidth and don’t require many bots to launch the attack.
+IP fragmentation attack. During this attack, hackers resize IP packets so that the receiving end cannot assemble them and comprehend the data within. Afterward, the system starts failing because it tries to use all its resources to reassemble broken IP data packet fragments.
+
+How to avoid DoS and DDoS attacks
+Sneaky and devastating as they may seem, both DoS and DDoS attacks can be avoided or at least tamed using proper measures. The following prevention methods can help you avoid falling victim to denial-of-service attacks:
+
+Network monitoring. It’s common for attackers to test the network they plan to corrupt before launching a DoS campaign. If you regularly monitor your network, you’ll have more chances to recognize suspiciously increased online traffic and stop the attack at its roots.
+Test running DoS attacks. By simulating a denial-of-service attack, network owners can assess how effective their prevention apparatus is against it. It’s an important step in trying to build a robust prevention strategy.
+Assessing possible damage. After test-running a DoS attack, it’s essential to evaluate which assets would have suffered the most and pinpoint the network’s vulnerabilities.
+Creating a backup strategy. A clear plan of action in the event of a DoS or DDoS attack can help mitigate the damages to the targeted network and recreate the usual system operation in the shortest possible time.

@@ -1,0 +1,122 @@
+How to Detect Reconnaissance Using MITRE ATT&CK Framework
+In this article, we will look at the reconnaissance techniques from the MITRE ATT&CK framework’s point of view and discuss how to detect cyberattacks using MITRE ATT&CK Framework, and how we can protect ourselves and the organizations from reconnaissance-related cyberattacks, and more.
+
+Reconnaissance derives from the military phrase for an information-gathering operation. Both forms of reconnaissance are sometimes called “passive assaults” due to their primary objective of gathering information rather than aggressively exploiting the victim. On the other hand, reconnaissance is often a prelude to an active effort to control the target system.
+
+Passive reconnaissance is a component of hackers’ pre-attack process. Attackers must first “get to know” their targets to guarantee that they have the necessary knowledge to carry out a successful assault. They may do this via passive or active reconnaissance.
+
+What’s the Difference Between Active and Passive Reconnaissance?
+The passive reconnaissance is carried out in the background without alerting the target. Attackers often use this technique to prevent their target victim from beefing up its security systems, which might significantly impact their approach.
+
+On the other hand, active reconnaissance requires hackers to interact with the target system or network. They look for open ports that may be used as entry points for an assault. As a result, they may do manual testing or automated scanning, utilizing various techniques. Active recon is much riskier due to the increased likelihood of being detected by a firewall or other security solution. However, many continue to conduct active recon to increase assault precision.
+
+Both attackers and victims use reconnaissance techniques. Their objectives, however, are distinct. While hackers research their targets to launch more effective attacks, ethical hackers conduct passive and active surveillance to detect system and network vulnerabilities and remedy them before impacted equipment becomes the target of actual assaults.
+
+MITRE ATT&CK Framework’s Perspective on Reconnaissance
+According to MITRE ATT&CK: Reconnaissance is a term that refers to tactics in which enemies actively or passively collect information that may be utilized to aid in targeting. This information may contain specifics about the victim organization’s infrastructure, people, or staff. The adversary may use this information to help in other stages of the adversary lifecycle, such as planning and executing Initial Access, scoping and prioritizing post-compromise goals, or driving and leading further Reconnaissance operations.
+
+Ten Techniques on MITRE ATT&CK that define the reconnaissance
+Ten Techniques on MITRE ATT&CK that define the reconnaissance
+10 Reconnaissance Techniques
+1. Active Scanning
+
+Adversaries may conduct active reconnaissance scans to acquire information for targeting. Active scans are those in which the adversary explores the victim infrastructure through network traffic; hence, adversaries may scan victim IP blocks to acquire information for targeting. Organizations may be assigned public IP addresses in blocks or in a range of consecutive addresses. 
+
+Additionally, adversaries may scan victims for vulnerabilities that may be exploited during the targeting process. In contrast to other techniques of reconnaissance that do not require direct involvement, vulnerability scans often assess whether the configuration of a target host/application (ex: software and version) possibly matches the target of a particular exploit the adversary may want to utilize.
+
+2. Gather Victim Host Information
+
+Adversaries may collect information about the victim’s hosts to attack them. Host information may comprise a range of facts, including administrative data (e.g., name, assigned IP address, functionality, etc.) and configuration parameters (ex: operating system, language, etc.).
+
+3. Gather Victim Identity Information
+
+Adversaries may collect information about the victim’s identification to target them. The identity information may comprise personal data (employee names, email addresses, etc.) and sensitive data such as credentials.
+
+4. Gather Victim Network Information
+
+Adversaries may obtain information about the victim’s social networks to attack them. The network information may comprise several elements, including administrative data (IP addresses, domain names, etc.) and the network’s structure and functioning characteristics.
+
+5. Gather Victim Org Information
+
+Adversaries may collect information about the victim’s organization to target them. An organization’s report may include the names of divisions/departments, corporate operations’ intricacies, and essential people’s roles and duties.
+
+6. Phishing for Information
+
+Adversaries may send phishing communications to obtain sensitive information for use in targeted attacks. Phishing is a technique used to fool targets into disclosing information, most typically passwords or other actionable data. Phishing for information is distinct from Phishing in that the purpose is data collection rather than harmful code execution.
+
+7. Search Closed Sources
+
+Adversaries may look for and obtain information on victims from closed sources, which they might use to attack them. Purchasers may be able to get information on victims through reputable private sources and databases, such as via paid subscriptions to feeds of technical/threat intelligence data. Additionally, adversaries may obtain information from less credible sites such as the dark web or cybercrime black markets.
+
+8. Search Open Technical Databases
+
+Adversaries may explore publicly accessible technological databases for information about victims that they might use to attack them. Online databases and repositories may include information on victims, such as domain registrations/certificates and public collections of network data/artifacts obtained through traffic and scans.
+
+9. Search Open Websites/Domains
+
+Adversaries may do free website and domain searches to gather information about victims for use in targeting. Victim information may be accessible on various internet platforms, including social networking platforms, new websites, and those that carry information regarding corporate activities such as recruiting or requested/rewarded contracts.
+
+10. Search Victim-Owned Websites
+
+Adversaries may search websites the victim owns for information that can be used during targeting. Victim-owned websites may contain various details, including names of departments/divisions, physical locations, and data about critical employees such as names, roles, and contact info (ex: Email Addresses). These sites may also have details highlighting business operations and relationships.
+
+How to Protect Your Organization Against Reconnaissance
+The easiest method to safeguard against active surveillance is deploying robust security measures such as adequately setting firewalls and maintaining those mechanisms. Educating staff about the risks of social engineering is essential — an attacker doing active reconnaissance might learn a great deal by conversing with network users.
+
+Additionally, Using Extended Threat Intelligence solutions like SOCRadar should always precede more advanced protection methods.
+
+SOCRadar covers MITRE ATT&CK’s Reconnaissance tactics to prevent any unwanted situation that might occur in the future with its unique scanning system; therefore, as a security team, you wouldn’t need to do any manual intelligence/OSINT scanning through the internet since SOCRadar automatically does it for you. Here is the list of coverage that SOCRadar can provide:
+
+Phishing Domain Detection
+
+Phishing Domain Detection is a module that helps you prevent spoofing attempts.
+Phishing Domain Detection is a module that helps you prevent spoofing attempts.
+SOCRadar’s AttackMapper module prevents and rapidly detects phishing attacks by discovering and tracking your digital assets on the internet, creating an inventory of publicly accessible digital assets, and sending an alarm to your organization to enable SPF, DMARC, and DKIM control over your MX registered domains, which are used to prevent email spoofing techniques.
+
+Attack Surface Management
+
+Get a regular automated attack surface discovery and be prepared for potential reconnaissance attacks.
+Get a regular automated attack surface discovery and be prepared for potential reconnaissance attacks.
+To prevent your organization’s uncontrollable Digital Footprint, SOCRadar monitors your organization’s security controls on Automatically detected Digital Footprint 24 hours a day, seven days a week, and automatically detects leaked credentials and data exposures in S3 buckets, Rsync servers, and GitHub repositories, among other locations.
+
+Vulnerability Management
+
+Wherever a critical vulnerability exists, threat actors could exploit it for further attacks.
+Wherever a critical vulnerability exists, threat actors could exploit it for further attacks.
+Because managing vulnerabilities is critical for any information technology security team, SOCRadar monitors all your assets to address potential vulnerabilities and discover them before threat actors can.
+
+Open Port & Service Scanning
+
+Attackers often take advantage of open ports for reconnaissance operations.
+Attackers often take advantage of open ports for reconnaissance operations.
+Your open ports, which are accessible to the outside world, might pose significant security dangers to your organization’s confidentiality, integrity, and availability. To avoid this, SOCRadar offers an Open Port monitoring solution.
+
+Deep & Dark Web Monitoring
+
+See how popular your organization is on the dark web.
+See how popular your organization is on the dark web.
+SOCRadar monitors Deep Web platforms that facilitate illegal purchases 24 hours a day to ensure your organization’s security. Additionally, By automatically monitoring corporate domains in Dark and Deep web settings, SOCRadar dark web analysts may connect with threat actors to validate the authenticity of current information and delete posts to improve the organization’s image when appropriate.
+
+Source Code Leakage Monitoring
+
+Threat actors can utilize your source code for reconnaissance activity if it leaks.
+Threat actors can utilize your source code for reconnaissance activity if it leaks.
+SOCRadar continually monitors items uploaded to open-source platforms that may constitute a security risk and notifies you through an alert in that respect.
+
+Sensitive Information & PII Data Leakage Monitoring
+
+Gathering sensitive information is the most common tactic for all kinds of cyberattacks.
+Gathering sensitive information is the most common tactic for all kinds of cyberattacks.
+SOCRadar protects your business from data breaches, identifies all of your data leaks, and helps you continuously monitor the security posture of all your vendors.
+
+Malware Analysis
+
+Find if there are any suspicious files in your network.
+Find if there are any suspicious files in your network.
+Maldoc attacks and suspicious files can be detected and prevented with SOCRadar’s “Malware Analysis” module by uploading suspicious files on the platform.
+
+In information security, the most significant mistake is “Believing you are fully secure,“ which may result in irreversible loss or even the collapse of businesses. To avoid getting into unpleasant circumstances, it is critical to take a proactive stance against the internet risks identified by organizations like MITRE. 
+
+Unfortunately, many vulnerabilities are unknown until threat actors exploit them. Hence, firms like Microsoft, Amazon, Facebook, and Google are always heavily investing in cyber security to remain one step ahead of threat actors.
+
+Therefore, for every large or small organization with an Internet presence, it has become critical to stay one step ahead of threat actors. Extended Threat Intelligence technologies such as SOCRadar may provide the most suitable solution without significant investments.

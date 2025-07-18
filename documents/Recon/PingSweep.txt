@@ -1,0 +1,67 @@
+A Ping Sweep attack is a type of network reconnaissance technique used to identify active devices and hosts on a network by sending ICMP Echo Request (ping) packets to a range of IP addresses. The attacker uses a tool to send pings to a large range of IP addresses, and the devices that respond with an ICMP Echo Reply (ping reply) are identified as active hosts on the network. This technique can be used to map the network topology, identify open ports and services, and gather information about the devices and their operating systems, allowing the attacker to plan a targeted attack or identify potential vulnerabilities.
+
+What is ping sweep (ICMP sweep)?
+A ping sweep (also known as an ICMP sweep) is a basic network scanning technique used to determine which of a range of IP addresses map to live hosts (computers).
+
+Whereas a single ping will tell whether one specified host computer exists on the network, a ping sweep consists of ICMP (Internet Control Message Protocol) echo requests sent to multiple hosts. To do this, the ping requires an address to send the echo request to, which can be an IP address or a web server domain name.
+
+If a given address is live, it will return an ICMP echo reply. To disable ping sweeps on a network, administrators can block ICMP echo requests from outside sources. However, ICMP timestamp and Address Mask requests can be used in a similar manner.
+
+Why are ping sweeps important?
+ICMP echo request
+Ping sweeps consist of ICMP echo requests sent to multiple hosts. Addresses that are live will send replies.
+Pinging is among the older and slower network security scanning methods available. However, they are still an effective means of auditing network management controls and ensuring the cybersecurity of an organization.
+
+In addition to identifying active devices on a network, ping sweeps are also helpful at detecting unrecognized devices that may be malicious and ensuring devices are functioning correctly.
+
+What ping sweep tools are available today?
+There are a number of tools organizations can use to perform a ping sweep:
+
+SolarWinds Ping Sweep
+SolarWinds Ping Sweep tool for Windows allows users to scan a range of IP addresses as part of their network management protocols. This is done by uploading a text file that includes a list of IP addresses. Users can export results as a TXT, CSV, XML or HTML document.
+
+Network discovery results reveal the hostname of each device detected and the time it took to respond. This information alone can indicate performance issues that users can resolve through troubleshooting. It can also indicate potential malicious device activity when compared against those devices that are expected to be present on your DNS server.
+
+SolarWinds also offers an IP Address scanner that combines ICMP and Simple Network Management Protocol (SNMP) sweeping options that works with IPv4 and IPv6 address types.
+
+Paessler PRTG
+Paessler PRTG is a system monitoring tool that maps networks and the devices connected to them, as well as the network performance overall. It is available on any operating system in use today.
+
+The program uses a command-line interface (CLI) to issue a ping query to one IP address at a time. To reach every node on a network, Paessler employs a ping command in a looped routine to sweep every network address available.
+
+If it receives a response, the response is recorded and additional inquiries can be used to investigate any suspicious network devices.
+
+Nmap
+ICMP destination unreachable message
+When a destination isn't reachable, the router responds with an ICMP message back to the ping sweep indicating so.
+Nmap is a free network system tool that, similarly to Paessler PRTG, executes from the command line. It can be installed on Windows, Mac OS, Linux and Unix, and can perform a scan with Transmission Control Protocol (TCP) or as a ping.
+
+The program provides the IP address of active hosts and their hostname. In TCP form, it can act as a port scanner and will indicate any open ports on each connected device or router.
+
+The raw output provided by the Nmap process can be difficult to read, but there are additional "reader" tools that can transform the data into easy-to-read records.
+
+Fping
+Fping is another command-line tool available for Linux OSes. It works by uploading an IP address range and allows you to filter results by address types, active or inactive hosts and DNS records. Results provide the hostname, and whether or not a DNS address looks suspicious or reveals a missing record.
+
+Hping
+Hping is also an ICMP ping command-line tool used heavily by senior network administrators who prefer using commands in either ping or a traceroute form. It can be installed on Windows, Mac OS, Linux or Unix.
+
+Its ping request function operates at the internet layer of a TCP/IP protocol. While it doesn't offer port visibility, TCP and User Datagram Protocol (UDP) functionality will allow users to conduct port scanning on connected computers and routers.
+
+This is a useful function if an organization frequently test firewalls within their systems. However, it should be noted this same reason makes port scanning popular with cybercriminals.
+
+Advanced IP Scanner
+Advanced IP Scanner is another ping sweep tool for Windows that can scan a single or group of IP addresses. Results reveal any shared folders on any detected host, as well as the hostname, MAC address and manufacturer.
+
+Once it detects all live nodes, users can access the connected device and execute commands on it, as well as turn them on, off or put them on standby. They can save output files as CSV files, which makes it easy to compare listed IP addresses against DNS records.
+
+Pinkie
+Another free ping sweep tool for Windows is Pinkie. Along with a straightforward ping scan, Pinkie provides a number of other capabilities such as a traceroute, port scanning and a subnet calculator.
+
+Top network management tasks
+Port mapping tools
+Port mapping tools are also commonly used as an alternative to a ping sweeping. They use both TCP and UDP to discern whether ports on a device are open.
+
+That knowledge of open ports is considered a security weakness, however. Therefore, some administrators will block their device from sending an ICMP response in order to mitigate the risk associated with port scans.
+
+In these scenarios, it is more common to use the higher-level ICMP UDP echo request. This is also referred to as a "UDP packet ping," which executes at the transport layer of an IP address.
