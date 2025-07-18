@@ -11,7 +11,6 @@ AutoGPT
 lagent
 results
 results.txt
-propcess.ipynb
 ./results
 ./longmemory
 *.csv
