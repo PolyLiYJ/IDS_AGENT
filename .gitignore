@@ -16,9 +16,8 @@ propcess.ipynb
 ./longmemory
 *.csv
 *.txt
-./documents
-./db
-./db-llama
-./db-long-memory
+db
+db-llama
+db-long-memory
 ./models
 ./model_CICIoT
