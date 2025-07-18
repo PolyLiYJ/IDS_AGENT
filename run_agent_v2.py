@@ -57,26 +57,9 @@ from functools import partial
 
 import json
 
-# success_memory_path = "longmemory/success_example_test_set0912_chatgpt35.json"
-# full_memory_path = "longmemory/all_example_test_set0912_chatgpt35.json"
-# result_path = "results/classification_results_CICIoT_0912_chatgpt35.txt"
 success_memory_path = "longmemory/success_example_test_set0912_chatgpt35.json"
 full_memory_path = "longmemory/all_example_test_set0912_chatgpt35.json"
 result_path = "results/classification_results_CICIoT_0920.txt"
-
-
-
-# os.environ["GOOGLE_CSE_ID"] = ""
-# os.environ["GOOGLE_API_KEY"] = ""
-# DataProcessingTool
-# Context extraction
-# FeatureSelectionTool
-# Scikit-learn API /Pretrain model Tool
-# huggingface model
-# Arkiv Tool
-# 结合Snort，Suricata进行实时流量监控和入侵响应。
-# 调用XAI解释
-# knowledge 用来解释分类结果
 
 def write_success_example_to_log(text_list, filename):
     # Name of the file to write
@@ -141,15 +124,6 @@ def get_list_dim(lst):
     
 def retriever_qa_creation(folder, chroma_db_database, init = False):
     kb = MyKnowledgeBase(pdf_source_folder_path=folder)
-    # ollama_model_name = "llama2:7b-chat-q6_K"
-    # embedder = OllamaEmbeddings(model=ollama_model_name)
-    # chroma_db_database = 'db-llama'
-    # retriever = kb.return_retriever_from_persistant_vector_db(embedder, chroma_db_database)
-    
-    # vector_db = kb.initiate_document_injection_pipeline(embedder)
-    # # retriever = vector_db.as_retriever()
-
-    # llm = Ollama(model=ollama_model_name) #, temperature=0.1)
     
     embedder = OpenAIEmbeddings()
     if init:
@@ -323,16 +297,9 @@ class DataProcessingInput(BaseModel):
 async def data_preprocessing(traffic_features: str) -> list:
     """input traffic_features and output preprocessed traffic features as a list
     """
-    # file_path = "/Users/yanjieli/program/IDS_AGENT/dataset/CICIoT2023/test_set_small.csv"
-    # data = pd.read_csv(file_path)
-    # columns_to_drop = [ "label", "final_label"]
-    # data.drop(columns=columns_to_drop, inplace=True)
-    # record = data.iloc[[line_number]]
     record = string_to_dataframe(traffic_features)
     
     """Preprocess the traffic record by selecting and scaling the features. This should be done after loading the data."""
-    # columns_to_drop = ['Flow ID', 'Src IP', 'Dst IP', 'Timestamp', 'Connection Type']
-    # df.drop(columns=columns_to_drop, inplace=True)
     
     # Handle missing values
     record.replace([np.inf, -np.inf], 0, inplace=True)
@@ -670,26 +637,6 @@ async def run_agent(file_path = "dataset/CICIoT2023/test_set_small.csv",
         if attitude == "Balanced":
             attitude_details = "balance the false alarm rate and the missing alarm rate"
         
-        #   1. Load the traffic features from the CSV file using tools. You can use the load_data_line tool to obtain the complete traffic_string.
-        # 4. When there are discrepancy/disagreements for different models
-        #         The input parameter name of google and wiki is `query`.
-        #        You can also extract some previous success examples to help you to make decisions using the long_memory_retriever tool by questions like `give some previous success examples that are close to the traffic string`.
-
-        # When there are discrepancy/disagreements for different models or you are unsure about the classification results, 
-        #For example, you can call the knowledge_retriever or wiki tool 'what is ArpSpoofing and how to detect it' if there is a potential MITM-ArpSpoofing attack for a benign example.
-        # For example, you can call the knowledge_retriever `what features push the prediction to recon` if you cannot distinguish benign and recon-xxx attack.
-        # For example, when one model classify the data as DDoS, and another classify the data as DoS, you can search on knowledge_retriever for "The features of DoS,and the features DDoS and their difference".
-        #
-        
-        # There are some examples:
-        #     1)You can first search from the long memory using the long_memory_retriever tool, by query like: "what is the features of xxx attacks"
-        #     2)You can call the knowledge_retriever or wiki tool 'what is xxx and how to detect it' and 'what is the difference about a potential xxx attack and benign example'.
-        #     3)You can call the knowledge_retriever `what features push the prediction to recon` if you cannot distinguish benign and recon attack.
-        #     4)When one model classify the data as DDoS, and another classify the data as DoS, you can search on knowledge_retriever for "The features of DoS,and the features DDoS and their difference".
-        # 
-        
-        # Summarize the classification with {attitude} sentitivity, {attitude_details}.
-
         
         prompt_text = f"""
         You are a helpful assisstant that can implement multi-step tasks, such as intrusion detection. I will give you the traffic features, you are asked to classfiy it using tools.
@@ -723,29 +670,7 @@ async def run_agent(file_path = "dataset/CICIoT2023/test_set_small.csv",
         
         Now, classsify the traffic from line_number {line_number} in the file {file_path}
         """
-        # Otherwise, the predicted_label should be original format of classifier prediction.
-        
-        # Summarize the classification with {attitude} attitude, which means {attitude_details}.
-        # When there are discrepancy/disagreements for different models, you can search from vector database/google/wiki to get more information about the difference of attacks to help you to make decision.
-        # For example, you can call the IDS knowledge database `what is port scan attack`.
-       
-        #For example, when one model classify the data as DDoS, and another classify the data as DoS, you can search on google or wiki for "The difference between DoS and DDoS".
-        
-        # 4. Additionally, you need to explain the results based on the classification outcomes. If you are uncertain about the classification, consider using online resources like Wikipedia.
-        # 5. Finnaly, give suggestions for intrusion response. You can access google and Wikipedis to summarize information.
-        
-        # """
-        # You should follow these steps:
-        # 1. Load the data using the `load_data_line` tool.
-        # 2. Data Processing: Use the `data_preprocessing` tool for this.
-        # 3. Load multiple Classifier Models: Use the provided pretrained ML models, including {model_name}.
-        # 4. Based on the classification results, give the final classification, and explain the classification reasons if an example is classified as malicious.
-        # Your goal is to accurately classify network traffic data and provide explanations for malicious classifications.
-        # """
-        # prompt_text = f"Is the network traffic from the line number {line_number} an attack or normal traffic?"
         print(prompt_text)
-        #response = agent_executor.invoke({"input": prompt_text})
-        #print(response)
 
         chunks = []
         output_list = []
@@ -840,13 +765,6 @@ async def run_agent(file_path = "dataset/CICIoT2023/test_set_small.csv",
     labels = np.unique(true_labels)  # Get all unique labels
     cm = confusion_matrix(true_labels, predicted_labels)    
     print(cm)   
-    # print(classification_report(true_labels, predicted_labels, target_names=np.unique(true_labels)))
-    # f.write("\nSummary:\n")
-    # f.write(f"Total Records: {len(true_labels)}\n")
-    
-    # Write the confusion matrix to the file
-    # f.write("Confusion Matrix:\n")
-    # np.savetxt(f, cm, fmt='%d')
 
     # Calculate and print the classification report
     report = classification_report(true_labels, predicted_labels, target_names=labels)
@@ -861,212 +779,6 @@ async def run_agent(file_path = "dataset/CICIoT2023/test_set_small.csv",
     plt.savefig("confusion_matrix.png")  # Save as a PNG file
     plt.close()  # Close the plot to avoid display if running in a script
     
-    # Load the label encoder
-    # label_encoder = joblib.load('label_encoder.joblib')
-    
-    # # Encode the true and predicted labels
-    # true_labels_encoded = label_encoder.transform(true_labels)
-    # predicted_labels_encoded = label_encoder.transform(predicted_labels)
-    
-    # # Calculate the average accuracy and weighted F1 score
-    # avg_accuracy = accuracy_score(true_labels_encoded, predicted_labels_encoded)
-    # weighted_f1 = f1_score(true_labels_encoded, predicted_labels_encoded, average='weighted')
-    
-    # print(f"Average Accuracy: {avg_accuracy:.4f}")
-    # print(f"Weighted F1 Score: {weighted_f1:.4f}")
-
-
-# def run_agent2(file_path = "dataset/CICIoT2023/test_set_small.csv",
-#                     model_name = ["Random Forest", "K-Nearest Neighbors", "Logistic Regression", "MLP", "Support Vector Classifier","Decision Tree"],
-#                     attitude ="Balanced",
-#                     #llm_model_name = "gpt-3.5-turbo-0125"
-#                     llm_model_name = "gpt-4o-mini"
-#                     ):
-
-#     llm = ChatOpenAI(model=llm_model_name, temperature=0)
-
-#     df = pd.read_csv(file_path)
-#     labels  = df["label"].unique()
-
-#     true_labels = []
-#     predicted_labels = []
-#     flow_ids = []
-    
-#     predicts_analysis = []
-    
-#     # define agent
-#     os.environ["GOOGLE_CSE_ID"] = "66297c07f31dc4c6d"
-#     os.environ["GOOGLE_API_KEY"] = "AIzaSyDE0ErQezoMG9H33i7IZ6x663yLzUe7_hA"
-
-#     google_search = GoogleSearchAPIWrapper(k=5)
-#     search_tool = Tool(
-#         name="google_search",
-#         description="Search Google for attack informations.",
-#         func=google_search.run,
-#     )
-#     # Define a Pydantic model for the tool's arguments
-#     # class GoogleSearchInput(BaseModel):
-#     #     query: str
-        
-#     # search_tool = StructuredTool(
-#     #     name="google_search",
-#     #     description="Search Google for informations.",
-#     #     func=google_search.run,  # Assuming this is the correct function for the tool
-#     #     args_schema=GoogleSearchInput
-#     # )
-    
-#     api_wrapper = WikipediaAPIWrapper(top_k_results=1, doc_content_chars_max=1000)
-#     wiki_tool = WikipediaQueryRun(api_wrapper=api_wrapper)
-
-#     # tools = [load_data_line, data_preprocessing, classifier, search_tool, wiki_tool]
-#     tools = [load_data_line, data_preprocessing, classifier, knowledge_retriever]
-#     message_history = RedisChatMessageHistory(
-#         url="redis://127.0.0.1:6379/0", ttl=600, session_id="gpt4-mini"
-#     )
-    
-#     # prompt = hub.pull("hwchase17/openai-tools-agent")
-#     # agent = create_openai_tools_agent(llm, tools, prompt)
-#     # prompt = hub.pull("hwchase17/react-chat-json")
-#     # prompt = chat_json_prompt()
-    
-    
-#     #agent = create_json_chat_agent(llm, tools, prompt)
-    
-#     # prompt = ids_system_prompt()
-#     # agent = create_tool_calling_agent(llm, tools, prompt)
-    
-#     prompt = react_prompt()
-#     #agent = create_react_agent(llm, tools, prompt)
-#     agent = create_react_agent(llm, tools, prompt, stop_sequence = True)
-
-#     # Create the agent executor
-#     agent_executor = AgentExecutor(agent=agent, tools=tools, verbose=True, handle_parsing_errors=True)
-    
-#     agent_with_chat_history = RunnableWithMessageHistory(
-#         agent_executor,
-#         # This is needed because in most real world scenarios, a session id is needed
-#         # It isn't really used here because we are using a simple in memory ChatMessageHistory
-#         lambda session_id: message_history,
-#         input_messages_key="input",
-#         history_messages_key="chat_history",
-#     )
-    
-#     few_shot_example = load_few_shot("few_shot.txt")
-    
-#     for line_number in range(183, 190):
-#         # Define the prompt for the agent
-#         # flow_id = df.at[line_number,"Flow ID"]
-#         # If there is a significant discrepancy in the model predictions, consider the possibility of `Unknown` attacks. 
-#         if "Recon" not in df.at[line_number,"label"]:
-#             continue
-
-#         if attitude == "Aggresive":
-#             attitude_details = "discover the attack at the first time"
-#         if attitude == "Conservative":
-#             attitude_details = "donot alert unless you are very sure"
-#         if attitude == "Balanced":
-#             attitude_details = "balance the false alarm rate and the missing alarm rate"
-        
-#         prompt_text = f"""
-#         Is the network traffic {traffic} an attack or normal traffic? 
-#         You are tasked with performing intrusion detection. Follow these steps for the detection process:
-
-#         1. Load the traffic features from the CSV file using tools. You can use the load_data_line tool to obtain the complete traffic_string.
-#         2. Select features and normalize the full feature strings using tools. This can be done using data_preprocessing tool.
-#         3. Finally, load classifiers for classification.
-#         You should classify this traffic until you reach a final classification. You can use multiple classifiers, including {model_name}. 
-#         4. At the end, you should summarize the results from these classifiers and provide a final result.
-
-#         The predicted_label should be one of the {labels}.
-#         The final output format should be: 
-#         Final Output:
-#         %%%json
-#         {{
-#             'line_number': line_number, 
-#             'analysis':  str,  \here is the Analysis, 
-#             'predicted_label_top_1': str,
-#             'predicted_label_top_2': str, 
-#             'predicted_label_top_3': str, 
-#         }}
-#         """
-#         print(prompt_text)
-
-#         chunks = []
-#         f = open("response_results_CICIoT_0830_vectordb.txt","a")
-    
-#         # async for chunk in agent_executor.astream({"input": prompt_text}):
-#         for chunk in agent_with_chat_history.astream({"input": prompt_text},config={"configurable": {"session_id": "gpt4-mini"}}):
-#             chunks.append(chunk)
-#             # print(chunk)
-#             print("------")
-            
-#             # print(chunk["messages"])
-#             if "actions" in chunk:
-#                 for action in chunk["actions"]:
-#                     # print(f"Calling Tool: {action.tool} with input {action.tool_input}")
-#                     f.write(f"Calling Tool: {action.tool} with input {action.tool_input}" + "\n")
-#             elif "output" in chunk:
-#                 response = chunk["output"]
-#                 f.write(str(response) + "\n")
-#                 print(f'Final Output: {chunk["output"]}')
-#                 # Regular expression to find the final classification
-#                 # Extract the JSON block from the text
-#                 start = response.find("%%%json") + len("%%%json")
-#                 end = response.find("%%%", start)
-#                 match = response[start:end].strip()
-#                 if response.find("%%%json") >= 0:
-#                     pred_dict = json.loads(match)
-#                     final_classification = pred_dict['predicted_label_top_1']
-#                     print(f"Final Classification: {final_classification}")
-#                     predicted_labels.append(final_classification)
-#                     data_line = df.iloc[line_number]
-#                     true_label = data_line['label']
-#                     true_labels.append(true_label)
-#                     pred_dict["true_label"] = true_label
-#                     predicts_analysis.append(pred_dict)
-#                     with open("results/classification_results_CICIoT_0830-vectordb.txt", "w") as f_class:
-#                         f_class.write(str(predicts_analysis))
-#                     print(f"line_number: {line_number}, True Label: {true_label}, Predicted Label: {final_classification}\n")
-#                 else:
-#                     print("Final Classification not found.")
-#             elif "steps" in chunk:
-#                 for step in chunk["steps"]:
-#                     print(f"Tool Result: {step.observation}")
-#                     f.write(f"Tool Result: {step.observation}" + "\n")
-#             else:
-#                 raise ValueError()
-#             print("--------------")
-
-#     # Compute the confusion matrix
-#     # Remove the first row and first column
-
-    
-#     cm = confusion_matrix(true_labels, predicted_labels)    
-#     print(cm)   
-#     # print(classification_report(true_labels, predicted_labels, target_names=np.unique(true_labels)))
-#     f.write("\nSummary:\n")
-#     f.write(f"Total Records: {len(true_labels)}\n")
-    
-#     # Write the confusion matrix to the file
-#     f.write("Confusion Matrix:\n")
-#     np.savetxt(f, cm, fmt='%d')
-
-#     # Calculate and print the classification report
-#     report = classification_report(true_labels, predicted_labels, target_names=labels)
-#     print(report)   
-#     f.write(report)
-    
-        
-#     # Optionally, display the confusion matrix
-    
-#     disp = ConfusionMatrixDisplay(confusion_matrix=cm, display_labels=np.unique(true_labels))
-#     disp.plot(cmap=plt.cm.Blues)
-#     plt.title("Confusion Matrix")
-#     # plt.show()
-#         # Save the confusion matrix figure
-#     plt.savefig("confusion_matrix.png")  # Save as a PNG file
-#     plt.close()  # Close the plot to avoid display if running in a script
-
 
 
 if __name__ == "__main__":
