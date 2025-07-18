@@ -31,8 +31,38 @@ pip install -r requirements.txt
 ```bash
 pip install jupyter
 ```
+### Data Preprocessing
+1. Preprocess main dataset:
+```bash
+jupyter notebook process.ipynb
+```
+- Output: Preprocessed dataset files
+- Expected artifacts:
+  - Cleaned dataset
+  - Feature engineered data
+  - Train/test splits
 
-## Usage
+2. Preprocess CICIoT dataset:
+```bash
+jupyter notebook process_CICIoT.ipynb
+``` 
+- Output: Standardized IoT dataset
+- Expected artifacts:
+  - Normalized features
+  - Attack type labels
+  - Combined dataset
+
+### Model Training
+```bash
+python train_model.py
+```
+- Expected outputs:
+  - Trained model weights (.joblib file)
+  - Training logs
+  - Performance metrics
+  - Model evaluation results
+
+
 ### Running the Detection Agent
 ```bash
 python run_agent_v2.py
